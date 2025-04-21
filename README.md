@@ -145,7 +145,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * (Google).
 
-    *[Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan)
+    * [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan)
 
     * Pioneering work grounding LLM planning in robot affordances. Uses an LLM (PaLM) to score potential skills by instruction relevance and a value function to score executability.  Primarily a high-level planner.
 
@@ -216,3 +216,113 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 * **VLA Model-Expert Collaboration** (arXiv 2025) - Xiang, T.-Y., et al.
 
     * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
+
+### Navigation
+
+Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
+
+* **NaVILA** ((https://arxiv.org/abs/2412.04453)) - Chen, X., et al.
+
+    * [Project](https://navila-vln.github.io/).
+
+    * Two-stage framework for legged robot VLN. High-level VLA outputs actions in mid-level language form (e.g., "move forward 75cm"), and a low-level vision-motor policy executes them. Decouples high-level reasoning from low-level control. 
+
+* **QUAR-VLA / QUART** (ECCV 2024 / arXiv 2023) - Tang, J., et al.
+
+    * [Project](https://sites.google.com/view/quar-vla).
+
+    * Paradigm and VLA model family (QUART) for quadruped robots, integrating vision and language for navigation, complex terrain traversal, and manipulation. Includes the QUARD dataset. 
+
+* **NaviLLM** (arXiv 2023) - Shah, D., et al.
+
+    * [Project / Code](https://github.com/allenai/navillm).
+
+    * General navigation model using LLMs for planning and interpreting instructions in diverse environments.
+
+* **NaVid** (arXiv 2024) - Chen, X., et al.
+
+    * [Project](https://navid-vlmap.github.io/).
+
+    * Focuses on next-step planning in navigation using VLMs. Earlier work related to NaVILA.
+
+### Human-Robot Interaction (HRI)
+
+Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
+
+* **VLAS (Vision-Language-Action-Speech)** ((https://arxiv.org/abs/2502.13508)) - Zhao, W., et al. ([https://openreview.net/forum?id=K4FAFNRpko](https://openreview.net/forum?id=K4FAFNRpko)).
+
+    * First end-to-end VLA with direct integration of speech commands, without needing an external ASR. Built upon LLaVA. Includes the SQA and CSI datasets. Uses Voice RAG to handle personalized tasks.
+
+* **Shake-VLA** (arXiv 2025) - Abdelkader, H., et al.
+
+    * Integrates voice commands for a dual-arm cocktail-making robot.
+
+* **VLA Model-Expert Collaboration** (arXiv 2025) - Xiang, T.-Y., et al.
+
+    * Enables human-robot collaboration through shared autonomy, improving both VLA and human performance.
+
+* **Helix** (Figure AI blog post 2024) - Figure AI.
+
+    * [Project](https://www.figure.ai/news/helix).
+
+    * Uses a single VLA model to enable multiple robots to collaborate on shared tasks (e.g., tidying up groceries).
+
+### Task Planning / Reasoning
+
+Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
+
+* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al.
+
+    * (Google).
+
+    * [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan)
+
+    * Grounds LLM planning in robot affordances.
+
+* **PaLM-E** (ICML 2023 / arXiv 2023) - Driess, D., et al. (Google).
+
+    * [Project](https://palm-e.github.io/).
+
+    * Can perform sequential manipulation planning end-to-end or output language subgoals. Shows visual chain-of-thought reasoning abilities.
+
+* **EmbodiedGPT** (arXiv 2023) - Mu, Y., et al.
+
+    * [Code](https://github.com/OpenGVLab/EmbodiedGPT).
+
+    * Multimodal model that performs end-to-end planning and reasoning for embodied tasks.
+
+* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al.
+
+    * [Project](https://cot-vla.github.io/).
+
+    * Explicitly incorporates visual CoT reasoning by predicting future goal images.
+
+* **Hi Robot** (arXiv 2025) - Physical Intelligence Team.
+
+    * [Project](https://www.physicalintelligence.company/research/hirobot).
+
+    * Hierarchical VLA where a high-level VLM reasons and decomposes tasks for a low-level VLA (π0) executor.
+
+* **LLM-Planner** ((https://ieeexplore.ieee.org/document/10160437)) - Liu, B., et al.
+
+    * Modular planner using LLMs.
+
+* **Code as Policies (CaP)** ((https://arxiv.org/abs/2212.06081)) - Liang, J., et al. (Google).
+
+    * [Project](https://code-as-policies.github.io/).
+
+    * Uses LLMs to directly generate robot policy code.
+
+* **ConceptGraphs** ((https://arxiv.org/abs/2306.08999)) - Vemprala, S., et al.
+
+    * [Project](https://concept-graphs.github.io/).
+
+    * Uses LLMs to build and query scene graphs for planning and grounding.
+
+* **Inner Monologue** ((https://arxiv.org/abs/2207.05608)) - Huang, W., et al.
+
+    * [Project](https://inner-monologue.github.io/).
+
+    * Uses language feedback from VLM/LLMs to guide robot policies.
+
+* **The Critical Role of Hierarchical Reasoning for Complexity:** Many successful approaches to complex, long-horizon tasks employ hierarchical structures. This can be explicit (e.g., NaVILA's VLA + motor policy; Helix's System 1/2; Hi Robot's VLM planner + VLA executor), or implicit (e.g., SayCan grounding LLM plans in affordances; CoT-VLA generating intermediate visual goals). This suggests that monolithic end-to-end VLAs may struggle with deep reasoning or long-term planning compared to approaches that leverage emergent abilities of a single large model. Architectures that separate high-level planning/reasoning from low-level reactive control appear more effective. This architectural trend reflects the inherent complexity of linking semantic understanding to robust physical execution over extended periods.
