@@ -603,7 +603,7 @@ Summarizes key limitations of current VLA models and highlights promising direct
     * https://github.com/Orlando-CS/Awesome-VLA
         
 * Awesome-Embodied-AI (multiple):
-    * https://github.com/HCPLab-SYSU/Embodied\_AI\_Paper\_List
+    * https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
     * https://github.com/matrix97317/Awesome-Embodied-AI
     * https://github.com/seanxuu/Awesome-Embodied-AI
     * https://github.com/dustland/awesome-embodied-ai
