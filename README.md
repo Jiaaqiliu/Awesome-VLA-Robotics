@@ -86,3 +86,133 @@ This section is the heart of the resource, listing specific VLA models and influ
 | CoT-VLA | Incorporates explicit Visual Chain-of-Thought (Visual CoT); Predicts future goal images before generating actions; Hybrid attention mechanism | Llama 2 (ViT vision) | Action binning + Token output (after predicting visual goals) | (https://arxiv.org/abs/2503.22020) | [Project](https://visualcot.github.io/) |
 | TinyVLA | Compact, fast, and data-efficient VLA; Requires no pre-training; Uses small VLM + diffusion policy decoder | MobileVLM V2 / Moondream2 + Diffusion Policy Decoder | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2409.12514) | [Project](https://tiny-vla.github.io/) |
 | CogACT | Componentized VLA architecture; Specialized action module (Diffusion Action Transformer) conditioned on VLM output; Significantly outperforms OpenVLA / RT-2-X | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2411.19650) | [Project](https://cogact-vla.github.io/) |
+
+## By Application Area
+
+### Manipulation
+
+Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
+
+* [**RT-1 (Robotics Transformer 1)**](https://arxiv.org/abs/2212.06817) - Brohan, A., et al. (Google).
+
+    * [Code](https://github.com/google-research/robotics_transformer).
+
+    * Early influential Transformer-based model demonstrating scalability on multi-task real-world data (13 robots, 130k trajectories). Uses discretized action tokens input to a Transformer. Shows improved generalization and robustness. 
+
+* [**RT-2 (Robotics Transformer 2)**](https://arxiv.org/abs/2307.15818) - Brohan, A., et al.
+
+    * (Google DeepMind).
+
+    * [Project](https://robotics-transformer2.github.io/).
+
+    * A landmark VLA model demonstrating the ability to transfer knowledge from web-scale VLMs to robotics by joint fine-tuning a VLM (PaLI-X, PaLM-E) to output action tokens. Shows emergent generalization to new objects, commands, and basic reasoning.  Defines the modern VLA concept.
+
+* **PaLM-E** ([ICML 2023 / arXiv 2023](https://arxiv.org/abs/2303.03378))  - Driess, D., et al.
+
+    * (Google).
+
+    * [Project](https://palm-e.github.io/).
+
+    * Embodied multimodal language model, injecting continuous sensor data (image, state) into a pre-trained LLM (PaLM). Validated on sequential manipulation, VQA, and captioning, showing positive transfer from vision-language data to robotic tasks. 
+
+* **OpenVLA** ([arXiv 2024](https://arxiv.org/abs/2406.09246))  - Kim, M. J., et al.
+
+    * (Stanford, Berkeley, TRI, Google, Physical Intelligence, MIT).
+
+    * [Code](https://github.com/mlresearch/openvla).
+
+    * State-of-the-art 7B open-source VLA at the time of release, based on Llama 2, DINOv2, SigLIP. Trained on 970k Open X-Embodiment trajectories. Outperforms RT-2-X with fewer parameters. Shows strong generalization and effective fine-tuning (PEFT) ability. 
+
+* **Helix** （[Figure AI blog post 2024](https://www.figure.ai/news/helix)） - Figure AI.
+
+    * [Project](https://www.figure.ai/news/helix).
+
+    * General-purpose VLA for humanoid robot (Figure 01) control. Features include full-body (including hands) control, multi-robot collaboration, arbitrary object grasping, all behaviors using a single network, and onboard deployment. Uses a hierarchical "System 1 (fast visuomotor) / System 2 (slow VLM reasoning)" architecture. 
+
+* **π0 (Pi-Zero)** (Physical Intelligence blog post / arXiv 2024) - Physical Intelligence Team.
+
+    * [Project](https://www.physicalintelligence.company/research/pi-zero) / [Code](https://github.com/Physical-Intelligence/openpi) / [HuggingFace](https://huggingface.co/physical-intelligence)
+
+    * General-purpose VLA using flow matching to generate continuous actions (50Hz). Trained on data from 7 platforms, 68 tasks. Demonstrates complex tasks like laundry folding and table clearing. 
+
+* **Hi Robot** (arXiv 2025) - Physical Intelligence Team.
+
+    * [Project](https://www.physicalintelligence.company/research/hirobot).
+
+    * Hierarchical system using π0 as "System 1" and a VLM as "System 2" for reasoning and task decomposition (via self-talk), improving handling of complex prompts. 
+
+* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al.
+
+    * (Google).
+
+    *[Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan)
+
+    * Pioneering work grounding LLM planning in robot affordances. Uses an LLM (PaLM) to score potential skills by instruction relevance and a value function to score executability.  Primarily a high-level planner.
+
+* **VIMA (Visual Matching Agent)** (ICML 2023 / arXiv 2022) - Jiang, Y., et al.
+
+    * [Project](https://vima.cs.princeton.edu/).
+
+    * Transformer-based agent that processes multimodal prompts (text, images, video) for manipulation tasks. Introduces VIMA-Bench. 
+
+* **Octo** (Project website 2023) - Octo Model Team (UC Berkeley, Google, TRI, et al.).
+
+    * [Code](https://github.com/google-research/octo).
+
+    * General-purpose robot model trained on Open X-Embodiment. Transformer architecture with flexible input/output conditioning. Often used as a strong baseline model. 
+
+* **VoxPoser** ((https://arxiv.org/abs/2307.05973)) - Huang, W., et al.
+
+    * [Project](https://voxposer.github.io/) / [Code](https://github.com/huangwl18/VoxPoser)
+
+    * Uses LLM/VLM to synthesize 3D value maps (affordances) in perceptual space for zero-shot manipulation.  Focuses on the motion planning aspect.
+
+* **ReKep (Relational Keypoint Constraints)** ((https://arxiv.org/abs/2409.01652)) - Huang, W., et al.
+
+    * [Project](https://rekep-robot.github.io/) / [Code](https://github.com/huangwl18/ReKep).
+
+    * Uses LVM (DINOv2, SAM2) + VLM (GPT-4o) for spatio-temporal reasoning via keypoint constraints for manipulation tasks.  Point-based action approach.
+
+* **OK-Robot** (arXiv 2024) - Singh, N., et al.
+
+    * [Project](https://ok-robot.github.io/) / [Code](https://github.com/ok-robot/ok-robot).
+
+    * Integrates open knowledge models (VLM, LLM) for mobile manipulation arm (Hello Robot) navigation, perception, and manipulation in home environments. 
+
+* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al.
+
+    * [Project](https://cot-vla.github.io/).
+
+    * Incorporates explicit visual chain-of-thought reasoning by predicting future goal images before generating actions. Uses hybrid attention (causal for vision/text, full for actions). 
+
+* **3D-VLA** ((https://arxiv.org/abs/2403.09599)) - Zhen, Z., et al.
+
+    * [[Project](https://3d-vla.github.io/) / [Code](https://github.com/zhen-zx/3D-VLA).
+
+    * Introduces 3D perception (point clouds) and generative world models into VLAs, connecting 3D perception, reasoning, and action. 
+
+* **TinyVLA** (arXiv 2024) - Liu, H., et al.
+
+    * [Project](https://tiny-vla.github.io/).
+
+    * Focuses on faster inference speed and higher data efficiency, eliminating the pre-training stage. Uses a smaller VLM backbone + diffusion policy decoder. Outperforms OpenVLA in speed/data efficiency. 
+
+* **CogACT** (arXiv 2024) - Li, Q., et al.
+
+    * [Project](https://cog-act.github.io/).
+
+    * Componentized VLA architecture with a specialized action module (Diffusion Action Transformer) conditioned on VLM output. Significantly outperforms OpenVLA and RT-2-X. 
+
+* **DexVLA** (arXiv 2025) - Li, Z., et al.
+
+    * [Project](https://diffusion-vla.github.io/).
+
+    * Improves VLA efficiency/generalization via a large (1B parameter) diffusion-based action expert and an embodied curriculum learning strategy. Focuses on dexterity across different embodiments (single-arm / dual-arm / dexterous hand). 
+
+* **Shake-VLA** (arXiv 2025) - Abdelkader, H., et al.
+
+    * VLA-based system for automated cocktail making with a dual-arm robot, integrating vision (YOLOv8, EasyOCR), speech-to-text, and LLM instruction generation.  Application-specific system.
+
+* **VLA Model-Expert Collaboration** (arXiv 2025) - Xiang, T.-Y., et al.
+
+    * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
