@@ -382,3 +382,185 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 * **Grounding:** The process of linking language descriptions or visual perceptions to specific entities, locations, or actions in the physical world or robot representation. Addressed via various techniques like similarity matching, leveraging common-sense knowledge, multimodal alignment, or interaction. LLM-Grounder focuses on open-vocabulary 3D visual grounding.
 
 * **The Need for Richer World Representations:** The increasing integration of 3D vision and speech indicates that standard RGB images and text may be insufficient for robust, nuanced robot interaction in complex environments. 3D data provides crucial spatial context missing from 2D images, while speech offers a more natural HRI modality. This trend suggests that future VLAs will become truly "multi-sensory" agents, moving beyond just vision and language. The VLA paradigm is expanding beyond its name ("Vision-Language-Action") to incorporate the richer sensory inputs (3D, speech, proprioception) needed for effective manipulation and interaction in the complex physical world, moving towards more general-purpose multimodal embodied agents.
+
+## Datasets and Benchmarks
+
+This section lists key resources for training and evaluating VLA models. Large-scale, diverse datasets and standardized benchmarks are crucial for progress in the field.
+
+### **Quick Glance at Datasets and Benchmarks**
+
+| Name | Type | Focus Area | Key Features / Environment | Link | Key Publication |
+|---|---|---|---|---|---|
+| Open X-Embodiment (OpenX) | Dataset | General Manipulation | Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [Project](https://robotics-transformer-x.github.io/) | arXiv 2023 |
+| DROID | Dataset | Real-world Manipulation | Large-scale human-collected data (500+ tasks, 26k hours) | [Project](https://droid-dataset.github.io/) | (https://arxiv.org/abs/2403.06037) |
+| CALVIN | Dataset / Benchmark | Long-Horizon Manipulation | Long-horizon tasks with language conditioning, Franka arm, PyBullet simulation | [Project](https://calvin.cs.uni-freiburg.de/)| (https://arxiv.org/abs/2112.03227) |
+| QUARD | Dataset | Quadruped Robot Tasks | Large-scale multi-task dataset (sim + real) for navigation and manipulation | [Project](https://sites.google.com/view/quar-vla) | [ECCV 2024](https://arxiv.org/abs/2312.14457) |
+| BEHAVIOR-1K | Dataset / Benchmark | Household Activities | 1000 simulated human household activities | [Project](https://behavior.stanford.edu/) | (https://arxiv.org/abs/2108.03332) |
+| Isaac Sim / Orbit / OmniGibson | Simulator | High-fidelity Robot Simulation | NVIDIA Omniverse-based, physically realistic | (https://developer.nvidia.com/isaac-sim), [Orbit](https://isaac-orbit.github.io/), [OmniGibson](https://omnigibson.stanford.edu/) | - |
+| Habitat Sim | Simulator | Embodied AI Navigation | Flexible, high-performance 3D simulator | [Project](https://aihabitat.org/) | (https://arxiv.org/abs/1904.01201) |
+| MuJoCo | Simulator | Physics Engine | Popular physics engine for robotics and RL | [Website](https://mujoco.org/) | - |
+| PyBullet | Simulator | Physics Engine | Open-source physics engine, used for CALVIN, etc. | [Website](https://pybullet.org/) | - |
+| ManiSkill (1, 2, 3) | Benchmark | Generalizable Manipulation Skills | Large-scale manipulation benchmark based on SAPIEN | [Project](https://maniskill.ai/) | (https://arxiv.org/abs/2107.14483) |
+| Meta-World | Benchmark | Multi-task / Meta RL Manipulation | 50 Sawyer arm manipulation tasks, MuJoCo | [Project](https://meta-world.github.io/)| (https://arxiv.org/abs/1910.10897) |
+| RLBench | Benchmark | Robot Learning Manipulation | 100+ manipulation tasks, CoppeliaSim (V-REP) | [Project](https://sites.google.com/view/rlbench) | (https://arxiv.org/abs/1909.12271) |
+| VLN-CE / R2R / RxR | Benchmark | Vision-Language Nav | Standard VLN benchmarks, often run in Habitat | [VLN-CE](https://github.com/jacobkrantz/VLN-CE), https://github.com/airsplay/R2R-EnvDrop, https://github.com/google-research-datasets/RxR) | Various |
+
+### Robot Learning Datasets
+
+Large-scale datasets of robot interaction trajectories, often with accompanying language instructions and visual observations. Crucial for training general-purpose policies via imitation learning.
+
+* **Open X-Embodiment (OpenX)** ([Project](https://robotics-transformer-x.github.io/)) - Open X-Embodiment Collaboration.
+
+    * A massive, standardized dataset aggregating data from 20+ existing robot datasets, spanning diverse embodiments, tasks, and environments.
+
+    * Used to train major VLAs like RT-X, Octo, OpenVLA, π0.
+
+    * Contains over 1 million trajectories. 
+
+* RT-X: A family of models released along with the Open X-Embodiment dataset. 
+    
+* **BridgeData V2** ([Project](https://rail-berkeley.github.io/bridgedata/)) - Walke, H., et al.
+
+    * Large dataset collected on a WidowX robot, used for OpenVLA evaluation. 
+
+* **DROID** ([Project](https://droid-dataset.github.io/))  - Manuelli, L., et al.
+
+    * Large-scale, diverse, human-collected manipulation dataset (500+ tasks, 26k hours).
+
+    * Used to fine-tune/evaluate OpenVLA, π0. 
+
+* **RH20T** ([Project](https://rh20t.github.io/)) - Shao, L., et al.
+
+    * Comprehensive dataset with 110k robot clips, 110k human demonstrations, and 140+ tasks. 
+
+* **CALVIN (Composing Actions from Language and Vision)** ** ([Project](https://calvin.cs.uni-freiburg.de/)) - Mees, O., et al.
+
+    * (Uni Freiburg).
+
+    * Benchmark and dataset for long-horizon language-conditioned manipulation with a simulated Franka arm in PyBullet. 
+
+* **QUARD (QUAdruped Robot Dataset)** ([Project](https://sites.google.com/view/quar-vla))  - Tang, J., et al.
+
+    * Large-scale multi-task dataset (sim + real) for quadruped navigation and manipulation, released with QUAR-VLA.
+
+    * Contains 348k sim + 3k real clips or 246k sim + 3k real clips. 
+
+* **RoboNet** ([Project](https://www.robonet.wiki/))  - Dasari, S., et al.
+
+    * Early large-scale dataset aggregating data from multiple robot platforms. 
+
+* **BEHAVIOR-1K** ([Project](https://behavior.stanford.edu/))  - Srivastava, S., et al.
+
+    * Dataset of 1000 simulated human household activities, useful for high-level task understanding. 
+
+* **SQA & CSI Datasets** ([arXiv 2025](https://arxiv.org/abs/2502.13508))- Zhao, W., et al.
+
+    * Curated datasets with speech instructions, released with the VLAS model, for speech-vision-action alignment and fine-tuning. 
+
+* **Libero** ([Project](https://libero-benchmark.github.io/))  - Li, Z., et al.
+
+    * Benchmark suite for robot lifelong learning with procedurally generated tasks.
+
+    * Used in π0 fine-tuning examples. 
+
+* **D4RL (Datasets for Deep Data-Driven Reinforcement Learning)** ([Project](https://sites.google.com/view/d4rl/home))  - Fu, J., et al.
+
+    * Standardized datasets for offline RL research, potentially useful for RL-based VLA methods. 
+
+### Simulation Environments
+
+Physics-based simulators used to train agents, generate synthetic data, and evaluate policies in controlled settings before real-world deployment.
+
+* **NVIDIA Isaac Sim / Orbit / OmniGibson** ((https://developer.nvidia.com/isaac-sim), Orbit, OmniGibson).
+
+    * High-fidelity, physically realistic simulators based on NVIDIA Omniverse.
+
+    * Used for QUAR-VLA, ReKep, ARNOLD, etc. 
+
+* **Habitat Sim** ([Project](https://aihabitat.org/)) - Facebook AI Research (Meta AI).
+
+    * Flexible, high-performance 3D simulator for Embodied AI research, especially navigation. 
+
+* **MuJoCo (Multi-Joint dynamics with Contact)** ([Project](https://mujoco.org/)).
+
+    * Popular physics engine widely used for robot simulation and RL benchmarks (dm\_control, robosuite, Meta-World, RoboHive). 
+
+* **PyBullet** ([Project](https://pybullet.org/)).
+
+    * Open-source physics engine, used for CALVIN and other benchmarks (panda-gym). 
+
+* **SAPIEN** ([Project](https://sapien.ucsd.edu/)).
+
+    * Physics simulator focused on articulated objects and interaction.
+
+    * Used for the ManiSkill benchmark. 
+
+* **Gazebo** ([Project](https://gazebosim.org/)).
+
+    * Widely used open-source robot simulator, especially in the ROS ecosystem. 
+
+* **Webots** ([Project](https://cyberbotics.com/)).
+
+    * Open-source desktop robot simulator. 
+
+* **Genesis** ([GitHub](https://github.com/Genesis-Embodied-AI/Genesis)).
+
+    * A newer platform aimed at general robot/Embodied AI simulation. 
+
+* **UniSim** ([arXiv 2023](https://arxiv.org/abs/2310.05899)) - Yang, G., et al.
+
+    * Learns interactive simulators from real-world videos. 
+
+### Evaluation Benchmarks
+
+Standardized suites of environments and tasks used to evaluate and compare the performance of VLA models and other robot learning algorithms.
+
+* **CALVIN** ([Project](https://calvin.cs.uni-freiburg.de/)).
+
+    * Benchmark for long-horizon language-conditioned manipulation. 
+
+* **ManiSkill (1, 2, 3)** ([Project](https://maniskill.ai/)).
+
+    * Large-scale benchmark for generalizable manipulation skills, based on SAPIEN. 
+
+* **Meta-World** ([Project](https://meta-world.github.io/)).
+
+    * Multi-task and meta-RL benchmark with 50 different manipulation tasks using a Sawyer arm in MuJoCo. 
+
+* **RLBench** ([Project](https://sites.google.com/view/rlbench)).
+
+    * Large-scale benchmark with 100+ manipulation tasks in CoppeliaSim (V-REP). 
+
+* **Franka Kitchen** ([GitHub](https://github.com/google-research/relay-policy-learning)).
+
+    * dm\_control-based benchmark involving kitchen tasks with a Franka arm.
+
+    * Used in iRe-VLA. 
+
+* **LIBERO** ([Project](https://libero-benchmark.github.io/)).
+
+    * Benchmark for lifelong/continual learning in robot manipulation. 
+
+* **VIMA-Bench** ([Project](https://vimalabs.github.io/)).
+
+    * Multimodal few-shot prompting benchmark for robot manipulation. 
+
+* **BEHAVIOR-1K** ([Project](https://behavior.stanford.edu/)).
+
+    * Benchmark focused on long-horizon household activities. 
+
+* **VLN-CE / R2R / RxR** ([VLN-CE](https://github.com/jacobkrantz/VLN-CE),[https://github.com/airsplay/R2R-EnvDrop](https://github.com/airsplay/R2R-EnvDrop),[https://github.com/google-research-datasets/RxR](https://github.com/google-research-datasets/RxR)).
+
+    * Standard benchmarks for Vision-Language Navigation, often run in Habitat.
+
+    * NaVILA is evaluated on these. 
+
+* **Safety-CHORES** ((https://arxiv.org/abs/2503.03480)).
+
+    * A new simulated benchmark with safety constraints, proposed for evaluating safe VLA learning. 
+
+* **OK-VQA** ([Project](https://okvqa.allenai.org/)).
+
+    * Visual question answering benchmark requiring external knowledge, used to evaluate the general VLM abilities of PaLM-E. 
+
+* **Symbiotic Relationship of Models, Data, and Simulation:** VLA progress is tightly coupled with the availability of large-scale datasets (OpenX being crucial) and powerful simulators (Isaac Sim, MuJoCo enabling large-scale training). Benchmarks (CALVIN, ManiSkill) drive standardized evaluation. However, the cost of real-world data collection and the persistent sim-to-real gap remain major bottlenecks, driving research into data augmentation, sim-to-real techniques, data-efficient learning, and automated data collection. The ecosystem of models, datasets, simulators, and benchmarks co-evolves, with limitations in one area (e.g., real data cost) driving innovation in others (e.g., simulation, data efficiency). Overcoming data/simulation limitations is key to unlocking the potential of VLAs.
