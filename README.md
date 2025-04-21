@@ -83,9 +83,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 | SayCan | Grounds LLM planning in robot affordances; Uses LLM to score skill relevance + value function to score executability | PaLM (Transformer) + Value Function | Selects pre-defined skills (high-level planner) | (https://arxiv.org/abs/2204.01691) | [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan) |
 | NaVILA | Two-stage framework for legged robot VLN; High-level VLA outputs mid-level language actions, low-level vision-motor policy executes | InternVL-Chat-V1.5 (VLM) + Locomotion Policy (RL) | Mid-level language action output (VLA) | https://arxiv.org/abs/2412.04453 | [Project](https://navila-bot.github.io/) |
 | VLAS | First end-to-end VLA with direct integration of speech commands; Based on LLaVA; Three-stage fine-tuning for voice commands; Supports personalized tasks (Voice RAG) | LLaVA (Transformer) + Speech Encoder | Action binning + Token output | https://arxiv.org/abs/2502.13508 | - |
-| CoT-VLA | Incorporates explicit Visual Chain-of-Thought (Visual CoT); Predicts future goal images before generating actions; Hybrid attention mechanism | Llama 2 (ViT vision) | Action binning + Token output (after predicting visual goals) | (https://arxiv.org/abs/2503.22020) | [Project](https://visualcot.github.io/) |
+| CoT-VLA | Incorporates explicit Visual Chain-of-Thought (Visual CoT); Predicts future goal images before generating actions; Hybrid attention mechanism | Llama 2 (ViT vision) | Action binning + Token output (after predicting visual goals) | (https://arxiv.org/abs/2503.22020) | [Project](https://cot-vla.github.io/) |
 | TinyVLA | Compact, fast, and data-efficient VLA; Requires no pre-training; Uses small VLM + diffusion policy decoder | MobileVLM V2 / Moondream2 + Diffusion Policy Decoder | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2409.12514) | [Project](https://tiny-vla.github.io/) |
-| CogACT | Componentized VLA architecture; Specialized action module (Diffusion Action Transformer) conditioned on VLM output; Significantly outperforms OpenVLA / RT-2-X | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2411.19650) | [Project](https://cogact-vla.github.io/) |
+| CogACT | Componentized VLA architecture; Specialized action module (Diffusion Action Transformer) conditioned on VLM output; Significantly outperforms OpenVLA / RT-2-X | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2411.19650) | [Project](https://cogact.github.io/) |
 
 ## By Application Area
 
@@ -119,7 +119,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * (Stanford, Berkeley, TRI, Google, Physical Intelligence, MIT).
 
-    * [Code](https://github.com/mlresearch/openvla).
+    * [Code](https://github.com/openvla/openvla).
 
     * State-of-the-art 7B open-source VLA at the time of release, based on Llama 2, DINOv2, SigLIP. Trained on 970k Open X-Embodiment trajectories. Outperforms RT-2-X with fewer parameters. Shows strong generalization and effective fine-tuning (PEFT) ability. 
 
@@ -131,7 +131,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **π0 (Pi-Zero)** (Physical Intelligence blog post / arXiv 2024) - Physical Intelligence Team.
 
-    * [Project](https://www.physicalintelligence.company/research/pi-zero) / [Code](https://github.com/Physical-Intelligence/openpi) / [HuggingFace](https://huggingface.co/physical-intelligence)
+    * [Project](https://www.physicalintelligence.company/blog/pi0) / [Code](https://github.com/Physical-Intelligence/openpi) / [HuggingFace](https://huggingface.co/physical-intelligence)
 
     * General-purpose VLA using flow matching to generate continuous actions (50Hz). Trained on data from 7 platforms, 68 tasks. Demonstrates complex tasks like laundry folding and table clearing. 
 
@@ -151,13 +151,13 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **VIMA (Visual Matching Agent)** (ICML 2023 / arXiv 2022) - Jiang, Y., et al.
 
-    * [Project](https://vima.cs.princeton.edu/).
+    * [Project](https://vimalabs.github.io/).
 
     * Transformer-based agent that processes multimodal prompts (text, images, video) for manipulation tasks. Introduces VIMA-Bench. 
 
 * **Octo** (Project website 2023) - Octo Model Team (UC Berkeley, Google, TRI, et al.).
 
-    * [Code](https://github.com/google-research/octo).
+    * [Code](https://github.com/octo-models/octo).
 
     * General-purpose robot model trained on Open X-Embodiment. Transformer architecture with flexible input/output conditioning. Often used as a strong baseline model. 
 
@@ -185,9 +185,9 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * Incorporates explicit visual chain-of-thought reasoning by predicting future goal images before generating actions. Uses hybrid attention (causal for vision/text, full for actions). 
 
-* **3D-VLA** ((https://arxiv.org/abs/2403.09599)) - Zhen, Z., et al.
+* **3D-VLA** ((https://arxiv.org/abs/2403.09631)) - Zhen, Z., et al.
 
-    * [[Project](https://3d-vla.github.io/) / [Code](https://github.com/zhen-zx/3D-VLA).
+    * [Code](https://github.com/UMass-Embodied-AGI/3D-VLA).
 
     * Introduces 3D perception (point clouds) and generative world models into VLAs, connecting 3D perception, reasoning, and action. 
 
@@ -199,22 +199,23 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **CogACT** (arXiv 2024) - Li, Q., et al.
 
-    * [Project](https://cog-act.github.io/).
+    * [Project](https://cogact.github.io/).
 
     * Componentized VLA architecture with a specialized action module (Diffusion Action Transformer) conditioned on VLM output. Significantly outperforms OpenVLA and RT-2-X. 
 
-* **DexVLA** (arXiv 2025) - Li, Z., et al.
+* **DexVLA** [(arXiv 2025)](https://arxiv.org/abs/2502.05855) - Li, Z., et al.
 
-    * [Project](https://diffusion-vla.github.io/).
+    * [Project](https://dex-vla.github.io/).
 
     * Improves VLA efficiency/generalization via a large (1B parameter) diffusion-based action expert and an embodied curriculum learning strategy. Focuses on dexterity across different embodiments (single-arm / dual-arm / dexterous hand). 
 
-* **Shake-VLA** (arXiv 2025) - Abdelkader, H., et al.
+* **Shake-VLA** [(arXiv 2025)](https://arxiv.org/abs/2501.06919) - Abdelkader, H., et al.
 
     * VLA-based system for automated cocktail making with a dual-arm robot, integrating vision (YOLOv8, EasyOCR), speech-to-text, and LLM instruction generation.  Application-specific system.
 
-* **VLA Model-Expert Collaboration** (arXiv 2025) - Xiang, T.-Y., et al.
+* **VLA Model-Expert Collaboration** [(arXiv 2025)](https://arxiv.org/abs/2503.04163) - Xiang, T.-Y., et al.
 
+    * [Project](https://aoqunjin.github.io/Expert-VLA/)
     * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
 
 ### Navigation
@@ -223,7 +224,7 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
 * **NaVILA** ((https://arxiv.org/abs/2412.04453)) - Chen, X., et al.
 
-    * [Project](https://navila-vln.github.io/).
+    * [Project](https://navila-bot.github.io/).
 
     * Two-stage framework for legged robot VLN. High-level VLA outputs actions in mid-level language form (e.g., "move forward 75cm"), and a low-level vision-motor policy executes them. Decouples high-level reasoning from low-level control. 
 
@@ -233,15 +234,15 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
     * Paradigm and VLA model family (QUART) for quadruped robots, integrating vision and language for navigation, complex terrain traversal, and manipulation. Includes the QUARD dataset. 
 
-* **NaviLLM** (arXiv 2023) - Shah, D., et al.
+* **NaviLLM** ([arXiv 2023](https://arxiv.org/abs/2312.02010))  - Shah, D., et al.
 
-    * [Project / Code](https://github.com/allenai/navillm).
+    *  [Code](https://github.com/zd11024/NaviLLM).
 
     * General navigation model using LLMs for planning and interpreting instructions in diverse environments.
 
-* **NaVid** (arXiv 2024) - Chen, X., et al.
+* **NaVid** ([arXiv 2024](https://arxiv.org/abs/2402.15852)) - Chen, X., et al.
 
-    * [Project](https://navid-vlmap.github.io/).
+    * [Project](https://pku-epic.github.io/NaVid/).
 
     * Focuses on next-step planning in navigation using VLMs. Earlier work related to NaVILA.
 
@@ -249,7 +250,7 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
 Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
 
-* **VLAS (Vision-Language-Action-Speech)** ((https://arxiv.org/abs/2502.13508)) - Zhao, W., et al. ([https://openreview.net/forum?id=K4FAFNRpko](https://openreview.net/forum?id=K4FAFNRpko)).
+* **VLAS (Vision-Language-Action-Speech)** ((https://arxiv.org/abs/2502.13508)) - Zhao, W., et al.
 
     * First end-to-end VLA with direct integration of speech commands, without needing an external ASR. Built upon LLaVA. Includes the SQA and CSI datasets. Uses Voice RAG to handle personalized tasks.
 
@@ -303,21 +304,17 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 
     * Hierarchical VLA where a high-level VLM reasons and decomposes tasks for a low-level VLA (π0) executor.
 
-* **LLM-Planner** ((https://ieeexplore.ieee.org/document/10160437)) - Liu, B., et al.
+* **LLM-Planner** ((https://arxiv.org/pdf/2212.04088)) - Liu, B., et al.
 
+    * [Project](https://dki-lab.github.io/LLM-Planner/)
     * Modular planner using LLMs.
 
-* **Code as Policies (CaP)** ((https://arxiv.org/abs/2212.06081)) - Liang, J., et al. (Google).
+* **Code as Policies (CaP)** ((https://arxiv.org/abs/2209.07753)) - Liang, J., et al. (Google).
 
     * [Project](https://code-as-policies.github.io/).
 
     * Uses LLMs to directly generate robot policy code.
 
-* **ConceptGraphs** ((https://arxiv.org/abs/2306.08999)) - Vemprala, S., et al.
-
-    * [Project](https://concept-graphs.github.io/).
-
-    * Uses LLMs to build and query scene graphs for planning and grounding.
 
 * **Inner Monologue** ((https://arxiv.org/abs/2207.05608)) - Huang, W., et al.
 
@@ -393,7 +390,7 @@ This section lists key resources for training and evaluating VLA models. Large-s
 |---|---|---|---|---|---|
 | Open X-Embodiment (OpenX) | Dataset | General Manipulation | Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [Project](https://robotics-transformer-x.github.io/) | arXiv 2023 |
 | DROID | Dataset | Real-world Manipulation | Large-scale human-collected data (500+ tasks, 26k hours) | [Project](https://droid-dataset.github.io/) | (https://arxiv.org/abs/2403.06037) |
-| CALVIN | Dataset / Benchmark | Long-Horizon Manipulation | Long-horizon tasks with language conditioning, Franka arm, PyBullet simulation | [Project](https://calvin.cs.uni-freiburg.de/)| (https://arxiv.org/abs/2112.03227) |
+| CALVIN | Dataset / Benchmark | Long-Horizon Manipulation | Long-horizon tasks with language conditioning, Franka arm, PyBullet simulation | [Project](http://calvin.cs.uni-freiburg.de/)| (https://arxiv.org/abs/2112.03227) |
 | QUARD | Dataset | Quadruped Robot Tasks | Large-scale multi-task dataset (sim + real) for navigation and manipulation | [Project](https://sites.google.com/view/quar-vla) | [ECCV 2024](https://arxiv.org/abs/2312.14457) |
 | BEHAVIOR-1K | Dataset / Benchmark | Household Activities | 1000 simulated human household activities | [Project](https://behavior.stanford.edu/) | (https://arxiv.org/abs/2108.03332) |
 | Isaac Sim / Orbit / OmniGibson | Simulator | High-fidelity Robot Simulation | NVIDIA Omniverse-based, physically realistic | (https://developer.nvidia.com/isaac-sim), [Orbit](https://isaac-orbit.github.io/), [OmniGibson](https://omnigibson.stanford.edu/) | - |
@@ -433,7 +430,7 @@ Large-scale datasets of robot interaction trajectories, often with accompanying 
 
     * Comprehensive dataset with 110k robot clips, 110k human demonstrations, and 140+ tasks. 
 
-* **CALVIN (Composing Actions from Language and Vision)** ** ([Project](https://calvin.cs.uni-freiburg.de/)) - Mees, O., et al.
+* **CALVIN (Composing Actions from Language and Vision)** ([Project](http://calvin.cs.uni-freiburg.de/)) - Mees, O., et al.
 
     * (Uni Freiburg).
 
@@ -457,13 +454,13 @@ Large-scale datasets of robot interaction trajectories, often with accompanying 
 
     * Curated datasets with speech instructions, released with the VLAS model, for speech-vision-action alignment and fine-tuning. 
 
-* **Libero** ([Project](https://libero-benchmark.github.io/))  - Li, Z., et al.
+* **Libero** ([Project](https://libero-project.github.io/datasets))  - Li, Z., et al.
 
     * Benchmark suite for robot lifelong learning with procedurally generated tasks.
 
     * Used in π0 fine-tuning examples. 
 
-* **D4RL (Datasets for Deep Data-Driven Reinforcement Learning)** ([Project](https://sites.google.com/view/d4rl/home))  - Fu, J., et al.
+* **D4RL (Datasets for Deep Data-Driven Reinforcement Learning)** ([Code](https://github.com/Farama-Foundation/D4RL))  - Fu, J., et al.
 
     * Standardized datasets for offline RL research, potentially useful for RL-based VLA methods. 
 
@@ -507,7 +504,7 @@ Physics-based simulators used to train agents, generate synthetic data, and eval
 
     * A newer platform aimed at general robot/Embodied AI simulation. 
 
-* **UniSim** ([arXiv 2023](https://arxiv.org/abs/2310.05899)) - Yang, G., et al.
+* **UniSim** ([arXiv 2023](https://universal-simulator.github.io/unisim/)) - Yang, G., et al.
 
     * Learns interactive simulators from real-world videos. 
 
@@ -515,7 +512,7 @@ Physics-based simulators used to train agents, generate synthetic data, and eval
 
 Standardized suites of environments and tasks used to evaluate and compare the performance of VLA models and other robot learning algorithms.
 
-* **CALVIN** ([Project](https://calvin.cs.uni-freiburg.de/)).
+* **CALVIN** ([Project](https://github.com/mees/calvin)).
 
     * Benchmark for long-horizon language-conditioned manipulation. 
 
@@ -531,13 +528,13 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 
     * Large-scale benchmark with 100+ manipulation tasks in CoppeliaSim (V-REP). 
 
-* **Franka Kitchen** ([GitHub](https://github.com/google-research/relay-policy-learning)).
+* **Franka Kitchen** ([GitHub](https://robotics.farama.org/envs/franka_kitchen/franka_kitchen/)).
 
     * dm\_control-based benchmark involving kitchen tasks with a Franka arm.
 
     * Used in iRe-VLA. 
 
-* **LIBERO** ([Project](https://libero-benchmark.github.io/)).
+* **LIBERO** ([Project](https://libero-project.github.io/datasets)).
 
     * Benchmark for lifelong/continual learning in robot manipulation. 
 
@@ -597,23 +594,21 @@ Summarizes key limitations of current VLA models and highlights promising direct
 
 ## Related Awesome Lists
 
-* Awesome-VLA(multiple):
+* Awesome-VLA:
 
     * https://github.com/yueen-ma/Awesome-VLA
     * https://github.com/Orlando-CS/Awesome-VLA
         
-* Awesome-Embodied-AI (multiple):
+* Awesome-Embodied-AI:
     * https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
-    * https://github.com/matrix97317/Awesome-Embodied-AI
-    * https://github.com/seanxuu/Awesome-Embodied-AI
     * https://github.com/dustland/awesome-embodied-ai
     * https://github.com/haoranD/Awesome-Embodied-AI
     * https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent
-* Awesome-Robot-Learning (multiple):
+* Awesome-Robot-Learning:
     * https://github.com/RayYoh/Awesome-Robot-Learning
     * https://github.com/jonzamora/awesome-robot-learning-envs
     * https://github.com/JadeCong/Awesome-Robot-Learning
-* Awesome-Vision-Language-Models (multiple):
+* Awesome-Vision-Language-Models:
     * https://github.com/jingyi0000/VLM_survey
     * https://github.com/geoaigroup/awesome-vision-language-models-for-earth-observation
 
