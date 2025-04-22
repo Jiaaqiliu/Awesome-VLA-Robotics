@@ -487,8 +487,6 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 
 ## Challenges and Future Directions
 
-Summarizes key limitations of current VLA models and highlights promising directions for future research, based on analysis of surveys and recent papers.
-
 * **Data Efficiency & Scalability:** Reducing reliance on massive, expensive, expert-driven datasets. Improving the ability to learn from limited, mixed-quality, or internet-sourced data. Efficiently scaling models and training processes. 
 
     * Future directions: Improved sample efficiency (RL, self-supervision), sim-to-real transfer, automated data generation, efficient architectures (SSMs, MoEs), data filtering/weighting.
@@ -540,8 +538,8 @@ Summarizes key limitations of current VLA models and highlights promising direct
 If you find this repository useful, please consider citing this list:
 
 ```
-@misc{kira2022llmroboticspaperslist,
-    title = {Awesome-VAL-Robotics},
+@misc{liu2025vlaroboticspaperslist,
+    title = {Awesome-VLA-Robotics},
     author = {Jiaqi Liu},
     journal = {GitHub repository},
     url = {https://github.com/Jiaaqiliu/Awesome-VLA-Robotics},
