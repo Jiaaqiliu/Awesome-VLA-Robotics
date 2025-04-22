@@ -8,16 +8,16 @@ A comprehensive list of excellent research papers, models, datasets, and other r
 - [Survey papers](#survey-papers)
 - [Key VLA Models and Research Papers](#key-vla-models-and-research-papers)
     - [Quick Glance at Key VLA Models](#q)
-- [By Application Area](#by-application-area)
-    - [Manipulation](#manipulation)
-    - [Navigation](#navigation)
-    - [Human-Robot Interaction (HRI)](#human-robot-interaction-hri)
-    - [Task Planning / Reasoning](#task-planning--reasoning)
-- [By Technical Approach](#by-technical-approach)
-    - [Model Architectures](#model-architectures)
-    - [Action Representation & Generation](#action-representation--generation)
-    - [Learning Paradigms](#learning-paradigms)
-    - [Input Modalities & Grounding](#input-modalities--grounding)
+    - [By Application Area](#by-application-area)
+        - [Manipulation](#manipulation)
+        - [Navigation](#navigation)
+        - [Human-Robot Interaction (HRI)](#human-robot-interaction-hri)
+        - [Task Planning / Reasoning](#task-planning--reasoning)
+    - [By Technical Approach](#by-technical-approach)
+        - [Model Architectures](#model-architectures)
+        - [Action Representation & Generation](#action-representation--generation)
+        - [Learning Paradigms](#learning-paradigms)
+        - [Input Modalities & Grounding](#input-modalities--grounding)
 - [Datasets and Benchmarks](#datasets-and-benchmarks)
     - [Quick Glance at Datasets and Benchmarks](#quick-glance-at-datasets-and-benchmarks)
     - [Robot Learning Datasets](#robot-learning-datasets)
@@ -82,9 +82,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 | TinyVLA | Compact, fast, and data-efficient VLA; Requires no pre-training; Uses small VLM + diffusion policy decoder | MobileVLM V2 / Moondream2 + Diffusion Policy Decoder | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2409.12514) | [Project](https://tiny-vla.github.io/) |
 | CogACT | Componentized VLA architecture; Specialized action module (Diffusion Action Transformer) conditioned on VLM output; Significantly outperforms OpenVLA / RT-2-X | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2411.19650) | [Project](https://cogact.github.io/) |
 
-## By Application Area
+### By Application Area
 
-### Manipulation
+#### Manipulation
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 
@@ -169,7 +169,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 * **VLA Model-Expert Collaboration** [(arXiv 2025)](https://arxiv.org/abs/2503.04163) - Xiang, T.-Y., et al, [[Project](https://aoqunjin.github.io/Expert-VLA/)]
     * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
 
-### Navigation
+#### Navigation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
 
@@ -189,7 +189,7 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
     * Focuses on next-step planning in navigation using VLMs. Earlier work related to NaVILA.
 
-### Human-Robot Interaction (HRI)
+#### Human-Robot Interaction (HRI)
 
 Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
 
@@ -209,7 +209,7 @@ Focuses on enabling more natural and effective interactions between humans and r
 
     * Uses a single VLA model to enable multiple robots to collaborate on shared tasks (e.g., tidying up groceries).
 
-### Task Planning / Reasoning
+#### Task Planning / Reasoning
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
@@ -247,9 +247,9 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 
 * **The Critical Role of Hierarchical Reasoning for Complexity:** Many successful approaches to complex, long-horizon tasks employ hierarchical structures. This can be explicit (e.g., NaVILA's VLA + motor policy; Helix's System 1/2; Hi Robot's VLM planner + VLA executor), or implicit (e.g., SayCan grounding LLM plans in affordances; CoT-VLA generating intermediate visual goals). This suggests that monolithic end-to-end VLAs may struggle with deep reasoning or long-term planning compared to approaches that leverage emergent abilities of a single large model. Architectures that separate high-level planning/reasoning from low-level reactive control appear more effective. This architectural trend reflects the inherent complexity of linking semantic understanding to robust physical execution over extended periods.
 
-## By Technical Approach
+### By Technical Approach
 
-### Model Architectures
+#### Model Architectures
 
 Focuses on the core neural network architectures used in VLA models.
 
@@ -261,7 +261,7 @@ Focuses on the core neural network architectures used in VLA models.
 
 * **Architectural Diversification for Capability and Efficiency:** While Transformers are foundational, their limitations in handling continuous actions, computational cost, and reasoning depth are driving researchers to explore alternative or hybrid architectures. Diffusion models excel at action generation, hierarchical systems improve reasoning/control separation, SSMs promise efficiency, and MoEs aim for adaptive specialization. This diversification indicates an active search for architectures better suited to the specific constraints and needs of robotics than those designed purely for vision-language tasks. This has led to the emergence of hybrid and specialized designs to address the unique challenges of real-time control, action modeling, efficiency, and complex reasoning in robotics.
 
-### Action Representation & Generation
+#### Action Representation & Generation
 
 Focuses on how robot actions are represented (e.g., discrete tokens vs. continuous vectors) and how models generate them. This is a key area differentiating VLAs from VLMs.
 
@@ -277,7 +277,7 @@ Focuses on how robot actions are represented (e.g., discrete tokens vs. continuo
 
 * **Action Generation as a Core VLA Challenge:** The diversity and rapid evolution of action representation/generation techniques highlight its importance and difficulty. The limitations of simple tokenization are driving innovations like diffusion models, flow matching, specialized tokenizers, and parallel decoding to balance precision, efficiency, and compatibility with large sequence models. This focus indicates that effectively translating high-level understanding into low-level physical control may be *the* core challenge that VLAs must address to move beyond standard VLM capabilities. Success requires a shift from simple VLM adaptation to action modeling techniques specifically designed for robotics.
 
-### Learning Paradigms
+#### Learning Paradigms
 
 Focuses on how VLA models are trained and adapted.
 
@@ -291,7 +291,7 @@ Focuses on how VLA models are trained and adapted.
 
 * **Bridging Imitation and Interaction:** While Imitation Learning (IL) on large-scale datasets like OpenX is foundational for creating general-purpose VLAs, there's a growing trend towards combining it with interactive learning (RL) for fine-tuning and improvement. This hybrid approach aims to leverage the broad knowledge of IL datasets while overcoming IL's limitations (suboptimality, dataset cost) by enabling robots to adapt and potentially surpass human demonstrators through environmental interaction. The challenge lies in making RL stable and efficient for large VLA models. This trend indicates a direction towards combining the strengths of both: broad generalization via large-scale IL pre-training, and targeted refinement and adaptation via efficient and stable RL fine-tuning.
 
-### Input Modalities & Grounding
+#### Input Modalities & Grounding
 
 Focuses on input data types beyond standard RGB images and text used by VLAs, and how they ground these inputs.
 
