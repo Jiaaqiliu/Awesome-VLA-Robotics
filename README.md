@@ -47,23 +47,21 @@ A comprehensive list of excellent research papers, models, datasets, and other r
 
 This section lists key survey papers that provide broad overviews of the VLA field, related concepts (such as Embodied AI), and the role of foundation models in robotics. 
 
-### **Overview of Key Survey Papers**
-|                                      Title                                      |         Authors        |                 Focus Area                 |                                       Key Taxonomy/Contributions                                      |       Link       |     Venue/Year     |
-|:-------------------------------------------------------------------------------:|:----------------------:|:------------------------------------------:|:-----------------------------------------------------------------------------------------------------:|:----------------:|:------------------:|
-| A Survey on Vision-Language-Action Models for Embodied AI                       | Ma, Y., et al.         | VLA for Embodied AI                        | First VLA survey; detailed taxonomy (components, control strategies, task planners); resource summary | [arXiv:2405.14093](https://arxiv.org/abs/2405.14093) | arXiv 2024         |
-| Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI | Liu, Y., et al.        | Embodied AI (General)                      | Broad Embodied AI background                                                                          | [arXiv:2407.06886](https://arxiv.org/abs/2407.06886) | arXiv 2024         |
-| Robot learning in the era of foundation models: A survey                        | Yuan, W., et al.       | Foundation Models in Robot Learning        | Focuses on the application of foundation models in robot learning                                     | [arXiv:2311.14379](https://arxiv.org/abs/2311.14379) | arXiv 2023         |
-| A Survey on Robotics with Foundation Models: toward Embodied AI                 | Xu, Z., et al.         | Foundation Models for Embodied AI          | Connects foundation models with Embodied AI                                                           | [arXiv:2402.02385](https://arxiv.org/abs/2402.02385) | arXiv 2024         |
-| Toward general-purpose robots via foundation models: A survey and meta-analysis | Hu, Y., et al.         | General-Purpose Robots & Foundation Models | Focuses on general-purpose robots and foundation models                                               | [arXiv:2312.08782](https://arxiv.org/abs/2312.08782) | Machines 2023      |
-| What Foundation Models can Bring for Robot Learning in Manipulation : A Survey  | Yao, L., et al.        | Foundation Models for Manipulation         | Focuses on manipulation tasks                                                                         | [arXiv:2404.18201](https://arxiv.org/abs/2404.18201) | arXiv 2024         |
-| Towards Generalist Robot Learning from Internet Video: A Survey                 | McCarthy, R., et al.   | Learning from Internet Video               | Focuses on learning from video data                                                                   | [arXiv:2404.19664](https://arxiv.org/abs/2404.19664) | arXiv 2024         |
-| Large Multimodal Agents: A Survey                                               | Xie, J., et al.        | Multimodal Agents                          | Broader background of multimodal agents                                                               | [arXiv:2402.15116](https://arxiv.org/abs/2402.15116) | arXiv 2024         |
-| A Survey on Large Language Models for Automated Planning                        | Aghzal, M., et al.     | LLMs for Automated Planning                | Focuses on the application of LLMs in planning, related to VLA task planners                          | [arXiv:2502.12435](https://arxiv.org/abs/2502.12435) | arXiv 2025         |
-| Integrating Large Language Models in Robotics: A Survey                         | Kim, D., et al.        | LLM Integration in Robotics                | Focuses on the integration of LLMs in various components of robotics                                  | [arXiv:2404.09228](https://arxiv.org/abs/2404.09228) | arXiv 2024         |
-| Vision-Language Models for Vision Tasks: A Survey                               | Zhang, J., et al.      | VLMs for Vision Tasks                      | Background knowledge of VLMs, the foundation of many VLAs                                             | [arXiv:2304.00685](https://arxiv.org/abs/2304.00685) | TPAMI 2024         |
-| Survey on Vision-Language-Action Models                                         | Adilkhanov, A., et al. | VLA Models (AI-Generated)                  | (Note: AI-generated demonstration survey, use with caution)                                           | [arXiv:2502.06851](https://arxiv.org/abs/2502.06851) | arXiv 2025         |
-| From Screens to Scenes: A Survey of Embodied AI in Healthcare                   | Liu, Y., et al.        | Embodied AI in Healthcare                  | Survey for a specific application area                                                                | [arXiv:2501.07468](https://arxiv.org/abs/2501.07468) | Information Fusion |
-| Towards Robust and Secure Embodied AI: A Survey on Vulnerabilities and Attacks  | Xing, W., et al.       | Security & Robustness in Embodied AI       | Focuses on the security and robustness challenges of Embodied AI                                      | [arXiv:2502.13175](https://arxiv.org/abs/2502.13175) | arXiv 2025         |
+### Key Survey Papers
+* A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
+* Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI. [[paper](https://arxiv.org/abs/2407.06886)]
+* Robot learning in the era of foundation models: A survey. [[paper](https://arxiv.org/abs/2311.14379)]
+* A Survey on Robotics with Foundation Models: toward Embodied AI. [[paper](https://arxiv.org/abs/2402.02385)]
+* Toward general-purpose robots via foundation models: A survey and meta-analysis. [[paper](https://arxiv.org/abs/2312.08782)]
+* What Foundation Models can Bring for Robot Learning in Manipulation: A Survey. [[paper](https://arxiv.org/abs/2404.18201)]
+* Towards Generalist Robot Learning from Internet Video: A Survey. [[paper](https://arxiv.org/abs/2404.19664)]
+* Large Multimodal Agents: A Survey. [[paper](https://arxiv.org/abs/2402.15116)]
+* A Survey on Large Language Models for Automated Planning. [[paper](https://arxiv.org/abs/2502.12435)]
+* Integrating Large Language Models in Robotics: A Survey. [[paper](https://arxiv.org/abs/2404.09228)]
+* Vision-Language Models for Vision Tasks: A Survey. [[paper](https://arxiv.org/abs/2304.00685)]
+* Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]
+* From Screens to Scenes: A Survey of Embodied AI in Healthcare. [[paper](https://arxiv.org/abs/2501.07468)]
+* Towards Robust and Secure Embodied AI: A Survey on Vulnerabilities and Attacks. [[paper](https://arxiv.org/abs/2502.13175)]
 
 ## Key VLA Models and Research Papers
 
@@ -93,119 +91,77 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 
-* [**RT-1 (Robotics Transformer 1)**](https://arxiv.org/abs/2212.06817) - Brohan, A., et al. (Google).
-
-    * [Code](https://github.com/google-research/robotics_transformer).
+* [**RT-1 (Robotics Transformer 1)**](https://arxiv.org/abs/2212.06817) - Brohan, A., et al. (Google) [[Code](https://github.com/google-research/robotics_transformer)]
 
     * Early influential Transformer-based model demonstrating scalability on multi-task real-world data (13 robots, 130k trajectories). Uses discretized action tokens input to a Transformer. Shows improved generalization and robustness. 
 
-* [**RT-2 (Robotics Transformer 2)**](https://arxiv.org/abs/2307.15818) - Brohan, A., et al.
-
-    * (Google DeepMind).
-
-    * [Project](https://robotics-transformer2.github.io/).
+* [**RT-2 (Robotics Transformer 2)**](https://arxiv.org/abs/2307.15818) - Brohan, A., et al. (Google DeepMind) [[Project](https://robotics-transformer2.github.io/)]
 
     * A landmark VLA model demonstrating the ability to transfer knowledge from web-scale VLMs to robotics by joint fine-tuning a VLM (PaLI-X, PaLM-E) to output action tokens. Shows emergent generalization to new objects, commands, and basic reasoning.  Defines the modern VLA concept.
 
-* **PaLM-E** ([ICML 2023 / arXiv 2023](https://arxiv.org/abs/2303.03378))  - Driess, D., et al.
-
-    * (Google).
-
-    * [Project](https://palm-e.github.io/).
+* **PaLM-E** ([ICML 2023 / arXiv 2023](https://arxiv.org/abs/2303.03378))  - Driess, D., et al. (Google) [[Project](https://palm-e.github.io/)]
 
     * Embodied multimodal language model, injecting continuous sensor data (image, state) into a pre-trained LLM (PaLM). Validated on sequential manipulation, VQA, and captioning, showing positive transfer from vision-language data to robotic tasks. 
 
-* **OpenVLA** ([arXiv 2024](https://arxiv.org/abs/2406.09246))  - Kim, M. J., et al.
-
-    * (Stanford, Berkeley, TRI, Google, Physical Intelligence, MIT).
-
-    * [Code](https://github.com/openvla/openvla).
+* **OpenVLA** ([arXiv 2024](https://arxiv.org/abs/2406.09246))  - Kim, M. J., et al, (Stanford, Berkeley, TRI, Google, Physical Intelligence, MIT), [[Code](https://github.com/openvla/openvla)]
 
     * State-of-the-art 7B open-source VLA at the time of release, based on Llama 2, DINOv2, SigLIP. Trained on 970k Open X-Embodiment trajectories. Outperforms RT-2-X with fewer parameters. Shows strong generalization and effective fine-tuning (PEFT) ability. 
 
-* **Helix** （[Figure AI blog post 2024](https://www.figure.ai/news/helix)） - Figure AI.
-
-    * [Project](https://www.figure.ai/news/helix).
+* **Helix** （[Figure AI blog post 2024](https://www.figure.ai/news/helix)） - Figure AI. [[Project](https://www.figure.ai/news/helix)]
 
     * General-purpose VLA for humanoid robot (Figure 01) control. Features include full-body (including hands) control, multi-robot collaboration, arbitrary object grasping, all behaviors using a single network, and onboard deployment. Uses a hierarchical "System 1 (fast visuomotor) / System 2 (slow VLM reasoning)" architecture. 
 
-* **π0 (Pi-Zero)** (Physical Intelligence blog post / arXiv 2024) - Physical Intelligence Team.
-
-    * [Project](https://www.physicalintelligence.company/blog/pi0) / [Code](https://github.com/Physical-Intelligence/openpi) / [HuggingFace](https://huggingface.co/physical-intelligence)
+* **π0 (Pi-Zero)** (Physical Intelligence blog post / arXiv 2024) - Physical Intelligence Team. [[Project](https://www.physicalintelligence.company/blog/pi0)] / [[Code](https://github.com/Physical-Intelligence/openpi)] / [[HuggingFace](https://huggingface.co/physical-intelligence)]
 
     * General-purpose VLA using flow matching to generate continuous actions (50Hz). Trained on data from 7 platforms, 68 tasks. Demonstrates complex tasks like laundry folding and table clearing. 
 
-* **Hi Robot** (arXiv 2025) - Physical Intelligence Team.
-
-    * [Project](https://www.physicalintelligence.company/research/hirobot).
+* **Hi Robot** (arXiv 2025) - Physical Intelligence Team. [[Project](https://www.physicalintelligence.company/research/hirobot)]
 
     * Hierarchical system using π0 as "System 1" and a VLM as "System 2" for reasoning and task decomposition (via self-talk), improving handling of complex prompts. 
 
-* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al.
-
-    * (Google).
-
-    * [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan)
+* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al, (Google). [[Project](https://say-can.github.io/)] / [[Code](https://github.com/google-research/google-research/tree/master/saycan)]
 
     * Pioneering work grounding LLM planning in robot affordances. Uses an LLM (PaLM) to score potential skills by instruction relevance and a value function to score executability.  Primarily a high-level planner.
 
-* **VIMA (Visual Matching Agent)** (ICML 2023 / arXiv 2022) - Jiang, Y., et al.
-
-    * [Project](https://vimalabs.github.io/).
+* **VIMA (Visual Matching Agent)** (ICML 2023 / arXiv 2022) - Jiang, Y., et al, [[Project](https://vimalabs.github.io/)]
 
     * Transformer-based agent that processes multimodal prompts (text, images, video) for manipulation tasks. Introduces VIMA-Bench. 
 
-* **Octo** (Project website 2023) - Octo Model Team (UC Berkeley, Google, TRI, et al.).
-
-    * [Code](https://github.com/octo-models/octo).
+* **Octo** (Project website 2023) - Octo Model Team (UC Berkeley, Google, TRI, et al.), [[Code](https://github.com/octo-models/octo)]
 
     * General-purpose robot model trained on Open X-Embodiment. Transformer architecture with flexible input/output conditioning. Often used as a strong baseline model. 
 
-* **VoxPoser** ((https://arxiv.org/abs/2307.05973)) - Huang, W., et al.
-
-    * [Project](https://voxposer.github.io/) / [Code](https://github.com/huangwl18/VoxPoser)
+* **VoxPoser** ((https://arxiv.org/abs/2307.05973)) - Huang, W., et al, [[Project](https://voxposer.github.io/) ]/ [[Code](https://github.com/huangwl18/VoxPoser)]
 
     * Uses LLM/VLM to synthesize 3D value maps (affordances) in perceptual space for zero-shot manipulation.  Focuses on the motion planning aspect.
 
-* **ReKep (Relational Keypoint Constraints)** ((https://arxiv.org/abs/2409.01652)) - Huang, W., et al.
-
-    * [Project](https://rekep-robot.github.io/) / [Code](https://github.com/huangwl18/ReKep).
+* **ReKep (Relational Keypoint Constraints)** ((https://arxiv.org/abs/2409.01652)) - Huang, W., et al, [[Project](https://rekep-robot.github.io/)] / [[Code](https://github.com/huangwl18/ReKep)]
 
     * Uses LVM (DINOv2, SAM2) + VLM (GPT-4o) for spatio-temporal reasoning via keypoint constraints for manipulation tasks.  Point-based action approach.
 
-* **OK-Robot** (arXiv 2024) - Singh, N., et al.
-
-    * [Project](https://ok-robot.github.io/) / [Code](https://github.com/ok-robot/ok-robot).
+* **OK-Robot** (arXiv 2024) - Singh, N., et al, [[Project](https://ok-robot.github.io/) ]/ [[Code](https://github.com/ok-robot/ok-robot)].
 
     * Integrates open knowledge models (VLM, LLM) for mobile manipulation arm (Hello Robot) navigation, perception, and manipulation in home environments. 
 
-* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al.
-
-    * [Project](https://cot-vla.github.io/).
+* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al, [[Project](https://cot-vla.github.io/)]
 
     * Incorporates explicit visual chain-of-thought reasoning by predicting future goal images before generating actions. Uses hybrid attention (causal for vision/text, full for actions). 
 
-* **3D-VLA** ((https://arxiv.org/abs/2403.09631)) - Zhen, Z., et al.
-
-    * [Code](https://github.com/UMass-Embodied-AGI/3D-VLA).
+* **3D-VLA** ((https://arxiv.org/abs/2403.09631)) - Zhen, Z., et al, [[Code](https://github.com/UMass-Embodied-AGI/3D-VLA)]
 
     * Introduces 3D perception (point clouds) and generative world models into VLAs, connecting 3D perception, reasoning, and action. 
 
-* **TinyVLA** (arXiv 2024) - Liu, H., et al.
+* **TinyVLA** ([arXiv 2024](https://arxiv.org/abs/2409.12514)) - Liu, H., et al.
 
     * [Project](https://tiny-vla.github.io/).
 
     * Focuses on faster inference speed and higher data efficiency, eliminating the pre-training stage. Uses a smaller VLM backbone + diffusion policy decoder. Outperforms OpenVLA in speed/data efficiency. 
 
-* **CogACT** (arXiv 2024) - Li, Q., et al.
-
-    * [Project](https://cogact.github.io/).
+* **CogACT** ([arXiv 2024](https://arxiv.org/abs/2411.19650))  - Li, Q., et al, [[Project](https://cogact.github.io/)]
 
     * Componentized VLA architecture with a specialized action module (Diffusion Action Transformer) conditioned on VLM output. Significantly outperforms OpenVLA and RT-2-X. 
 
-* **DexVLA** [(arXiv 2025)](https://arxiv.org/abs/2502.05855) - Li, Z., et al.
-
-    * [Project](https://dex-vla.github.io/).
+* **DexVLA** [(arXiv 2025)](https://arxiv.org/abs/2502.05855) - Li, Z., et al, [[Project](https://dex-vla.github.io/)]
 
     * Improves VLA efficiency/generalization via a large (1B parameter) diffusion-based action expert and an embodied curriculum learning strategy. Focuses on dexterity across different embodiments (single-arm / dual-arm / dexterous hand). 
 
@@ -213,36 +169,26 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * VLA-based system for automated cocktail making with a dual-arm robot, integrating vision (YOLOv8, EasyOCR), speech-to-text, and LLM instruction generation.  Application-specific system.
 
-* **VLA Model-Expert Collaboration** [(arXiv 2025)](https://arxiv.org/abs/2503.04163) - Xiang, T.-Y., et al.
-
-    * [Project](https://aoqunjin.github.io/Expert-VLA/)
+* **VLA Model-Expert Collaboration** [(arXiv 2025)](https://arxiv.org/abs/2503.04163) - Xiang, T.-Y., et al, [[Project](https://aoqunjin.github.io/Expert-VLA/)]
     * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
 
 ### Navigation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
 
-* **NaVILA** ((https://arxiv.org/abs/2412.04453)) - Chen, X., et al.
-
-    * [Project](https://navila-bot.github.io/).
+* **NaVILA** ((https://arxiv.org/abs/2412.04453)) - Chen, X., et al, [[Project](https://navila-bot.github.io/)]
 
     * Two-stage framework for legged robot VLN. High-level VLA outputs actions in mid-level language form (e.g., "move forward 75cm"), and a low-level vision-motor policy executes them. Decouples high-level reasoning from low-level control. 
 
-* **QUAR-VLA / QUART** (ECCV 2024 / arXiv 2023) - Tang, J., et al.
-
-    * [Project](https://sites.google.com/view/quar-vla).
+* **QUAR-VLA / QUART** ([ECCV 2024 / arXiv 2023](https://arxiv.org/abs/2312.14457)) - Tang, J., et al, [[Project](https://sites.google.com/view/quar-vla)]
 
     * Paradigm and VLA model family (QUART) for quadruped robots, integrating vision and language for navigation, complex terrain traversal, and manipulation. Includes the QUARD dataset. 
 
-* **NaviLLM** ([arXiv 2023](https://arxiv.org/abs/2312.02010))  - Shah, D., et al.
-
-    *  [Code](https://github.com/zd11024/NaviLLM).
+* **NaviLLM** ([arXiv 2023](https://arxiv.org/abs/2312.02010))  - Shah, D., et al, [[Code](https://github.com/zd11024/NaviLLM)]
 
     * General navigation model using LLMs for planning and interpreting instructions in diverse environments.
 
-* **NaVid** ([arXiv 2024](https://arxiv.org/abs/2402.15852)) - Chen, X., et al.
-
-    * [Project](https://pku-epic.github.io/NaVid/).
+* **NaVid** ([arXiv 2024](https://arxiv.org/abs/2402.15852)) - Chen, X., et al, [[Project](https://pku-epic.github.io/NaVid/)]
 
     * Focuses on next-step planning in navigation using VLMs. Earlier work related to NaVILA.
 
@@ -262,9 +208,7 @@ Focuses on enabling more natural and effective interactions between humans and r
 
     * Enables human-robot collaboration through shared autonomy, improving both VLA and human performance.
 
-* **Helix** (Figure AI blog post 2024) - Figure AI.
-
-    * [Project](https://www.figure.ai/news/helix).
+* **Helix** (Figure AI blog post 2024) - Figure AI, [[Project](https://www.figure.ai/news/helix)]
 
     * Uses a single VLA model to enable multiple robots to collaborate on shared tasks (e.g., tidying up groceries).
 
@@ -272,53 +216,35 @@ Focuses on enabling more natural and effective interactions between humans and r
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
-* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al.
-
-    * (Google).
-
-    * [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan)
+* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al,(Google), [[Project](https://say-can.github.io/)] / [[Code](https://github.com/google-research/google-research/tree/master/saycan)]
 
     * Grounds LLM planning in robot affordances.
 
-* **PaLM-E** (ICML 2023 / arXiv 2023) - Driess, D., et al. (Google).
-
-    * [Project](https://palm-e.github.io/).
+* **PaLM-E** (ICML 2023 / arXiv 2023) - Driess, D., et al, (Google), [[Project](https://palm-e.github.io/)]
 
     * Can perform sequential manipulation planning end-to-end or output language subgoals. Shows visual chain-of-thought reasoning abilities.
 
-* **EmbodiedGPT** (arXiv 2023) - Mu, Y., et al.
-
-    * [Code](https://github.com/OpenGVLab/EmbodiedGPT).
+* **EmbodiedGPT** (arXiv 2023) - Mu, Y., et al, [[Code](https://github.com/OpenGVLab/EmbodiedGPT)]
 
     * Multimodal model that performs end-to-end planning and reasoning for embodied tasks.
 
-* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al.
-
-    * [Project](https://cot-vla.github.io/).
+* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al, [[Project](https://cot-vla.github.io/)]
 
     * Explicitly incorporates visual CoT reasoning by predicting future goal images.
 
-* **Hi Robot** (arXiv 2025) - Physical Intelligence Team.
-
-    * [Project](https://www.physicalintelligence.company/research/hirobot).
+* **Hi Robot** (arXiv 2025) - Physical Intelligence Team, [[Project](https://www.physicalintelligence.company/research/hirobot)]
 
     * Hierarchical VLA where a high-level VLM reasons and decomposes tasks for a low-level VLA (π0) executor.
 
-* **LLM-Planner** ((https://arxiv.org/pdf/2212.04088)) - Liu, B., et al.
-
-    * [Project](https://dki-lab.github.io/LLM-Planner/)
+* **LLM-Planner** ((https://arxiv.org/pdf/2212.04088)) - Liu, B., et al, [[Project](https://dki-lab.github.io/LLM-Planner/)]
     * Modular planner using LLMs.
 
-* **Code as Policies (CaP)** ((https://arxiv.org/abs/2209.07753)) - Liang, J., et al. (Google).
-
-    * [Project](https://code-as-policies.github.io/).
+* **Code as Policies (CaP)** ((https://arxiv.org/abs/2209.07753)) - Liang, J., et al. (Google), [[Project](https://code-as-policies.github.io/)]
 
     * Uses LLMs to directly generate robot policy code.
 
 
-* **Inner Monologue** ((https://arxiv.org/abs/2207.05608)) - Huang, W., et al.
-
-    * [Project](https://inner-monologue.github.io/).
+* **Inner Monologue** ((https://arxiv.org/abs/2207.05608)) - Huang, W., et al, [[Project](https://inner-monologue.github.io/)]
 
     * Uses language feedback from VLM/LLMs to guide robot policies.
 
@@ -388,7 +314,7 @@ This section lists key resources for training and evaluating VLA models. Large-s
 
 | Name | Type | Focus Area | Key Features / Environment | Link | Key Publication |
 |---|---|---|---|---|---|
-| Open X-Embodiment (OpenX) | Dataset | General Manipulation | Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [Project](https://robotics-transformer-x.github.io/) | arXiv 2023 |
+| Open X-Embodiment (OpenX) | Dataset | General Manipulation | Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [Project](https://robotics-transformer-x.github.io/) | [arXiv 2023](https://arxiv.org/abs/2310.08864) |
 | DROID | Dataset | Real-world Manipulation | Large-scale human-collected data (500+ tasks, 26k hours) | [Project](https://droid-dataset.github.io/) | (https://arxiv.org/abs/2403.06037) |
 | CALVIN | Dataset / Benchmark | Long-Horizon Manipulation | Long-horizon tasks with language conditioning, Franka arm, PyBullet simulation | [Project](http://calvin.cs.uni-freiburg.de/)| (https://arxiv.org/abs/2112.03227) |
 | QUARD | Dataset | Quadruped Robot Tasks | Large-scale multi-task dataset (sim + real) for navigation and manipulation | [Project](https://sites.google.com/view/quar-vla) | [ECCV 2024](https://arxiv.org/abs/2312.14457) |
