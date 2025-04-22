@@ -5,9 +5,9 @@ A comprehensive list of excellent research papers, models, datasets, and other r
 ## Table of Contents
 
 - [What are VLA Models in Robotics?](#what-are-vla-models-in-robotics)
-- [Surveys and Overviews](#surveys-and-overviews)
+- [Survey papers](#survey-papers)
 - [Key VLA Models and Research Papers](#key-vla-models-and-research-papers)
-- [Quick Glance at Key VLA Models](#q)
+    - [Quick Glance at Key VLA Models](#q)
 - [By Application Area](#by-application-area)
     - [Manipulation](#manipulation)
     - [Navigation](#navigation)
@@ -43,11 +43,8 @@ A comprehensive list of excellent research papers, models, datasets, and other r
 
 * **Evolution from VLM Adaptation to Integrated Systems:** Early VLA research focused mainly on adapting existing VLMs by simply fine-tuning them to output action tokens (e.g., the initial concept of RT-2 ). However, the field is moving towards more integrated architectures where the action generation components are more sophisticated and co-designed (e.g., diffusion policies, specialized action modules, hierarchical systems like Helix  or NaVILA ). This evolution indicates that the definition of VLA is shifting from merely fine-tuning VLMs to designing specific VLA architectures that better address the unique requirements of robot action generation, while still leveraging the capabilities of VLMs.
 
-## Surveys and Overviews
+## Survey papers
 
-This section lists key survey papers that provide broad overviews of the VLA field, related concepts (such as Embodied AI), and the role of foundation models in robotics. 
-
-### Key Survey Papers
 * A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
 * Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI. [[paper](https://arxiv.org/abs/2407.06886)]
 * Robot learning in the era of foundation models: A survey. [[paper](https://arxiv.org/abs/2311.14379)]
@@ -57,11 +54,11 @@ This section lists key survey papers that provide broad overviews of the VLA fie
 * Towards Generalist Robot Learning from Internet Video: A Survey. [[paper](https://arxiv.org/abs/2404.19664)]
 * Large Multimodal Agents: A Survey. [[paper](https://arxiv.org/abs/2402.15116)]
 * A Survey on Large Language Models for Automated Planning. [[paper](https://arxiv.org/abs/2502.12435)]
-* Integrating Large Language Models in Robotics: A Survey. [[paper](https://arxiv.org/abs/2404.09228)]
+* A Survey on Integration of Large Language Models with Intelligent Robots. [[paper](https://arxiv.org/abs/2404.09228)]
 * Vision-Language Models for Vision Tasks: A Survey. [[paper](https://arxiv.org/abs/2304.00685)]
 * Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]
 * From Screens to Scenes: A Survey of Embodied AI in Healthcare. [[paper](https://arxiv.org/abs/2501.07468)]
-* Towards Robust and Secure Embodied AI: A Survey on Vulnerabilities and Attacks. [[paper](https://arxiv.org/abs/2502.13175)]
+
 
 ## Key VLA Models and Research Papers
 
@@ -71,17 +68,17 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 | Model Name | Key Contribution / Features | Base VLM / Architecture | Action Generation Method | Key Publication(s) | Project / Code |
 |---|---|---|---|---|---|
-| RT-1 | First large-scale Transformer robot model; Demonstrates scalability on multi-task real-world data; Action discretization | Transformer (EfficientNet-B3 vision) | Action binning + Token output | https://arxiv.org/abs/2212.06817 | [Project](https://robotics-transformer1.github.io/) / [Code](https://github.com/google-research/robotics_transformer) |
-| RT-2 | Transfers web knowledge of VLMs to robot control; Joint fine-tuning of VLM to output action tokens; Shows emergent generalization | PaLI-X / PaLM-E (Transformer) | Action binning + Token output | https://arxiv.org/abs/2307.15818 | [Project](https://robotics-transformer2.github.io/) |
+| RT-1 | First large-scale Transformer robot model; Demonstrates scalability on multi-task real-world data; Action discretization | Transformer (EfficientNet-B3 vision) | Action binning + Token output | [arxiv](https://arxiv.org/abs/2212.06817) | [Project](https://robotics-transformer1.github.io/) / [Code](https://github.com/google-research/robotics_transformer) |
+| RT-2 | Transfers web knowledge of VLMs to robot control; Joint fine-tuning of VLM to output action tokens; Shows emergent generalization | PaLI-X / PaLM-E (Transformer) | Action binning + Token output | [arxiv](https://arxiv.org/abs/2307.15818) | [Project](https://robotics-transformer2.github.io/) |
 | PaLM-E | Embodied multimodal language model; Injects continuous sensor data (image, state) into pre-trained LLM; Usable for sequential manipulation planning, VQA, etc. | PaLM (Transformer) | Outputs text (subgoals or action descriptions), needs low-level policy to execute | [ICML 2023](https://openreview.net/pdf?id=VTpHpqM3Cf) | [Project](https://palm-e.github.io/)|
-| OpenVLA | Open-source 7B parameter VLA; Based on Llama 2; Trained on OpenX dataset; Outperforms RT-2-X; Shows good generalization and PEFT ability | Llama 2 (DINOv2 + SigLIP vision) | Action binning + Token output (raw) / L1 regression (OFT) | [Projects](https://openvla.github.io/) | [Project](https://openvla.github.io/) / [Code](https://github.com/openvla/openvla) / [HF](https://huggingface.co/collections/openvla/openvla-666b11f9e9f77a2f02a6c740)|
+| OpenVLA | Open-source 7B parameter VLA; Based on Llama 2; Trained on OpenX dataset; Outperforms RT-2-X; Shows good generalization and PEFT ability | Llama 2 (DINOv2 + SigLIP vision) | Action binning + Token output (raw) / L1 regression (OFT) | [arxiv](https://arxiv.org/abs/2406.09246) | [Project](https://openvla.github.io/) / [Code](https://github.com/openvla/openvla) / [HF](https://huggingface.co/collections/openvla/openvla-666b11f9e9f77a2f02a6c740)|
 | Helix | General-purpose VLA for humanoid robots; Hierarchical architecture (System 1/2); Full-body control; Multi-robot collaboration; Onboard deployment | Custom VLM (System 2) + Visuomotor Policy (System 1) | Continuous action output (System 1) | https://www.figure.ai/news/helix | [Project](https://www.figure.ai/news/helix) |
 | π0 (Pi-Zero) | General-purpose VLA; Uses Flow Matching to generate continuous action trajectories (50Hz); Cross-platform training (7 platforms, 68 tasks) | PaliGemma (Transformer) + Action Expert | Flow Matching | [arXiv 2024](https://arxiv.org/abs/2410.08532) | [Project](https://www.physicalintelligence.company/research/pi-zero) / [Code](https://github.com/Physical-Intelligence/openpi) / [HF](https://huggingface.co/physical-intelligence) |
-| Octo | General-purpose robot model; Trained on OpenX dataset; Flexible input/output conditioning; Often used as a baseline | Transformer (ViT) | Action binning + Token output / Diffusion Head | [Project Website 2023](https://octo-models.github.io/)| [Code](https://github.com/octo-models/octo) |
-| SayCan | Grounds LLM planning in robot affordances; Uses LLM to score skill relevance + value function to score executability | PaLM (Transformer) + Value Function | Selects pre-defined skills (high-level planner) | (https://arxiv.org/abs/2204.01691) | [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan) |
-| NaVILA | Two-stage framework for legged robot VLN; High-level VLA outputs mid-level language actions, low-level vision-motor policy executes | InternVL-Chat-V1.5 (VLM) + Locomotion Policy (RL) | Mid-level language action output (VLA) | https://arxiv.org/abs/2412.04453 | [Project](https://navila-bot.github.io/) |
-| VLAS | First end-to-end VLA with direct integration of speech commands; Based on LLaVA; Three-stage fine-tuning for voice commands; Supports personalized tasks (Voice RAG) | LLaVA (Transformer) + Speech Encoder | Action binning + Token output | https://arxiv.org/abs/2502.13508 | - |
-| CoT-VLA | Incorporates explicit Visual Chain-of-Thought (Visual CoT); Predicts future goal images before generating actions; Hybrid attention mechanism | Llama 2 (ViT vision) | Action binning + Token output (after predicting visual goals) | (https://arxiv.org/abs/2503.22020) | [Project](https://cot-vla.github.io/) |
+| Octo | General-purpose robot model; Trained on OpenX dataset; Flexible input/output conditioning; Often used as a baseline | Transformer (ViT) | Action binning + Token output / Diffusion Head | [arXiv 2024](https://arxiv.org/abs/2405.12213)| [Project](https://octo-models.github.io/) / [Code](https://github.com/octo-models/octo) |
+| SayCan | Grounds LLM planning in robot affordances; Uses LLM to score skill relevance + value function to score executability | PaLM (Transformer) + Value Function | Selects pre-defined skills (high-level planner) | [arXiv 2024](https://arxiv.org/abs/2204.01691) | [Project](https://say-can.github.io/) / [Code](https://github.com/google-research/google-research/tree/master/saycan) |
+| NaVILA | Two-stage framework for legged robot VLN; High-level VLA outputs mid-level language actions, low-level vision-motor policy executes | InternVL-Chat-V1.5 (VLM) + Locomotion Policy (RL) | Mid-level language action output (VLA) | [arXiv 2024](https://arxiv.org/abs/2412.04453) | [Project](https://navila-bot.github.io/) |
+| VLAS | First end-to-end VLA with direct integration of speech commands; Based on LLaVA; Three-stage fine-tuning for voice commands; Supports personalized tasks (Voice RAG) | LLaVA (Transformer) + Speech Encoder | Action binning + Token output | [arXiv 2024](https://arxiv.org/abs/2502.13508) | - |
+| CoT-VLA | Incorporates explicit Visual Chain-of-Thought (Visual CoT); Predicts future goal images before generating actions; Hybrid attention mechanism | Llama 2 (ViT vision) | Action binning + Token output (after predicting visual goals) | [arXiv 2024](https://arxiv.org/abs/2503.22020) | [Project](https://cot-vla.github.io/) |
 | TinyVLA | Compact, fast, and data-efficient VLA; Requires no pre-training; Uses small VLM + diffusion policy decoder | MobileVLM V2 / Moondream2 + Diffusion Policy Decoder | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2409.12514) | [Project](https://tiny-vla.github.io/) |
 | CogACT | Componentized VLA architecture; Specialized action module (Diffusion Action Transformer) conditioned on VLM output; Significantly outperforms OpenVLA / RT-2-X | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2411.19650) | [Project](https://cogact.github.io/) |
 
@@ -123,11 +120,11 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * Pioneering work grounding LLM planning in robot affordances. Uses an LLM (PaLM) to score potential skills by instruction relevance and a value function to score executability.  Primarily a high-level planner.
 
-* **VIMA (Visual Matching Agent)** (ICML 2023 / arXiv 2022) - Jiang, Y., et al, [[Project](https://vimalabs.github.io/)]
+* **VIMA (Visual Matching Agent)** ([ICML 2023 / arXiv 2022](https://arxiv.org/abs/2210.03094)) - Jiang, Y., et al, [[Project](https://vimalabs.github.io/)]
 
     * Transformer-based agent that processes multimodal prompts (text, images, video) for manipulation tasks. Introduces VIMA-Bench. 
 
-* **Octo** (Project website 2023) - Octo Model Team (UC Berkeley, Google, TRI, et al.), [[Code](https://github.com/octo-models/octo)]
+* **Octo** ([arXiv 2024](https://arxiv.org/abs/2405.12213))  - Octo Model Team (UC Berkeley, Google, TRI, et al.), [[Project](https://octo-models.github.io/)] / [[Code](https://github.com/octo-models/octo)]
 
     * General-purpose robot model trained on Open X-Embodiment. Transformer architecture with flexible input/output conditioning. Often used as a strong baseline model. 
 
@@ -139,7 +136,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * Uses LVM (DINOv2, SAM2) + VLM (GPT-4o) for spatio-temporal reasoning via keypoint constraints for manipulation tasks.  Point-based action approach.
 
-* **OK-Robot** (arXiv 2024) - Singh, N., et al, [[Project](https://ok-robot.github.io/) ]/ [[Code](https://github.com/ok-robot/ok-robot)].
+* **OK-Robot** ([arXiv 2024](https://arxiv.org/abs/2401.12202))  - Singh, N., et al, [[Project](https://ok-robot.github.io/) ]/ [[Code](https://github.com/ok-robot/ok-robot)].
 
     * Integrates open knowledge models (VLM, LLM) for mobile manipulation arm (Hello Robot) navigation, perception, and manipulation in home environments. 
 
