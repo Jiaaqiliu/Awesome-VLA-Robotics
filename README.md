@@ -45,19 +45,18 @@ A comprehensive list of excellent research papers, models, datasets, and other r
 
 ## Survey papers
 
-* A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
-* Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI. [[paper](https://arxiv.org/abs/2407.06886)]
-* Robot learning in the era of foundation models: A survey. [[paper](https://arxiv.org/abs/2311.14379)]
-* A Survey on Robotics with Foundation Models: toward Embodied AI. [[paper](https://arxiv.org/abs/2402.02385)]
-* Toward general-purpose robots via foundation models: A survey and meta-analysis. [[paper](https://arxiv.org/abs/2312.08782)]
-* What Foundation Models can Bring for Robot Learning in Manipulation: A Survey. [[paper](https://arxiv.org/abs/2404.18201)]
-* Towards Generalist Robot Learning from Internet Video: A Survey. [[paper](https://arxiv.org/abs/2404.19664)]
-* Large Multimodal Agents: A Survey. [[paper](https://arxiv.org/abs/2402.15116)]
-* A Survey on Large Language Models for Automated Planning. [[paper](https://arxiv.org/abs/2502.12435)]
-* A Survey on Integration of Large Language Models with Intelligent Robots. [[paper](https://arxiv.org/abs/2404.09228)]
-* Vision-Language Models for Vision Tasks: A Survey. [[paper](https://arxiv.org/abs/2304.00685)]
-* Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]
-* From Screens to Scenes: A Survey of Embodied AI in Healthcare. [[paper](https://arxiv.org/abs/2501.07468)]
+* [2025] A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
+* [2025] Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]
+* [2025] Exploring Embodied Multimodal Large Models: Development, Datasets, and Future Directions [[paper](https://arxiv.org/pdf/2502.15336)]
+* [2024] Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI. [[paper](https://arxiv.org/abs/2407.06886)]
+* [2024] A Survey on Robotics with Foundation Models: toward Embodied AI. [[paper](https://arxiv.org/abs/2402.02385)]
+* [2024] What Foundation Models can Bring for Robot Learning in Manipulation: A Survey. [[paper](https://arxiv.org/abs/2404.18201)]
+* [2024] Towards Generalist Robot Learning from Internet Video: A Survey. [[paper](https://arxiv.org/abs/2404.19664)]
+* [2024] Large Multimodal Agents: A Survey. [[paper](https://arxiv.org/abs/2402.15116)]
+* [2024] A Survey on Integration of Large Language Models with Intelligent Robots. [[paper](https://arxiv.org/abs/2404.09228)]
+* [2024] Vision-Language Models for Vision Tasks: A Survey. [[paper](https://arxiv.org/abs/2304.00685)]
+* [2023] Toward general-purpose robots via foundation models: A survey and meta-analysis. [[paper](https://arxiv.org/abs/2312.08782)]
+* [2023] Robot learning in the era of foundation models: A survey. [[paper](https://arxiv.org/abs/2311.14379)]
 
 
 ## Key VLA Models and Research Papers
@@ -144,7 +143,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
     * Incorporates explicit visual chain-of-thought reasoning by predicting future goal images before generating actions. Uses hybrid attention (causal for vision/text, full for actions). 
 
-* **3D-VLA** ((https://arxiv.org/abs/2403.09631)) - Zhen, Z., et al, [[Code](https://github.com/UMass-Embodied-AGI/3D-VLA)]
+* **3D-VLA** ([arXiv 2024](https://arxiv.org/abs/2403.09631)) - Zhen, Z., et al, [[Code](https://github.com/UMass-Embodied-AGI/3D-VLA)]
 
     * Introduces 3D perception (point clouds) and generative world models into VLAs, connecting 3D perception, reasoning, and action. 
 
@@ -271,7 +270,7 @@ Focuses on how robot actions are represented (e.g., discrete tokens vs. continuo
 * **Flow Matching:** An alternative generative method for continuous actions, used in π0 for efficient, high-frequency (50Hz) trajectory generation.
 * **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. Used in ACT, RoboAgent, π0, PD-VLA. Increases action dimensionality and inference time when using AR decoding.
 * **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. E.g., PD-VLA.
-* **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. E.g., FAST (Frequency-domain Action Sequence Tokenization), designed for dexterous, high-frequency tasks.
+* **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. E.g., [FAST], designed for dexterous, high-frequency tasks.
 * **Point-based Actions:** Using VLMs to predict keypoints or goal locations rather than full trajectories. E.g., PIVOT, RoboPoint, ReKep.
 * **Mid-Level Language Actions:** Generating actions as natural language commands to be consumed by a lower-level policy. E.g., NaVILA.
 
@@ -296,7 +295,7 @@ Focuses on how VLA models are trained and adapted.
 Focuses on input data types beyond standard RGB images and text used by VLAs, and how they ground these inputs.
 
 * **Integrating Speech:** Control via spoken commands, potentially capturing nuances missed by text. Requires handling the speech modality directly or via ASR. E.g., VLAS (direct integration), Shake-VLA (uses external STT/TTS).
-* **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. E.g., 3D-VLA, PerAct, Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, SpatialVLA.
+* **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. E.g., 3D-VLA, PerAct, Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, [SpatialVLA](https://spatialvla.github.io/).
 * **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in VLAS, PaLM-E, π0 (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 * **Multimodal Prompts:** Handling instructions that include images or video in addition to text. E.g., VIMA.
 * **Grounding:** The process of linking language descriptions or visual perceptions to specific entities, locations, or actions in the physical world or robot representation. Addressed via various techniques like similarity matching, leveraging common-sense knowledge, multimodal alignment, or interaction. LLM-Grounder focuses on open-vocabulary 3D visual grounding.
@@ -492,7 +491,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * Future directions: Improved sample efficiency (RL, self-supervision), sim-to-real transfer, automated data generation, efficient architectures (SSMs, MoEs), data filtering/weighting.
 * **Inference Speed & Real-Time Control:** Current large VLAs may be too slow for the high-frequency control loops needed for dynamic tasks or dexterous manipulation. 
 
-    * Future directions: Smaller/compact models (TinyVLA), efficient architectures (RoboMamba), parallel decoding (PD-VLA), action chunking optimization (FAST), model distillation (OneDP, RPD), hardware acceleration.
+    * Future directions: Smaller/compact models (TinyVLA), efficient architectures (RoboMamba), parallel decoding (PD-VLA), action chunking optimization ([FAST](https://arxiv.org/abs/2501.09747)), model distillation (OneDP, RPD), hardware acceleration.
 * **Robustness & Reliability:** Ensuring consistent performance across variations in environment, lighting, object appearance, disturbances, and unexpected events. Current models can be brittle. 
 
     * Future directions: Adversarial training, improved grounding, better 3D understanding, closed-loop feedback, anomaly detection, incorporating physical priors, testing frameworks (VLATest).
@@ -531,7 +530,6 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * https://github.com/JadeCong/Awesome-Robot-Learning
 * Awesome-Vision-Language-Models:
     * https://github.com/jingyi0000/VLM_survey
-    * https://github.com/geoaigroup/awesome-vision-language-models-for-earth-observation
 
 ## Citation
 
