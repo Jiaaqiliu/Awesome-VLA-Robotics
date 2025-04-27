@@ -127,6 +127,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **[2025] Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding** [[paper(PD-VLA)](https://arxiv.org/abs/2503.02310)]
 
+* **[2025] Refined Policy Distillation: From VLA Generalists to RL Experts** [[paper(RPD)](https://arxiv.org/abs/2503.05833)]
+
 ##### 2024
 * **[2024] OpenVLA: An Open-Source Vision-Language-Action Model**
  [[paper](https://arxiv.org/abs/2406.09246)] [[code](https://github.com/openvla/openvla)]
