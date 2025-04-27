@@ -168,25 +168,51 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 * **VLA Model-Expert Collaboration** [(arXiv 2025)](https://arxiv.org/abs/2503.04163) - Xiang, T.-Y., et al, [[Project](https://aoqunjin.github.io/Expert-VLA/)]
     * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
 
+- **FAST: Efficient Action Tokenization for Vision-Language-Action Models** – Physical Intelligence, arXiv 2025
+ [[Project Page\]](https://www.pi.website/research/fast) [[Paper\]](https://arxiv.org/abs/2501.09747)
+    - Proposes a compression-based tokenization scheme (FAST) for robot actions, enabling efficient training of autoregressive VLA models for dexterous and high-frequency tasks.
+
+- **HybridVLA: Integrating Diffusion and Autoregressive Action Prediction for Generalist Robot Control** – PKU-HMI-Lab, arXiv 2025
+ [[Project\]](https://hybrid-vla.github.io/) [[Paper\]](https://arxiv.org/abs/2503.10631) [[Code\]](https://github.com/PKU-HMI-Lab/Hybrid-VLA)
+    - Introduces a unified framework combining diffusion and autoregressive policies within a single large language model, enhancing generalization across various manipulation tasks.
+
+- RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation – Meituan, arXiv 2024
+    - Presents a multimodal robotic manipulation model, RoboMM, along with the comprehensive dataset, RoboData, enhancing 3D perception through camera parameters and occupancy supervision.
+
+- **OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction** – arXiv 2025
+ [[Project Page\]](https://ottervla.github.io/) [[Paper\]](https://arxiv.org/pdf/2503.03734)
+    - Proposes OTTER, a VLA architecture that leverages text-aware visual feature extraction, preserving semantic alignments and enabling strong zero-shot generalization in manipulation tasks.
+
+- **PointVLA: Injecting the 3D World into Vision-Language-Action Models** – arXiv 2025
+ [[Project Page\]](https://pointvla.github.io/) [[Paper\]](https://arxiv.org/abs/2503.07511)
+    - Enhances pre-trained VLAs with point cloud inputs without requiring retraining, improving spatial reasoning and adaptability in manipulation tasks.
+
 #### Navigation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
 
-* **NaVILA** ((https://arxiv.org/abs/2412.04453)) - Chen, X., et al, [[Project](https://navila-bot.github.io/)]
+- **NaVILA: Legged Robot Vision-Language-Action Model for Navigation** – Chen, X., et al., arXiv 2024
+ [[Project\]](https://navila-bot.github.io/) [[Paper\]](https://arxiv.org/abs/2412.04453)
+    - *Proposes a two-level framework combining high-level vision-language-action modeling with low-level locomotion skills, enabling legged robots to navigate complex environments based on natural language instructions.* 
 
-    * Two-stage framework for legged robot VLN. High-level VLA outputs actions in mid-level language form (e.g., "move forward 75cm"), and a low-level vision-motor policy executes them. Decouples high-level reasoning from low-level control. 
+- **QUAR-VLA / QUART: Vision-Language-Action Model for Quadruped Robots** – Tang, J., et al., ECCV 2024 / arXiv 2023
+ [[Project\]](https://sites.google.com/view/quar-vla) [[Paper\]](https://arxiv.org/abs/2312.14457)
+    - *Introduces QUART, a family of VLA models integrating visual information and language instructions to generate executable actions for quadruped robots, accompanied by the QUARD dataset for training.* 
 
-* **QUAR-VLA / QUART** ([ECCV 2024 / arXiv 2023](https://arxiv.org/abs/2312.14457)) - Tang, J., et al, [[Project](https://sites.google.com/view/quar-vla)]
+- **NaviLLM: Towards Learning a Generalist Model for Embodied Navigation** – Shah, D., et al., arXiv 2023
+ [[Code\]](https://github.com/zd11024/NaviLLM) [[Paper\]](https://arxiv.org/abs/2312.02010)
+    - *Presents NaviLLM, a generalist model for embodied navigation that adapts large language models using schema-based instructions to unify various navigation tasks across diverse environments.* 
 
-    * Paradigm and VLA model family (QUART) for quadruped robots, integrating vision and language for navigation, complex terrain traversal, and manipulation. Includes the QUARD dataset. 
+- **NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation** – Chen, X., et al., arXiv 2024
+ [[Project\]](https://pku-epic.github.io/NaVid/) [[Paper\]](https://arxiv.org/abs/2402.15852)
+    - *Proposes NaVid, a video-based vision-language model that plans next-step actions for navigation tasks using monocular RGB video streams, enhancing generalization across different environments.*
 
-* **NaviLLM** ([arXiv 2023](https://arxiv.org/abs/2312.02010))  - Shah, D., et al, [[Code](https://github.com/zd11024/NaviLLM)]
 
-    * General navigation model using LLMs for planning and interpreting instructions in diverse environments.
-
-* **NaVid** ([arXiv 2024](https://arxiv.org/abs/2402.15852)) - Chen, X., et al, [[Project](https://pku-epic.github.io/NaVid/)]
-
-    * Focuses on next-step planning in navigation using VLMs. Earlier work related to NaVILA.
+- **SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models** – Shanghai AI Laboratory, arXiv 2025
+ [[Project\]](https://spatialvla.github.io/)
+    - *Introduces SpatialVLA, a spatial-enhanced VLA model trained on 1.1 million real robot episodes, achieving superior 3D scene spatial understanding and efficient adaptation to new robot setups.*
+- **[2025] Do Visual Imaginations Improve Vision-and-Language Navigation Agents?**
+ [[paper](https://arxiv.org/pdf/2503.16394)] [[project](https://www.akhilperincherry.com/VLN-Imagine-website/)]
 
 #### Human-Robot Interaction (HRI)
 
@@ -212,40 +238,32 @@ Focuses on enabling more natural and effective interactions between humans and r
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
-* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al,(Google), [[Project](https://say-can.github.io/)] / [[Code](https://github.com/google-research/google-research/tree/master/saycan)]
+- **[2025] [Nvidia] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
+ [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
 
-    * Grounds LLM planning in robot affordances.
+- **[2025] [Gemini Robotics] Gemini Robotics: Bringing AI into the Physical World**
+ [[report](https://storage.googleapis.com/deepmind-media/gemini-robotics/gemini_robotics_report.pdf)]
+- **[2025] Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models**
+   [[paper](https://arxiv.org/pdf/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
+- **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**
+   [[paper](https://arxiv.org/abs/2503.22020)] [[project](https://cot-vla.github.io/)]
 
-* **PaLM-E** (ICML 2023 / arXiv 2023) - Driess, D., et al, (Google), [[Project](https://palm-e.github.io/)]
+- **[2023] PaLM-E: An Embodied Multimodal Language Model**
+   [[paper](https://arxiv.org/abs/2303.03378)] [[project](https://palm-e.github.io/)]
 
-    * Can perform sequential manipulation planning end-to-end or output language subgoals. Shows visual chain-of-thought reasoning abilities.
+- **[2023] EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought**
+   [[paper](https://arxiv.org/abs/2305.15021)] [[code](https://github.com/OpenGVLab/EmbodiedGPT)]
 
-* **EmbodiedGPT** (arXiv 2023) - Mu, Y., et al, [[Code](https://github.com/OpenGVLab/EmbodiedGPT)]
+- **[2022] LLM-Planner: Few-Shot Grounded Planning with Large Language Models**
+   [[paper](https://arxiv.org/pdf/2212.04088)] [[project](https://dki-lab.github.io/LLM-Planner/)]
 
-    * Multimodal model that performs end-to-end planning and reasoning for embodied tasks.
+- **[2022] Code as Policies: Language Model Programs for Embodied Control**
+   [[paper](https://arxiv.org/abs/2209.07753)] [[project](https://code-as-policies.github.io/)]
 
-* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al, [[Project](https://cot-vla.github.io/)]
-
-    * Explicitly incorporates visual CoT reasoning by predicting future goal images.
-
-* **Hi Robot** (arXiv 2025) - Physical Intelligence Team, [[Project](https://www.physicalintelligence.company/research/hirobot)]
-
-    * Hierarchical VLA where a high-level VLM reasons and decomposes tasks for a low-level VLA (π0) executor.
-
-* **LLM-Planner** ((https://arxiv.org/pdf/2212.04088)) - Liu, B., et al, [[Project](https://dki-lab.github.io/LLM-Planner/)]
-    * Modular planner using LLMs.
-
-* **Code as Policies (CaP)** ((https://arxiv.org/abs/2209.07753)) - Liang, J., et al. (Google), [[Project](https://code-as-policies.github.io/)]
-
-    * Uses LLMs to directly generate robot policy code.
-
-
-* **Inner Monologue** ((https://arxiv.org/abs/2207.05608)) - Huang, W., et al, [[Project](https://inner-monologue.github.io/)]
-
-    * Uses language feedback from VLM/LLMs to guide robot policies.
-
-* **The Critical Role of Hierarchical Reasoning for Complexity:** Many successful approaches to complex, long-horizon tasks employ hierarchical structures. This can be explicit (e.g., NaVILA's VLA + motor policy; Helix's System 1/2; Hi Robot's VLM planner + VLA executor), or implicit (e.g., SayCan grounding LLM plans in affordances; CoT-VLA generating intermediate visual goals). This suggests that monolithic end-to-end VLAs may struggle with deep reasoning or long-term planning compared to approaches that leverage emergent abilities of a single large model. Architectures that separate high-level planning/reasoning from low-level reactive control appear more effective. This architectural trend reflects the inherent complexity of linking semantic understanding to robust physical execution over extended periods.
-
+- **[2022] Inner Monologue: Embodied Reasoning through Planning with Language Models**
+   [[paper](https://arxiv.org/abs/2207.05608)] [[project](https://inner-monologue.github.io/)]
+- **[2022] Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (SayCan)**
+   [[paper](https://arxiv.org/abs/2204.01691)] [[project](https://say-can.github.io/)] [[code](https://github.com/google-research/google-research/tree/master/saycan)]
 ### By Technical Approach
 
 #### Model Architectures
