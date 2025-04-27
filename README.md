@@ -86,162 +86,126 @@ This section is the heart of the resource, listing specific VLA models and influ
 #### Manipulation
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
+##### 2025
+* **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
+ [[project](https://www.figure.ai/news/helix)]
 
-* [**RT-1 (Robotics Transformer 1)**](https://arxiv.org/abs/2212.06817) - Brohan, A., et al. (Google) [[Code](https://github.com/google-research/robotics_transformer)]
+* **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**  [[paper](https://arxiv.org/pdf/2503.22020)] [[project](https://cot-vla.github.io/)]
 
-    * Early influential Transformer-based model demonstrating scalability on multi-task real-world data (13 robots, 130k trajectories). Uses discretized action tokens input to a Transformer. Shows improved generalization and robustness. 
 
-* [**RT-2 (Robotics Transformer 2)**](https://arxiv.org/abs/2307.15818) - Brohan, A., et al. (Google DeepMind) [[Project](https://robotics-transformer2.github.io/)]
+* **[2025] Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models**
+ [[paper](https://arxiv.org/abs/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
 
-    * A landmark VLA model demonstrating the ability to transfer knowledge from web-scale VLMs to robotics by joint fine-tuning a VLM (PaLI-X, PaLM-E) to output action tokens. Shows emergent generalization to new objects, commands, and basic reasoning.  Defines the modern VLA concept.
 
-* **PaLM-E** ([ICML 2023 / arXiv 2023](https://arxiv.org/abs/2303.03378))  - Driess, D., et al. (Google) [[Project](https://palm-e.github.io/)]
+* **[2025] DexVLA: Scaling Vision-Language-Action Models for Dexterous Manipulation Across Embodiments** [[paper](https://arxiv.org/pdf/2502.05855)] [[project](https://dex-vla.github.io/)]
 
-    * Embodied multimodal language model, injecting continuous sensor data (image, state) into a pre-trained LLM (PaLM). Validated on sequential manipulation, VQA, and captioning, showing positive transfer from vision-language data to robotic tasks. 
+* **[2025] Shake-VLA: Shake, Stir, and Pour with a Dual-Arm Robot: A Vision-Language-Action Model for Automated Cocktail Making** [[paper](https://arxiv.org/pdf/2501.06919)]
 
-* **OpenVLA** ([arXiv 2024](https://arxiv.org/abs/2406.09246))  - Kim, M. J., et al, (Stanford, Berkeley, TRI, Google, Physical Intelligence, MIT), [[Code](https://github.com/openvla/openvla)]
+* **[2025] VLA Model-Expert Collaboration: Enhancing Vision-Language-Action Models with Human Corrections via Shared Autonomy** [[paper](https://arxiv.org/pdf/2503.04163)] [[project](https://aoqunjin.github.io/Expert-VLA/)]
 
-    * State-of-the-art 7B open-source VLA at the time of release, based on Llama 2, DINOv2, SigLIP. Trained on 970k Open X-Embodiment trajectories. Outperforms RT-2-X with fewer parameters. Shows strong generalization and effective fine-tuning (PEFT) ability. 
+* **[2025] FAST: Efficient Action Tokenization for Vision-Language-Action Models** [[paper](https://arxiv.org/pdf/2501.09747)] [[project](https://www.pi.website/research/fast)]
 
-* **Helix** （[Figure AI blog post 2024](https://www.figure.ai/news/helix)） - Figure AI. [[Project](https://www.figure.ai/news/helix)]
+* **[2025] HybridVLA: Integrating Diffusion and Autoregressive Action Prediction for Generalist Robot Control** [[paper](https://arxiv.org/pdf/2503.10631)] [[project](https://hybrid-vla.github.io/)] [[code](https://github.com/PKU-HMI-Lab/Hybrid-VLA)]
 
-    * General-purpose VLA for humanoid robot (Figure 01) control. Features include full-body (including hands) control, multi-robot collaboration, arbitrary object grasping, all behaviors using a single network, and onboard deployment. Uses a hierarchical "System 1 (fast visuomotor) / System 2 (slow VLM reasoning)" architecture. 
+* **[2025] OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction** [[paper](https://arxiv.org/pdf/2503.03734)] [[project](https://ottervla.github.io/)]
 
-* **π0 (Pi-Zero)** (Physical Intelligence blog post / arXiv 2024) - Physical Intelligence Team. [[Project](https://www.physicalintelligence.company/blog/pi0)] / [[Code](https://github.com/Physical-Intelligence/openpi)] / [[HuggingFace](https://huggingface.co/physical-intelligence)]
+* **[2025] PointVLA: Injecting the 3D World into Vision-Language-Action Models** [[paper](https://arxiv.org/pdf/2503.07511)] [[project](https://pointvla.github.io/)]
 
-    * General-purpose VLA using flow matching to generate continuous actions (50Hz). Trained on data from 7 platforms, 68 tasks. Demonstrates complex tasks like laundry folding and table clearing. 
 
-* **Hi Robot** (arXiv 2025) - Physical Intelligence Team. [[Project](https://www.physicalintelligence.company/research/hirobot)]
+##### 2024
+* **[2024] OpenVLA: An Open-Source Vision-Language-Action Model**
+ [[paper](https://arxiv.org/abs/2406.09246)] [[code](https://github.com/openvla/openvla)]
 
-    * Hierarchical system using π0 as "System 1" and a VLM as "System 2" for reasoning and task decomposition (via self-talk), improving handling of complex prompts. 
+* **[2024] π₀ (Pi-Zero): Our First Generalist Policy**
+ [[project](https://www.physicalintelligence.company/blog/pi0)] [[code](https://github.com/Physical-Intelligence/openpi)]
 
-* **SayCan (Do As I Can, Not As I Say)** ((https://arxiv.org/abs/2204.01691)) - Ahn, M., et al, (Google). [[Project](https://say-can.github.io/)] / [[Code](https://github.com/google-research/google-research/tree/master/saycan)]
+* **[2024] Octo: An Open-Source Generalist Robot Policy [[paper](https://arxiv.org/pdf/2405.12213)] [[project](https://octo-models.github.io/)] [[Code](https://github.com/octo-models/octo)]** 
 
-    * Pioneering work grounding LLM planning in robot affordances. Uses an LLM (PaLM) to score potential skills by instruction relevance and a value function to score executability.  Primarily a high-level planner.
+* **[2024] ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2409.01652)]  [[project](https://rekep-robot.github.io/)] [[code](https://github.com/huangwl18/ReKep)]
+ 
+* **[2024] OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics**  [[paper](https://arxiv.org/pdf/2401.12202)] [[project](https://ok-robot.github.io/)] [[code](https://github.com/ok-robot/ok-robot)]
 
-* **VIMA (Visual Matching Agent)** ([ICML 2023 / arXiv 2022](https://arxiv.org/abs/2210.03094)) - Jiang, Y., et al, [[Project](https://vimalabs.github.io/)]
+* **[2024] 3D-VLA: A 3D Vision-Language-Action Generative World Model**  [[paper](https://arxiv.org/pdf/2403.09631)]  [[code](https://github.com/UMass-Embodied-AGI/3D-VLA)]
+* **[2024] TinyVLA: Towards Fast, Data-Efficient Vision-Language-Action Models for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2409.12514)] [[project](https://tiny-vla.github.io/)]
 
-    * Transformer-based agent that processes multimodal prompts (text, images, video) for manipulation tasks. Introduces VIMA-Bench. 
+* **[2024] CogACT: Componentized Vision-Language-Action Models for Robotic Control** [[paper](https://arxiv.org/pdf/2411.19650)] [[project](https://cogact.github.io/)]
 
-* **Octo** ([arXiv 2024](https://arxiv.org/abs/2405.12213))  - Octo Model Team (UC Berkeley, Google, TRI, et al.), [[Project](https://octo-models.github.io/)] / [[Code](https://github.com/octo-models/octo)]
 
-    * General-purpose robot model trained on Open X-Embodiment. Transformer architecture with flexible input/output conditioning. Often used as a strong baseline model. 
+* **[2024] RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2412.07215v1)][[Code](https://github.com/RoboUniview/RoboMM)]
 
-* **VoxPoser** ((https://arxiv.org/abs/2307.05973)) - Huang, W., et al, [[Project](https://voxposer.github.io/) ]/ [[Code](https://github.com/huangwl18/VoxPoser)]
 
-    * Uses LLM/VLM to synthesize 3D value maps (affordances) in perceptual space for zero-shot manipulation.  Focuses on the motion planning aspect.
+##### 2023
+* **[2023] RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**
+ [[paper](https://arxiv.org/abs/2307.15818)] [[project](https://robotics-transformer2.github.io/)]
 
-* **ReKep (Relational Keypoint Constraints)** ((https://arxiv.org/abs/2409.01652)) - Huang, W., et al, [[Project](https://rekep-robot.github.io/)] / [[Code](https://github.com/huangwl18/ReKep)]
+* **[2023] PaLM-E: An Embodied Multimodal Language Model**
+ [[paper](https://arxiv.org/abs/2303.03378)] [[project](https://palm-e.github.io/)]
 
-    * Uses LVM (DINOv2, SAM2) + VLM (GPT-4o) for spatio-temporal reasoning via keypoint constraints for manipulation tasks.  Point-based action approach.
+* **[2023] VIMA: General Robot Manipulation with Multimodal Prompts**
+ [[paper](https://arxiv.org/abs/2210.03094)] [[project](https://vimalabs.github.io/)]
 
-* **OK-Robot** ([arXiv 2024](https://arxiv.org/abs/2401.12202))  - Singh, N., et al, [[Project](https://ok-robot.github.io/) ]/ [[Code](https://github.com/ok-robot/ok-robot)].
+* **[2023] VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models**  [[paper](https://arxiv.org/pdf/2307.05973)] [[project](https://voxposer.github.io/)] [[code](https://github.com/huangwl18/VoxPoser)]
 
-    * Integrates open knowledge models (VLM, LLM) for mobile manipulation arm (Hello Robot) navigation, perception, and manipulation in home environments. 
+##### 2022
 
-* **CoT-VLA (Chain-of-Thought VLA)** ((https://arxiv.org/abs/2503.22020)) - Wu, J., et al, [[Project](https://cot-vla.github.io/)]
+* **[2022] RT-1: Robotics Transformer for Real-World Control at Scale**
+ [[paper](https://arxiv.org/abs/2212.06817)] [[code](https://github.com/google-research/robotics_transformer)]
 
-    * Incorporates explicit visual chain-of-thought reasoning by predicting future goal images before generating actions. Uses hybrid attention (causal for vision/text, full for actions). 
+* **[2022] Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (SayCan)**
+ [[paper](https://arxiv.org/abs/2204.01691)] [[project](https://say-can.github.io/)] [[code](https://github.com/google-research/google-research/tree/master/saycan)]
 
-* **3D-VLA** ([arXiv 2024](https://arxiv.org/abs/2403.09631)) - Zhen, Z., et al, [[Code](https://github.com/UMass-Embodied-AGI/3D-VLA)]
 
-    * Introduces 3D perception (point clouds) and generative world models into VLAs, connecting 3D perception, reasoning, and action. 
 
-* **TinyVLA** ([arXiv 2024](https://arxiv.org/abs/2409.12514)) - Liu, H., et al.
 
-    * [Project](https://tiny-vla.github.io/).
 
-    * Focuses on faster inference speed and higher data efficiency, eliminating the pre-training stage. Uses a smaller VLM backbone + diffusion policy decoder. Outperforms OpenVLA in speed/data efficiency. 
-
-* **CogACT** ([arXiv 2024](https://arxiv.org/abs/2411.19650))  - Li, Q., et al, [[Project](https://cogact.github.io/)]
-
-    * Componentized VLA architecture with a specialized action module (Diffusion Action Transformer) conditioned on VLM output. Significantly outperforms OpenVLA and RT-2-X. 
-
-* **DexVLA** [(arXiv 2025)](https://arxiv.org/abs/2502.05855) - Li, Z., et al, [[Project](https://dex-vla.github.io/)]
-
-    * Improves VLA efficiency/generalization via a large (1B parameter) diffusion-based action expert and an embodied curriculum learning strategy. Focuses on dexterity across different embodiments (single-arm / dual-arm / dexterous hand). 
-
-* **Shake-VLA** [(arXiv 2025)](https://arxiv.org/abs/2501.06919) - Abdelkader, H., et al.
-
-    * VLA-based system for automated cocktail making with a dual-arm robot, integrating vision (YOLOv8, EasyOCR), speech-to-text, and LLM instruction generation.  Application-specific system.
-
-* **VLA Model-Expert Collaboration** [(arXiv 2025)](https://arxiv.org/abs/2503.04163) - Xiang, T.-Y., et al, [[Project](https://aoqunjin.github.io/Expert-VLA/)]
-    * Enables human experts to collaborate with VLA models by providing corrective actions via shared autonomy. Achieves bi-directional learning (VLA improves, humans also improve). 
-
-- **FAST: Efficient Action Tokenization for Vision-Language-Action Models** – Physical Intelligence, arXiv 2025
- [[Project Page\]](https://www.pi.website/research/fast) [[Paper\]](https://arxiv.org/abs/2501.09747)
-    - Proposes a compression-based tokenization scheme (FAST) for robot actions, enabling efficient training of autoregressive VLA models for dexterous and high-frequency tasks.
-
-- **HybridVLA: Integrating Diffusion and Autoregressive Action Prediction for Generalist Robot Control** – PKU-HMI-Lab, arXiv 2025
- [[Project\]](https://hybrid-vla.github.io/) [[Paper\]](https://arxiv.org/abs/2503.10631) [[Code\]](https://github.com/PKU-HMI-Lab/Hybrid-VLA)
-    - Introduces a unified framework combining diffusion and autoregressive policies within a single large language model, enhancing generalization across various manipulation tasks.
-
-- RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation – Meituan, arXiv 2024
-    - Presents a multimodal robotic manipulation model, RoboMM, along with the comprehensive dataset, RoboData, enhancing 3D perception through camera parameters and occupancy supervision.
-
-- **OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction** – arXiv 2025
- [[Project Page\]](https://ottervla.github.io/) [[Paper\]](https://arxiv.org/pdf/2503.03734)
-    - Proposes OTTER, a VLA architecture that leverages text-aware visual feature extraction, preserving semantic alignments and enabling strong zero-shot generalization in manipulation tasks.
-
-- **PointVLA: Injecting the 3D World into Vision-Language-Action Models** – arXiv 2025
- [[Project Page\]](https://pointvla.github.io/) [[Paper\]](https://arxiv.org/abs/2503.07511)
-    - Enhances pre-trained VLAs with point cloud inputs without requiring retraining, improving spatial reasoning and adaptability in manipulation tasks.
 
 #### Navigation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
-
-- **NaVILA: Legged Robot Vision-Language-Action Model for Navigation** – Chen, X., et al., arXiv 2024
- [[Project\]](https://navila-bot.github.io/) [[Paper\]](https://arxiv.org/abs/2412.04453)
-    - *Proposes a two-level framework combining high-level vision-language-action modeling with low-level locomotion skills, enabling legged robots to navigate complex environments based on natural language instructions.* 
-
-- **QUAR-VLA / QUART: Vision-Language-Action Model for Quadruped Robots** – Tang, J., et al., ECCV 2024 / arXiv 2023
- [[Project\]](https://sites.google.com/view/quar-vla) [[Paper\]](https://arxiv.org/abs/2312.14457)
-    - *Introduces QUART, a family of VLA models integrating visual information and language instructions to generate executable actions for quadruped robots, accompanied by the QUARD dataset for training.* 
-
-- **NaviLLM: Towards Learning a Generalist Model for Embodied Navigation** – Shah, D., et al., arXiv 2023
- [[Code\]](https://github.com/zd11024/NaviLLM) [[Paper\]](https://arxiv.org/abs/2312.02010)
-    - *Presents NaviLLM, a generalist model for embodied navigation that adapts large language models using schema-based instructions to unify various navigation tasks across diverse environments.* 
-
-- **NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation** – Chen, X., et al., arXiv 2024
- [[Project\]](https://pku-epic.github.io/NaVid/) [[Paper\]](https://arxiv.org/abs/2402.15852)
-    - *Proposes NaVid, a video-based vision-language model that plans next-step actions for navigation tasks using monocular RGB video streams, enhancing generalization across different environments.*
-
-
-- **SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models** – Shanghai AI Laboratory, arXiv 2025
- [[Project\]](https://spatialvla.github.io/)
-    - *Introduces SpatialVLA, a spatial-enhanced VLA model trained on 1.1 million real robot episodes, achieving superior 3D scene spatial understanding and efficient adaptation to new robot setups.*
 - **[2025] Do Visual Imaginations Improve Vision-and-Language Navigation Agents?**
  [[paper](https://arxiv.org/pdf/2503.16394)] [[project](https://www.akhilperincherry.com/VLN-Imagine-website/)]
+
+ - **[2025] SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models**
+   [[paper](https://arxiv.org/abs/2501.15830)] [[project](https://spatialvla.github.io/)]
+
+
+- **[2024] NaVILA: Legged Robot Vision-Language-Action Model for Navigation**
+   [[paper](https://arxiv.org/abs/2412.04453)] [[project](https://navila-bot.github.io/)]
+
+- **[2024] QUAR-VLA: Vision-Language-Action Model for Quadruped Robots**
+   [[paper](https://arxiv.org/abs/2312.14457)] [[project](https://sites.google.com/view/quar-vla)]
+
+- **[2024] NaviLLM: Towards Learning a Generalist Model for Embodied Navigation**
+   [[paper](https://arxiv.org/abs/2312.02010)] [[code](https://github.com/zd11024/NaviLLM)]
+
+- **[2024] NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation**
+   [[paper](https://arxiv.org/abs/2402.15852)] [[project](https://pku-epic.github.io/NaVid/)]
+  
 
 #### Human-Robot Interaction (HRI)
 
 Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
 
-* **VLAS (Vision-Language-Action-Speech)** ((https://arxiv.org/abs/2502.13508)) - Zhao, W., et al.
+- **[2025] VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation** [[paper](https://arxiv.org/abs/2502.13508)]
 
-    * First end-to-end VLA with direct integration of speech commands, without needing an external ASR. Built upon LLaVA. Includes the SQA and CSI datasets. Uses Voice RAG to handle personalized tasks.
-
-* **Shake-VLA** (arXiv 2025) - Abdelkader, H., et al.
-
-    * Integrates voice commands for a dual-arm cocktail-making robot.
-
-* **VLA Model-Expert Collaboration** (arXiv 2025) - Xiang, T.-Y., et al.
-
-    * Enables human-robot collaboration through shared autonomy, improving both VLA and human performance.
-
-* **Helix** (Figure AI blog post 2024) - Figure AI, [[Project](https://www.figure.ai/news/helix)]
-
-    * Uses a single VLA model to enable multiple robots to collaborate on shared tasks (e.g., tidying up groceries).
+- **[2025] Shake-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Manipulations and Liquid Mixing**
+   [[paper](https://arxiv.org/abs/2501.06919)]
+  
+- **[2025] VLA Model-Expert Collaboration for Bi-directional Manipulation Learning**
+   [[paper](https://arxiv.org/abs/2503.04163)]
+  
+- **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
+   [[project](https://www.figure.ai/news/helix)]
+  
 
 #### Task Planning / Reasoning
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
-- **[2025] [Nvidia] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
+- **[2025] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
  [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
 
-- **[2025] [Gemini Robotics] Gemini Robotics: Bringing AI into the Physical World**
+- **[2025]  Gemini Robotics: Bringing AI into the Physical World**
  [[report](https://storage.googleapis.com/deepmind-media/gemini-robotics/gemini_robotics_report.pdf)]
 - **[2025] Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models**
    [[paper](https://arxiv.org/pdf/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
