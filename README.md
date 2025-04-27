@@ -107,11 +107,18 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **[2025] HybridVLA: Integrating Diffusion and Autoregressive Action Prediction for Generalist Robot Control** [[paper](https://arxiv.org/pdf/2503.10631)] [[project](https://hybrid-vla.github.io/)] [[code](https://github.com/PKU-HMI-Lab/Hybrid-VLA)]
 
+* **[2025] GRAPE: Generalizing Robot Policy via Preference Alignment** [[paper](https://arxiv.org/pdf/2411.19309)] [[Project](https://grape-vla.github.io/)][[Code](https://github.com/aiming-lab/grape)]
+
 * **[2025] OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction** [[paper](https://arxiv.org/pdf/2503.03734)] [[project](https://ottervla.github.io/)]
 
 * **[2025] PointVLA: Injecting the 3D World into Vision-Language-Action Models** [[paper](https://arxiv.org/pdf/2503.07511)] [[project](https://pointvla.github.io/)]
 
+* **[2025] AgiBot World Colosseo: Large-scale Manipulation Platform for Scalable and Intelligent Embodied Systems** [[paper](https://agibot-world.com/blog/agibot_go1.pdf)] [[project](https://agibot-world.com/blog/go1)] [Category: Manipulation]
 
+* **[2025] DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping** [[paper](https://arxiv.org/pdf/2502.20900)] [[project](https://dexgraspvla.github.io/)] 
+
+* **[2025] EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation** [[paper](https://arxiv.org/pdf/2501.01895)]
+* **[2025] VLA-Cache: Towards Efficient Vision-Language-Action Model via Adaptive Token Caching in Robotic Manipulation**[[paper](https://arxiv.org/pdf/2502.02175)]
 ##### 2024
 * **[2024] OpenVLA: An Open-Source Vision-Language-Action Model**
  [[paper](https://arxiv.org/abs/2406.09246)] [[code](https://github.com/openvla/openvla)]
@@ -207,6 +214,13 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 
 - **[2025]  Gemini Robotics: Bringing AI into the Physical World**
  [[report](https://storage.googleapis.com/deepmind-media/gemini-robotics/gemini_robotics_report.pdf)]
+
+- **[2025] GRAPE: Generalizing Robot Policy via Preference Alignment** [[paper](https://arxiv.org/pdf/2411.19309)]
+
+- **[2025] HAMSTER: Hierarchical Action Models For Open-World Robot Manipulation** [[paper](https://arxiv.org/pdf/2502.05485)]
+
+- **[2025]π0.5: A Vision-Language-Action Model with Open-World Generalization**[[paper](https://arxiv.org/pdf/2504.16054)] [[project](https://www.pi.website/blog/pi05)]
+
 - **[2025] Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models**
    [[paper](https://arxiv.org/pdf/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
 - **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**
