@@ -362,7 +362,7 @@ This section lists key resources for training and evaluating VLA models. Large-s
 | ManiSkill (1, 2, 3) | Benchmark | Generalizable Manipulation Skills | Large-scale manipulation benchmark based on SAPIEN | [Project](https://maniskill.ai/) | (https://arxiv.org/abs/2107.14483) |
 | Meta-World | Benchmark | Multi-task / Meta RL Manipulation | 50 Sawyer arm manipulation tasks, MuJoCo | [Project](https://meta-world.github.io/)| (https://arxiv.org/abs/1910.10897) |
 | RLBench | Benchmark | Robot Learning Manipulation | 100+ manipulation tasks, CoppeliaSim (V-REP) | [Project](https://sites.google.com/view/rlbench) | (https://arxiv.org/abs/1909.12271) |
-| VLN-CE / R2R / RxR | Benchmark | Vision-Language Nav | Standard VLN benchmarks, often run in Habitat | [VLN-CE](https://github.com/jacobkrantz/VLN-CE), https://github.com/airsplay/R2R-EnvDrop, https://github.com/google-research-datasets/RxR) | Various |
+| VLN-CE / R2R / RxR | Benchmark | Vision-Language Nav | Standard VLN benchmarks, often run in Habitat | [VLN-CE](https://github.com/jacobkrantz/VLN-CE),[R2R-EnvDrop](https://github.com/airsplay/R2R-EnvDrop),[RxR](https://github.com/google-research-datasets/RxR) | Various |
 
 ### Robot Learning Datasets
 
