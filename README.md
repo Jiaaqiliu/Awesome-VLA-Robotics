@@ -109,6 +109,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **[2025] Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success** [[paper](https://arxiv.org/abs/2502.19645)] [[project(OpenVLA-OFT)](https://openvla-oft.github.io/)]
 
+* **[2025] RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete** [[paper](https://arxiv.org/pdf/2502.21257)] [[project](https://superrobobrain.github.io/)]  [[code](https://github.com/FlagOpen/RoboBrain)]
+
 * **[2025] GRAPE: Generalizing Robot Policy via Preference Alignment** [[paper](https://arxiv.org/pdf/2411.19309)] [[Project](https://grape-vla.github.io/)][[Code](https://github.com/aiming-lab/grape)]
 
 * **[2025] OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction** [[paper](https://arxiv.org/pdf/2503.03734)] [[project](https://ottervla.github.io/)]
@@ -129,7 +131,12 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **[2025] Refined Policy Distillation: From VLA Generalists to RL Experts** [[paper(RPD)](https://arxiv.org/abs/2503.05833)]
 
+* **[2025] MoManipVLA: Transferring Vision-language-action Models for General Mobile Manipulation** [[paper](https://arxiv.org/pdf/2503.13446)] [[project](https://gary3410.github.io/momanipVLA/)]
+
+* **[2025] Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy** [[paper](https://arxiv.org/pdf/2410.15959v4)] [[project](https://robodita.github.io/)]
+
 ##### 2024
+
 * **[2024] OpenVLA: An Open-Source Vision-Language-Action Model**
  [[paper](https://arxiv.org/abs/2406.09246)] [[code](https://github.com/openvla/openvla)]
 
@@ -233,6 +240,10 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
    [[paper](https://arxiv.org/pdf/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
 - **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**
    [[paper](https://arxiv.org/abs/2503.22020)] [[project](https://cot-vla.github.io/)]
+
+- **[2025] RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete** [[paper](https://arxiv.org/pdf/2502.21257)] [[project](https://superrobobrain.github.io/)]  [[code](https://github.com/FlagOpen/RoboBrain)]
+
+- **[2025] JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse** [[paper](https://arxiv.org/pdf/2503.16365)] [[project](https://craftjarvis.github.io/JarvisVLA/)]
 
 - **[2024] RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation**
    [[paper](https://arxiv.org/abs/2406.04339)] [[project](https://sites.google.com/view/robomamba-web)]
