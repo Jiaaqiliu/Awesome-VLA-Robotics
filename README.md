@@ -586,6 +586,8 @@ If you find this repository useful, please consider citing this list:
     year = {2025},
 }
 
+```
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Jiaaqiliu/Awesome-VLA-Robotics&type=Date)](https://www.star-history.com/#Jiaaqiliu/Awesome-VLA-Robotics&Date)
