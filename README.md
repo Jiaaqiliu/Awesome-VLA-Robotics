@@ -260,7 +260,7 @@ Focuses on the core neural network architectures used in VLA models.
 Used in [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [Octo](https://arxiv.org/abs/2405.12213), [OpenVLA](https://arxiv.org/abs/2406.09246), [VIMA](https://arxiv.org/abs/2210.03094),[ QUART](https://arxiv.org/abs/2312.14457), etc.
 
 * **Diffusion-based:** Primarily for the action generation component, utilizing the ability of diffusion models to model complex distributions. 
-Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (can use diffusion head), [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [SUDD](https://arxiv.org/abs/2307.14535v2), MDT, RDT-1B, DexVLA, DiVLA, TinyVLA, DTP, Hybrid VLA+Diffusion.
+Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (can use diffusion head), [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514), [Hybrid VLA+Diffusion](https://arxiv.org/abs/2503.10631).
 
 
 * **Hierarchical / Decoupled:** Architectures that separate high-level reasoning/planning (often VLM/LLM-based) from low-level control/execution 
