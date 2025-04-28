@@ -234,6 +234,9 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**
    [[paper](https://arxiv.org/abs/2503.22020)] [[project](https://cot-vla.github.io/)]
 
+- **[2024] RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation**
+   [[paper](https://arxiv.org/abs/2406.04339)] [[project](https://sites.google.com/view/robomamba-web)]
+
 - **[2023] PaLM-E: An Embodied Multimodal Language Model**
    [[paper](https://arxiv.org/abs/2303.03378)] [[project](https://palm-e.github.io/)]
 
@@ -264,9 +267,9 @@ Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://dif
 
 
 * **Hierarchical / Decoupled:** Architectures that separate high-level reasoning/planning (often VLM/LLM-based) from low-level control/execution 
-(which may be a separate policy). E.g., Helix (System 1/2), NaVILA (VLA + Locomotion Policy), Hi Robot (VLM + π0), SayCan (LLM + Value Function).
+(which may be a separate policy). E.g., [Helix](https://www.figure.ai/news/helix) (System 1/2), [NaVILA](https://arxiv.org/abs/2412.04453) (VLA + Locomotion Policy), [Hi Robot](https://arxiv.org/pdf/2502.19417) (VLM + π0), [SayCan](https://arxiv.org/abs/2204.01691) (LLM + Value Function).
 
-* **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. E.g., RoboMamba.
+* **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. E.g., [RoboMamba](https://arxiv.org/abs/2406.04339).
 
 * **Mixture-of-Experts (MoE / MoLE):** Using sparsely activated expert modules for task adaptation or efficiency. 
 E.g., MoRE (Mixture-of-Robotic-Experts using LoRA). Componentized architecture in CogACT. π0 uses an MoE-like structure.
