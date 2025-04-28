@@ -272,7 +272,7 @@ Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://dif
 * **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. E.g., [RoboMamba](https://arxiv.org/abs/2406.04339).
 
 * **Mixture-of-Experts (MoE / MoLE):** Using sparsely activated expert modules for task adaptation or efficiency. 
-E.g., MoRE (Mixture-of-Robotic-Experts using LoRA). Componentized architecture in CogACT. π0 uses an MoE-like structure.
+E.g., [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA). Componentized architecture in [CogACT](https://arxiv.org/abs/2411.19650) . [π0](https://www.physicalintelligence.company/blog/pi0) uses an MoE-like structure.
 
 * **Architectural Diversification for Capability and Efficiency:** While Transformers are foundational, their limitations in handling continuous actions, computational cost, and reasoning depth are driving researchers to explore alternative or hybrid architectures. Diffusion models excel at action generation, hierarchical systems improve reasoning/control separation, SSMs promise efficiency, and MoEs aim for adaptive specialization. This diversification indicates an active search for architectures better suited to the specific constraints and needs of robotics than those designed purely for vision-language tasks. This has led to the emergence of hybrid and specialized designs to address the unique challenges of real-time control, action modeling, efficiency, and complex reasoning in robotics.
 
