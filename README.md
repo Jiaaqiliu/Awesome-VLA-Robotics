@@ -1,6 +1,7 @@
 # Awesome VLA for Robotics
 
-A comprehensive list of excellent research papers, models, datasets, and other resources on Vision-Language-Action (VLA) models in robotics. Contributions are welcome! 
+A comprehensive list of excellent research papers, models, datasets, and other resources on Vision-Language-Action (VLA) models in robotics. The relevant survey paper will be released soon.
+Contributions are welcome! 
 
 ## Table of Contents
 
@@ -134,6 +135,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 * **[2025] MoManipVLA: Transferring Vision-language-action Models for General Mobile Manipulation** [[paper](https://arxiv.org/pdf/2503.13446)] [[project](https://gary3410.github.io/momanipVLA/)]
 
 * **[2025] Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy** [[paper](https://arxiv.org/pdf/2410.15959v4)] [[project](https://robodita.github.io/)]
+
 
 ##### 2024
 
@@ -274,7 +276,8 @@ Focuses on the core neural network architectures used in VLA models.
 Used in [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [Octo](https://arxiv.org/abs/2405.12213), [OpenVLA](https://arxiv.org/abs/2406.09246), [VIMA](https://arxiv.org/abs/2210.03094),[ QUART](https://arxiv.org/abs/2312.14457), etc.
 
 * **Diffusion-based:** Primarily for the action generation component, utilizing the ability of diffusion models to model complex distributions. 
-Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (can use diffusion head), [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514), [Hybrid VLA+Diffusion](https://arxiv.org/abs/2503.10631).
+Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (can use diffusion head), [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), 
+[DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514), [Hybrid VLA+Diffusion](https://arxiv.org/abs/2503.10631).
 
 
 * **Hierarchical / Decoupled:** Architectures that separate high-level reasoning/planning (often VLM/LLM-based) from low-level control/execution 
@@ -291,20 +294,21 @@ E.g., [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using
 
 Focuses on how robot actions are represented (e.g., discrete tokens vs. continuous vectors) and how models generate them. This is a key area differentiating VLAs from VLMs.
 
-* **Action Tokenization / Discretization:** Representing continuous actions (e.g., joint angles, end-effector pose) as discrete tokens, often via binning. Used in early/many Transformer-based VLAs like RT-1, RT-2 to fit the language modeling paradigm. May have limitations in precision and high-frequency control.
+* **Action Tokenization / Discretization:** Representing continuous actions (e.g., joint angles, end-effector pose) as discrete tokens, often via binning.
+Used in early/many Transformer-based VLAs like [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818) to fit the language modeling paradigm. May have limitations in precision and high-frequency control.
 
 * **Continuous Action Regression:** Directly predicting continuous action vectors. 
-Sometimes used in conjunction with other methods or implemented via specific heads. L1 regression is used in OpenVLA-OFT.
+Sometimes used in conjunction with other methods or implemented via specific heads. L1 regression is used in [OpenVLA-OFT](https://openvla-oft.github.io/).
 
 * **Diffusion Policies for Actions:** Modeling action generation as a denoising diffusion process. 
-Good at capturing multi-modality and continuous spaces. E.g., Diffusion Policy, Octo (diffusion head), SUDD, MDT, RDT-1B, DexVLA, DiVLA, TinyVLA, DTP. Can be slow due to iterative sampling.
+Good at capturing multi-modality and continuous spaces. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (diffusion head), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514). Can be slow due to iterative sampling.
 
-* **Flow Matching:** An alternative generative method for continuous actions, used in π0 for efficient, high-frequency (50Hz) trajectory generation.
+* **Flow Matching:** An alternative generative method for continuous actions, used in [π0](https://www.physicalintelligence.company/blog/pi0) for efficient, high-frequency (50Hz) trajectory generation.
 
 * **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. 
-Used in ACT, RoboAgent, π0, PD-VLA. Increases action dimensionality and inference time when using AR decoding.
+Used in ACT, RoboAgent, [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). Increases action dimensionality and inference time when using AR decoding.
 
-* **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. E.g., PD-VLA.
+* **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. E.g., [PD-VLA](https://arxiv.org/abs/2503.02310).
 
 * **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. 
 E.g., [FAST], designed for dexterous, high-frequency tasks.
@@ -544,7 +548,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * Future directions: Improved sample efficiency (RL, self-supervision), sim-to-real transfer, automated data generation, efficient architectures (SSMs, MoEs), data filtering/weighting.
 * **Inference Speed & Real-Time Control:** Current large VLAs may be too slow for the high-frequency control loops needed for dynamic tasks or dexterous manipulation. 
 
-    * Future directions: Smaller/compact models (TinyVLA), efficient architectures (RoboMamba), parallel decoding (PD-VLA), action chunking optimization ([FAST](https://arxiv.org/abs/2501.09747)), model distillation (OneDP, RPD), hardware acceleration.
+    * Future directions: Smaller/compact models ([TinyVLA](https://arxiv.org/abs/2409.12514)), efficient architectures (RoboMamba), parallel decoding ([PD-VLA](https://arxiv.org/abs/2503.02310)), action chunking optimization ([FAST](https://arxiv.org/abs/2501.09747)), model distillation (OneDP, RPD), hardware acceleration.
 * **Robustness & Reliability:** Ensuring consistent performance across variations in environment, lighting, object appearance, disturbances, and unexpected events. Current models can be brittle. 
 
     * Future directions: Adversarial training, improved grounding, better 3D understanding, closed-loop feedback, anomaly detection, incorporating physical priors, testing frameworks (VLATest).
