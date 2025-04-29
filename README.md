@@ -306,7 +306,7 @@ Good at capturing multi-modality and continuous spaces. E.g., [Diffusion Policy]
 * **Flow Matching:** An alternative generative method for continuous actions, used in [π0](https://www.physicalintelligence.company/blog/pi0) for efficient, high-frequency (50Hz) trajectory generation.
 
 * **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. 
-Used in ACT, RoboAgent, [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). Increases action dimensionality and inference time when using AR decoding.
+Used in [CogACT](https://cogact.github.io/), [RoboAgent](https://robopen.github.io/), [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). Increases action dimensionality and inference time when using AR decoding.
 
 * **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. E.g., [PD-VLA](https://arxiv.org/abs/2503.02310).
 
@@ -495,7 +495,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 
     * Benchmark for long-horizon language-conditioned manipulation. 
 
-* **ManiSkill (1, 2, 3)** [[Project](https://maniskill.ai/).]
+* **ManiSkill (1, 2, 3)** [[Project](https://maniskill.ai/)]
 
     * Large-scale benchmark for generalizable manipulation skills, based on SAPIEN. 
 
