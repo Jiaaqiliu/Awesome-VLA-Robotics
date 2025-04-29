@@ -327,7 +327,7 @@ Focuses on how VLA models are trained and adapted.
 * **Imitation Learning (IL) / Behavior Cloning (BC):** Dominant paradigm, training VLAs to mimic expert demonstrations (often from teleoperation). 
 Used for [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [OpenVLA](https://arxiv.org/abs/2406.09246) pre-training, [Octo](https://arxiv.org/abs/2405.12213), [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), etc. Heavily reliant on large-scale, diverse, high-quality datasets. Performance is often limited by the quality of the demonstrations.
 
-* **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. E.g., [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), SafeVLA (Constrained RL for safety).
+* **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. E.g., [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety).
 
 * **Pre-training & Fine-tuning:** Standard approach, involving pre-training on large datasets (web data for VLM backbones, large robot datasets like OpenX for VLAs) and then fine-tuning on specific tasks or robots.
 
@@ -348,13 +348,13 @@ there's a growing trend towards combining it with interactive learning (RL) for 
 
 Focuses on input data types beyond standard RGB images and text used by VLAs, and how they ground these inputs.
 
-* **Integrating Speech:** Control via spoken commands, potentially capturing nuances missed by text. Requires handling the speech modality directly or via ASR. E.g., VLAS (direct integration), Shake-VLA (uses external STT/TTS).
+* **Integrating Speech:** Control via spoken commands, potentially capturing nuances missed by text. Requires handling the speech modality directly or via ASR. E.g., [VLAS](https://arxiv.org/abs/2502.13508) (direct integration), Shake-VLA (uses external STT/TTS).
 
 * **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. E.g., 3D-VLA, PerAct, Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, [SpatialVLA](https://spatialvla.github.io/).
 
-* **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in VLAS, PaLM-E, π0 (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
+* **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in [VLAS](https://arxiv.org/abs/2502.13508), [PaLM-E](https://arxiv.org/abs/2303.03378), [π0](https://www.physicalintelligence.company/blog/pi0) (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 
-* **Multimodal Prompts:** Handling instructions that include images or video in addition to text. E.g., VIMA.
+* **Multimodal Prompts:** Handling instructions that include images or video in addition to text. E.g., [VIMA](https://arxiv.org/abs/2210.03094).
 
 * **Grounding:** The process of linking language descriptions or visual perceptions to specific entities, locations, or actions in the physical world or robot representation. Addressed via various techniques like similarity matching, leveraging common-sense knowledge, multimodal alignment, or interaction. LLM-Grounder focuses on open-vocabulary 3D visual grounding.
 
@@ -537,7 +537,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 
 * **OK-VQA** [[Project](https://okvqa.allenai.org/)].
 
-    * Visual question answering benchmark requiring external knowledge, used to evaluate the general VLM abilities of PaLM-E. 
+    * Visual question answering benchmark requiring external knowledge, used to evaluate the general VLM abilities of [PaLM-E](https://arxiv.org/abs/2303.03378). 
 
 * **Symbiotic Relationship of Models, Data, and Simulation:** VLA progress is tightly coupled with the availability of large-scale datasets (OpenX being crucial) and powerful simulators (Isaac Sim, MuJoCo enabling large-scale training). Benchmarks (CALVIN, ManiSkill) drive standardized evaluation. However, the cost of real-world data collection and the persistent sim-to-real gap remain major bottlenecks, driving research into data augmentation, sim-to-real techniques, data-efficient learning, and automated data collection. The ecosystem of models, datasets, simulators, and benchmarks co-evolves, with limitations in one area (e.g., real data cost) driving innovation in others (e.g., simulation, data efficiency). Overcoming data/simulation limitations is key to unlocking the potential of VLAs.
 
@@ -557,7 +557,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * Future directions: Training on more diverse data (OpenX), effective utilization of VLM pre-training knowledge, compositional reasoning, continual/lifelong learning, better action representations.
 * **Safety & Alignment:** Explicitly incorporating safety constraints to prevent harm to the robot, the environment, or humans. Ensuring alignment with user intent. Crucial for real-world deployment. 
 
-    * Future directions: Constrained reinforcement learning (SafeVLA), formal verification, human oversight mechanisms, robust failure detection/recovery, ethical considerations.
+    * Future directions: Constrained reinforcement learning ([SafeVLA](https://arxiv.org/pdf/2503.03480)), formal verification, human oversight mechanisms, robust failure detection/recovery, ethical considerations.
 * **Dexterity & Contact-Rich Tasks:** Improving performance on tasks requiring fine motor skills, precise force control, and handling complex object interactions. Current VLAs often lag behind specialized methods in this area. 
 
     * Future directions: Better action representations ([FAST](https://arxiv.org/pdf/2501.09747), Diffusion), integration of tactile sensing, improved physical understanding/simulation, hybrid control approaches.
@@ -567,7 +567,8 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 * **Multimodality Expansion:** Integrating richer sensory inputs beyond vision + language, such as audio/speech, touch, force, 3D. 
 
     * Future directions: Developing architectures and alignment techniques for diverse modalities.
-* **The Tension Between Generalization and Specialization/Performance:** While a core promise of VLAs is to leverage large pre-trained models for generalization, achieving high success rates on specific, complex, or novel tasks often requires significant fine-tuning or specialized components. This creates a tension: how to achieve expert-level performance while maintaining broad generalization? Future research needs to balance general capabilities with task-specific proficiency, potentially through more effective adaptation techniques (e.g., PEFT), modular architectures (e.g., MoEs), or methods that combine general priors with task-specific learning.
+* **The Tension Between Generalization and Specialization/Performance:** While a core promise of VLAs is to leverage large pre-trained models for generalization, achieving high success rates on specific, complex, or novel tasks often requires significant fine-tuning or specialized components. This creates a tension: how to achieve expert-level performance while maintaining broad generalization? 
+Future research needs to balance general capabilities with task-specific proficiency, potentially through more effective adaptation techniques (e.g., [PEFT](https://github.com/huggingface/peft)), modular architectures (e.g., MoEs), or methods that combine general priors with task-specific learning.
 
 ## Related Awesome Lists
 
