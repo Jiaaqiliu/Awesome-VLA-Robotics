@@ -311,12 +311,12 @@ Used in ACT, RoboAgent, [π0](https://www.physicalintelligence.company/blog/pi0)
 * **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. E.g., [PD-VLA](https://arxiv.org/abs/2503.02310).
 
 * **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. 
-E.g., [FAST], designed for dexterous, high-frequency tasks.
+E.g., [FAST](https://arxiv.org/pdf/2501.09747), designed for dexterous, high-frequency tasks.
 
 * **Point-based Actions:** Using VLMs to predict keypoints or goal locations rather than full trajectories. 
-E.g., PIVOT, RoboPoint, ReKep.
+E.g., [PIVOT](https://arxiv.org/abs/2402.07872), [RoboPoint](https://arxiv.org/abs/2406.10721), [ReKep](https://arxiv.org/pdf/2409.01652).
 
-* **Mid-Level Language Actions:** Generating actions as natural language commands to be consumed by a lower-level policy. E.g., NaVILA.
+* **Mid-Level Language Actions:** Generating actions as natural language commands to be consumed by a lower-level policy. E.g., [NaVILA](https://arxiv.org/abs/2412.04453).
 
 * **Action Generation as a Core VLA Challenge:** The diversity and rapid evolution of action representation/generation techniques highlight its importance and difficulty. The limitations of simple tokenization are driving innovations like diffusion models, flow matching, specialized tokenizers, and parallel decoding to balance precision, efficiency, and compatibility with large sequence models. This focus indicates that effectively translating high-level understanding into low-level physical control may be *the* core challenge that VLAs must address to move beyond standard VLM capabilities. Success requires a shift from simple VLM adaptation to action modeling techniques specifically designed for robotics.
 
@@ -325,19 +325,19 @@ E.g., PIVOT, RoboPoint, ReKep.
 Focuses on how VLA models are trained and adapted.
 
 * **Imitation Learning (IL) / Behavior Cloning (BC):** Dominant paradigm, training VLAs to mimic expert demonstrations (often from teleoperation). 
-Used for RT-1, RT-2, OpenVLA pre-training, Octo, Diffusion Policy, etc. Heavily reliant on large-scale, diverse, high-quality datasets. Performance is often limited by the quality of the demonstrations.
+Used for [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [OpenVLA](https://arxiv.org/abs/2406.09246) pre-training, [Octo](https://arxiv.org/abs/2405.12213), [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), etc. Heavily reliant on large-scale, diverse, high-quality datasets. Performance is often limited by the quality of the demonstrations.
 
-* **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. E.g., iRe-VLA (iterative RL/SFT), MoRE (RL objective for MoE VLAs handling mixed data), RPD (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), SafeVLA (Constrained RL for safety).
+* **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. E.g., [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), SafeVLA (Constrained RL for safety).
 
 * **Pre-training & Fine-tuning:** Standard approach, involving pre-training on large datasets (web data for VLM backbones, large robot datasets like OpenX for VLAs) and then fine-tuning on specific tasks or robots.
 
-* **Parameter-Efficient Fine-Tuning (PEFT):** Techniques like LoRA to efficiently adapt large VLAs without retraining the entire model, crucial for practical deployment and customization. MoRE uses LoRA modules as experts.
+* **Parameter-Efficient Fine-Tuning (PEFT):** Techniques like LoRA to efficiently adapt large VLAs without retraining the entire model, crucial for practical deployment and customization. [MoRE](https://arxiv.org/abs/2503.08007) uses LoRA modules as experts.
 
 * **Distillation:** Training smaller, faster models (students) to mimic the behavior of larger, slower models (teachers). 
-E.g., RPD (distilling a VLA to an RL policy), OneDP (distilling a diffusion policy).
+E.g., [RPD](https://arxiv.org/abs/2503.05833) (distilling a VLA to an RL policy), [OneDP](https://arxiv.org/abs/2410.21257) (distilling a diffusion policy).
 
 * **Curriculum Learning:** Structuring the learning process, e.g., by embodiment complexity. 
-E.g., DexVLA uses embodied curriculum.
+E.g., [DexVLA](https://arxiv.org/pdf/2502.05855) uses embodied curriculum.
 
 * **Learning from Mixed-Quality Data:** Using techniques (e.g., RL in MoRE) to learn effectively even when demonstration data is suboptimal or contains failures.
 
@@ -548,7 +548,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * Future directions: Improved sample efficiency (RL, self-supervision), sim-to-real transfer, automated data generation, efficient architectures (SSMs, MoEs), data filtering/weighting.
 * **Inference Speed & Real-Time Control:** Current large VLAs may be too slow for the high-frequency control loops needed for dynamic tasks or dexterous manipulation. 
 
-    * Future directions: Smaller/compact models ([TinyVLA](https://arxiv.org/abs/2409.12514)), efficient architectures (RoboMamba), parallel decoding ([PD-VLA](https://arxiv.org/abs/2503.02310)), action chunking optimization ([FAST](https://arxiv.org/abs/2501.09747)), model distillation (OneDP, RPD), hardware acceleration.
+    * Future directions: Smaller/compact models ([TinyVLA](https://arxiv.org/abs/2409.12514)), efficient architectures (RoboMamba), parallel decoding ([PD-VLA](https://arxiv.org/abs/2503.02310)), action chunking optimization ([FAST](https://arxiv.org/abs/2501.09747)), model distillation ([OneDP](https://arxiv.org/abs/2410.21257), [RPD](https://arxiv.org/abs/2503.05833) ), hardware acceleration.
 * **Robustness & Reliability:** Ensuring consistent performance across variations in environment, lighting, object appearance, disturbances, and unexpected events. Current models can be brittle. 
 
     * Future directions: Adversarial training, improved grounding, better 3D understanding, closed-loop feedback, anomaly detection, incorporating physical priors, testing frameworks (VLATest).
@@ -560,7 +560,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * Future directions: Constrained reinforcement learning (SafeVLA), formal verification, human oversight mechanisms, robust failure detection/recovery, ethical considerations.
 * **Dexterity & Contact-Rich Tasks:** Improving performance on tasks requiring fine motor skills, precise force control, and handling complex object interactions. Current VLAs often lag behind specialized methods in this area. 
 
-    * Future directions: Better action representations (FAST, Diffusion), integration of tactile sensing, improved physical understanding/simulation, hybrid control approaches.
+    * Future directions: Better action representations ([FAST](https://arxiv.org/pdf/2501.09747), Diffusion), integration of tactile sensing, improved physical understanding/simulation, hybrid control approaches.
 * **Reasoning & Long-Horizon Planning:** Enhancing the ability for multi-step reasoning, long-horizon planning, and handling complex instructions. 
 
     * Future directions: Hierarchical architectures, explicit planning modules, chain-of-thought reasoning (visual/textual), memory mechanisms, world models.
