@@ -81,6 +81,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 | CoT-VLA | Incorporates explicit Visual Chain-of-Thought (Visual CoT); Predicts future goal images before generating actions; Hybrid attention mechanism | Llama 2 (ViT vision) | Action binning + Token output (after predicting visual goals) | [arXiv 2024](https://arxiv.org/abs/2503.22020) | [Project](https://cot-vla.github.io/) |
 | TinyVLA | Compact, fast, and data-efficient VLA; Requires no pre-training; Uses small VLM + diffusion policy decoder | MobileVLM V2 / Moondream2 + Diffusion Policy Decoder | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2409.12514) | [Project](https://tiny-vla.github.io/) |
 | CogACT | Componentized VLA architecture; Specialized action module (Diffusion Action Transformer) conditioned on VLM output; Significantly outperforms OpenVLA / RT-2-X | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2411.19650) | [Project](https://cogact.github.io/) |
+| TLA | Tactile-Language-Action (TLA) model; sequential tactile feedback via cross-modal language grounding to enable robust policy generation in contact-intensive scenarios. | Qwen2 7B + LoRA + Qwen2-VL | Qwen2 | [arXiv 2025](https://arxiv.org/abs/2503.08548) | [Project](https://sites.google.com/view/tactile-language-action/) |
+| OpenVLA-OFT | Optimized Fine-Tuning (OFT)  | Llama 2 (DINOv2 + SigLIP vision) | L1 regression  | [arXiv 2025](https://arxiv.org/abs/2502.19645) | [Project](https://openvla-oft.github.io/) |
+| RDT |  Robotics Diffusion | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2410.07864) | [Project](https://rdt-robotics.github.io/rdt-robotics/) |
 
 ### By Application Area
 
