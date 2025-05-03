@@ -19,6 +19,7 @@ Contributions are welcome!
         - [Action Representation & Generation](#action-representation--generation)
         - [Learning Paradigms](#learning-paradigms)
         - [Input Modalities & Grounding](#input-modalities--grounding)
+        - [Fine-tuning Improvement Methods](#fine-tuning)
 - [Datasets and Benchmarks](#datasets-and-benchmarks)
     - [Quick Glance at Datasets and Benchmarks](#quick-glance-at-datasets-and-benchmarks)
     - [Robot Learning Datasets](#robot-learning-datasets)
@@ -362,6 +363,10 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 * **Grounding:** The process of linking language descriptions or visual perceptions to specific entities, locations, or actions in the physical world or robot representation. Addressed via various techniques like similarity matching, leveraging common-sense knowledge, multimodal alignment, or interaction. LLM-Grounder focuses on open-vocabulary 3D visual grounding.
 
 * **The Need for Richer World Representations:** The increasing integration of 3D vision and speech indicates that standard RGB images and text may be insufficient for robust, nuanced robot interaction in complex environments. 3D data provides crucial spatial context missing from 2D images, while speech offers a more natural HRI modality. This trend suggests that future VLAs will become truly "multi-sensory" agents, moving beyond just vision and language. The VLA paradigm is expanding beyond its name ("Vision-Language-Action") to incorporate the richer sensory inputs (3D, speech, proprioception) needed for effective manipulation and interaction in the complex physical world, moving towards more general-purpose multimodal embodied agents.
+
+### Fine-turning
+* ***FT by RL*
+    - [ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy](https://cccedric.github.io/conrft/), RSS 2025
 
 ## Datasets and Benchmarks
 
