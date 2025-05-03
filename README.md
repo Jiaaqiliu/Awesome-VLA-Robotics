@@ -283,7 +283,6 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2025] Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration**
    [[paper](https://arxiv.org/pdf/2502.14795)]
 
-
 ### By Technical Approach
 
 #### Model Architectures
