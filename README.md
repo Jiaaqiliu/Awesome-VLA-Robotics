@@ -14,6 +14,7 @@ Contributions are welcome!
         - [Navigation](#navigation)
         - [Human-Robot Interaction (HRI)](#human-robot-interaction-hri)
         - [Task Planning / Reasoning](#task-planning--reasoning)
+        - [Humanoid](#humanoid)
     - [By Technical Approach](#by-technical-approach)
         - [Model Architectures](#model-architectures)
         - [Action Representation & Generation](#action-representation--generation)
@@ -269,6 +270,16 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
    [[paper](https://arxiv.org/abs/2207.05608)] [[project](https://inner-monologue.github.io/)]
 - **[2022] Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (SayCan)**
    [[paper](https://arxiv.org/abs/2204.01691)] [[project](https://say-can.github.io/)] [[code](https://github.com/google-research/google-research/tree/master/saycan)]
+
+#### Humanoid
+- **[2025] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
+ [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
+- **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
+ [[project](https://www.figure.ai/news/helix)]
+- **[2025] Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration**
+   [[paper](https://arxiv.org/pdf/2502.14795)]
+
+
 ### By Technical Approach
 
 #### Model Architectures
