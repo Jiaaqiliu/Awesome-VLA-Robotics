@@ -60,6 +60,7 @@ Contributions are welcome!
 - [2024] A Survey on Integration of Large Language Models with Intelligent Robots. [[paper](https://arxiv.org/abs/2404.09228)]
 - [2024] Vision-Language Models for Vision Tasks: A Survey. [[paper](https://arxiv.org/abs/2304.00685)]
 - [2024] A Survey of Embodied Learning for Object-Centric Robotic Manipulation [[paper](https://arxiv.org/pdf/2408.11537)]
+- [2024] Vision-language navigation: a survey and taxonomy [[paper](https://arxiv.org/pdf/2108.11544)]
 - [2023] Toward general-purpose robots via foundation models: A survey and meta-analysis. [[paper](https://arxiv.org/abs/2312.08782)]
 - [2023] Robot learning in the era of foundation models: A survey. [[paper](https://arxiv.org/abs/2311.14379)]
 
