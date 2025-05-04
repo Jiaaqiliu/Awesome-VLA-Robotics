@@ -348,6 +348,8 @@ Used for [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/
 * **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. E.g., [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety).
 
 * **Pre-training & Fine-tuning:** Standard approach, involving pre-training on large datasets (web data for VLM backbones, large robot datasets like OpenX for VLAs) and then fine-tuning on specific tasks or robots.
+    * **Fine-tuning by RL**
+        - **[2025] ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy**, RSS 2025 [[Paper](https://arxiv.org/abs/2502.05450)][[Project](https://cccedric.github.io/conrft/)]
 
 * **Parameter-Efficient Fine-Tuning (PEFT):** Techniques like LoRA to efficiently adapt large VLAs without retraining the entire model, crucial for practical deployment and customization. [MoRE](https://arxiv.org/abs/2503.08007) uses LoRA modules as experts.
 
@@ -378,8 +380,8 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 
 * **The Need for Richer World Representations:** The increasing integration of 3D vision and speech indicates that standard RGB images and text may be insufficient for robust, nuanced robot interaction in complex environments. 3D data provides crucial spatial context missing from 2D images, while speech offers a more natural HRI modality. This trend suggests that future VLAs will become truly "multi-sensory" agents, moving beyond just vision and language. The VLA paradigm is expanding beyond its name ("Vision-Language-Action") to incorporate the richer sensory inputs (3D, speech, proprioception) needed for effective manipulation and interaction in the complex physical world, moving towards more general-purpose multimodal embodied agents.
 
-### Fine-turning
-* ***FT by RL*
+### Fine-tuning
+* **FT by RL**
     - [ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy](https://cccedric.github.io/conrft/), RSS 2025
 
 ## Datasets and Benchmarks
