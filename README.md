@@ -5,31 +5,31 @@ Contributions are welcome!
 
 ## Table of Contents
 
-- [What are VLA Models in Robotics?](#what-are-vla-models-in-robotics)
-- [Survey papers](#survey-papers)
-- [Key VLA Models and Research Papers](#key-vla-models-and-research-papers)
-    - [Quick Glance at Key VLA Models](#q)
-    - [By Application Area](#by-application-area)
-        - [Manipulation](#manipulation)
-        - [Navigation](#navigation)
-        - [Human-Robot Interaction (HRI)](#human-robot-interaction-hri)
-        - [Task Planning / Reasoning](#task-planning--reasoning)
-        - [Humanoid](#humanoid)
-    - [By Technical Approach](#by-technical-approach)
-        - [Model Architectures](#model-architectures)
-        - [Action Representation & Generation](#action-representation--generation)
-        - [Learning Paradigms](#learning-paradigms)
-        - [Input Modalities & Grounding](#input-modalities--grounding)
-        - [Fine-tuning Improvement Methods](#fine-tuning)
-- [Datasets and Benchmarks](#datasets-and-benchmarks)
-    - [Quick Glance at Datasets and Benchmarks](#quick-glance-at-datasets-and-benchmarks)
-    - [Robot Learning Datasets](#robot-learning-datasets)
-    - [Simulation Environments](#simulation-environments)
-    - [Evaluation Benchmarks](#evaluation-benchmarks)
-- [Related Awesome Lists](#related-awesome-lists)
-- [Challenges and Future Directions](#challenges-and-future-directions)
+- [1. What are VLA Models in Robotics?](#1-what-are-vla-models-in-robotics)
+- [2. Survey papers](#2-survey-papers)
+- [3. Key VLA Models and Research Papers](#3-key-vla-models-and-research-papers)
+    - [3.1 Quick Glance at Key VLA Models](#31-quick-glance-at-key-vla-models)
+    - [3.2 By Application Area](#32-by-application-area)
+        - [3.2.1 Manipulation](#321-manipulation)
+        - [3.2.2 Navigation](#322-navigation)
+        - [3.2.3 Human-Robot Interaction (HRI)](#323-human-robot-interaction-hri)
+        - [3.2.4 Task Planning / Reasoning](#324-task-planning--reasoning)
+        - [3.2.5 Humanoid](#325-humanoid)
+    - [3.3 By Technical Approach](#33-by-technical-approach)
+        - [3.3.1 Model Architectures](#331-model-architectures)
+        - [3.3.2 Action Representation & Generation](#332-action-representation--generation)
+        - [3.3.3 Learning Paradigms](#333-learning-paradigms)
+        - [3.3.4 Input Modalities & Grounding](#334-input-modalities--grounding)
+        - [3.3.5 Fine-tuning Improvement Methods](#335-fine-tuning)
+- [4. Datasets and Benchmarks](#4-datasets-and-benchmarks)
+    - [4.1 Quick Glance at Datasets and Benchmarks](#41-quick-glance-at-datasets-and-benchmarks)
+    - [4.2 Robot Learning Datasets](#42-robot-learning-datasets)
+    - [4.3 Simulation Environments](#43-simulation-environments)
+    - [4.4 Evaluation Benchmarks](#44-evaluation-benchmarks)
+- [5. Challenges and Future Directions](#5-challenges-and-future-directions)
+- [6. Related Awesome Lists](#6-related-awesome-lists)
 
-## What are VLA Models in Robotics?
+## 1. What are VLA Models in Robotics?
 
 * **Definition:** Vision-Language-Action (VLA) models are a class of multimodal AI systems specifically designed for robotics and Embodied AI. They integrate visual perception (from cameras/sensors), natural language understanding (from text or voice commands), and action generation (physical movements or digital tasks) into a unified framework. Unlike traditional robotic systems that often treat perception, planning, and control as separate modules, VLAs aim for end-to-end or tightly integrated processing, similar to how the human brain processes these modalities simultaneously. The term "VLA" gained prominence with the introduction of the RT-2 model. Generally, a VLA is defined as any model capable of processing multimodal inputs (vision, language) to generate robotic actions for completing embodied tasks.
 
@@ -46,7 +46,7 @@ Contributions are welcome!
 
 * **Evolution from VLM Adaptation to Integrated Systems:** Early VLA research focused mainly on adapting existing VLMs by simply fine-tuning them to output action tokens (e.g., the initial concept of RT-2 ). However, the field is moving towards more integrated architectures where the action generation components are more sophisticated and co-designed (e.g., diffusion policies, specialized action modules, hierarchical systems like Helix  or NaVILA ). This evolution indicates that the definition of VLA is shifting from merely fine-tuning VLMs to designing specific VLA architectures that better address the unique requirements of robot action generation, while still leveraging the capabilities of VLMs.
 
-## Survey papers
+## 2. Survey papers
 
 - [2025] A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
 - [2025] Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]
@@ -66,11 +66,11 @@ Contributions are welcome!
 - [2023] Robot learning in the era of foundation models: A survey. [[paper](https://arxiv.org/abs/2311.14379)]
 
 
-## Key VLA Models and Research Papers
+## 3. Key VLA Models and Research Papers
 
 This section is the heart of the resource, listing specific VLA models and influential research papers. Papers are first categorized by major application area, then by key technical contributions. A paper/model may appear in multiple subsections if it is relevant to several categories.
 
-### **Quick Glance at Key VLA Models**
+### **3.1 Quick Glance at Key VLA Models**
 
 | Model Name | Key Contribution / Features | Base VLM / Architecture | Action Generation Method | Key Publication(s) | Project / Code |
 |---|---|---|---|---|---|
@@ -91,9 +91,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 | OpenVLA-OFT | Optimized Fine-Tuning (OFT)  | Llama 2 (DINOv2 + SigLIP vision) | L1 regression  | [arXiv 2025](https://arxiv.org/abs/2502.19645) | [Project](https://openvla-oft.github.io/) |
 | RDT |  Robotics Diffusion | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer | Diffusion Policy | [arXiv 2024](https://arxiv.org/abs/2410.07864) | [Project](https://rdt-robotics.github.io/rdt-robotics/) |
 
-### By Application Area
+### 3.2 By Application Area
 
-#### Manipulation
+#### 3.2.1 Manipulation
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
@@ -192,7 +192,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 
 
-#### Navigation
+#### 3.2.2 Navigation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
 - **[2025] Do Visual Imaginations Improve Vision-and-Language Navigation Agents?**
@@ -215,7 +215,7 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
    [[paper](https://arxiv.org/abs/2402.15852)] [[project](https://pku-epic.github.io/NaVid/)]
   
 
-#### Human-Robot Interaction (HRI)
+#### 3.2.3 Human-Robot Interaction (HRI)
 
 Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
 
@@ -231,7 +231,7 @@ Focuses on enabling more natural and effective interactions between humans and r
    [[project](https://www.figure.ai/news/helix)]
   
 
-#### Task Planning / Reasoning
+#### 3.2.4 Task Planning / Reasoning
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
@@ -276,7 +276,7 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2022] Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (SayCan)**
    [[paper](https://arxiv.org/abs/2204.01691)] [[project](https://say-can.github.io/)] [[code](https://github.com/google-research/google-research/tree/master/saycan)]
 
-#### Humanoid
+#### 3.2.5 Humanoid
 - **[2025] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
  [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
 - **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
@@ -284,9 +284,9 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2025] Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration**
    [[paper](https://arxiv.org/pdf/2502.14795)]
 
-### By Technical Approach
+### 3.3 By Technical Approach
 
-#### Model Architectures
+#### 3.3.1 Model Architectures
 
 Focuses on the core neural network architectures used in VLA models.
 
@@ -308,7 +308,7 @@ E.g., [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using
 
 * **Architectural Diversification for Capability and Efficiency:** While Transformers are foundational, their limitations in handling continuous actions, computational cost, and reasoning depth are driving researchers to explore alternative or hybrid architectures. Diffusion models excel at action generation, hierarchical systems improve reasoning/control separation, SSMs promise efficiency, and MoEs aim for adaptive specialization. This diversification indicates an active search for architectures better suited to the specific constraints and needs of robotics than those designed purely for vision-language tasks. This has led to the emergence of hybrid and specialized designs to address the unique challenges of real-time control, action modeling, efficiency, and complex reasoning in robotics.
 
-#### Action Representation & Generation
+#### 3.3.2 Action Representation & Generation
 
 Focuses on how robot actions are represented (e.g., discrete tokens vs. continuous vectors) and how models generate them. This is a key area differentiating VLAs from VLMs.
 
@@ -338,7 +338,7 @@ E.g., [PIVOT](https://arxiv.org/abs/2402.07872), [RoboPoint](https://arxiv.org/a
 
 * **Action Generation as a Core VLA Challenge:** The diversity and rapid evolution of action representation/generation techniques highlight its importance and difficulty. The limitations of simple tokenization are driving innovations like diffusion models, flow matching, specialized tokenizers, and parallel decoding to balance precision, efficiency, and compatibility with large sequence models. This focus indicates that effectively translating high-level understanding into low-level physical control may be *the* core challenge that VLAs must address to move beyond standard VLM capabilities. Success requires a shift from simple VLM adaptation to action modeling techniques specifically designed for robotics.
 
-#### Learning Paradigms
+#### 3.3.3 Learning Paradigms
 
 Focuses on how VLA models are trained and adapted.
 
@@ -364,7 +364,7 @@ E.g., [DexVLA](https://arxiv.org/pdf/2502.05855) uses embodied curriculum.
 * **Bridging Imitation and Interaction:** While Imitation Learning (IL) on large-scale datasets like OpenX is foundational for creating general-purpose VLAs, 
 there's a growing trend towards combining it with interactive learning (RL) for fine-tuning and improvement. This hybrid approach aims to leverage the broad knowledge of IL datasets while overcoming IL's limitations (suboptimality, dataset cost) by enabling robots to adapt and potentially surpass human demonstrators through environmental interaction. The challenge lies in making RL stable and efficient for large VLA models. This trend indicates a direction towards combining the strengths of both: broad generalization via large-scale IL pre-training, and targeted refinement and adaptation via efficient and stable RL fine-tuning.
 
-#### Input Modalities & Grounding
+#### 3.3.4 Input Modalities & Grounding
 
 Focuses on input data types beyond standard RGB images and text used by VLAs, and how they ground these inputs.
 
@@ -380,15 +380,15 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 
 * **The Need for Richer World Representations:** The increasing integration of 3D vision and speech indicates that standard RGB images and text may be insufficient for robust, nuanced robot interaction in complex environments. 3D data provides crucial spatial context missing from 2D images, while speech offers a more natural HRI modality. This trend suggests that future VLAs will become truly "multi-sensory" agents, moving beyond just vision and language. The VLA paradigm is expanding beyond its name ("Vision-Language-Action") to incorporate the richer sensory inputs (3D, speech, proprioception) needed for effective manipulation and interaction in the complex physical world, moving towards more general-purpose multimodal embodied agents.
 
-### Fine-tuning
+### 3.3.5 Fine-tuning
 * **FT by RL**
     - [ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy](https://cccedric.github.io/conrft/), RSS 2025
 
-## Datasets and Benchmarks
+## 4. Datasets and Benchmarks
 
 This section lists key resources for training and evaluating VLA models. Large-scale, diverse datasets and standardized benchmarks are crucial for progress in the field.
 
-### **Quick Glance at Datasets and Benchmarks**
+### **4.1 Quick Glance at Datasets and Benchmarks**
 
 | Name | Type | Focus Area | Key Features / Environment | Link | Key Publication |
 |---|---|---|---|---|---|
@@ -406,7 +406,7 @@ This section lists key resources for training and evaluating VLA models. Large-s
 | RLBench | Benchmark | Robot Learning Manipulation | 100+ manipulation tasks, CoppeliaSim (V-REP) | [Project](https://sites.google.com/view/rlbench) | [arxiv](https://arxiv.org/abs/1909.12271) |
 | VLN-CE / R2R / RxR | Benchmark | Vision-Language Nav | Standard VLN benchmarks, often run in Habitat | [VLN-CE](https://github.com/jacobkrantz/VLN-CE),[R2R-EnvDrop](https://github.com/airsplay/R2R-EnvDrop),[RxR](https://github.com/google-research-datasets/RxR) | - |
 
-### Robot Learning Datasets
+### 4.2 Robot Learning Datasets
 
 Large-scale datasets of robot interaction trajectories, often with accompanying language instructions and visual observations. Crucial for training general-purpose policies via imitation learning.
 
@@ -467,7 +467,7 @@ Large-scale datasets of robot interaction trajectories, often with accompanying 
 
     * Standardized datasets for offline RL research, potentially useful for RL-based VLA methods. 
 
-### Simulation Environments
+### 4.3 Simulation Environments
 
 Physics-based simulators used to train agents, generate synthetic data, and evaluate policies in controlled settings before real-world deployment.
 
@@ -511,7 +511,7 @@ Physics-based simulators used to train agents, generate synthetic data, and eval
 
     * Learns interactive simulators from real-world videos. 
 
-### Evaluation Benchmarks
+### 4.4 Evaluation Benchmarks
 
 Standardized suites of environments and tasks used to evaluate and compare the performance of VLA models and other robot learning algorithms.
 
@@ -565,7 +565,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 
 * **Symbiotic Relationship of Models, Data, and Simulation:** VLA progress is tightly coupled with the availability of large-scale datasets (OpenX being crucial) and powerful simulators (Isaac Sim, MuJoCo enabling large-scale training). Benchmarks (CALVIN, ManiSkill) drive standardized evaluation. However, the cost of real-world data collection and the persistent sim-to-real gap remain major bottlenecks, driving research into data augmentation, sim-to-real techniques, data-efficient learning, and automated data collection. The ecosystem of models, datasets, simulators, and benchmarks co-evolves, with limitations in one area (e.g., real data cost) driving innovation in others (e.g., simulation, data efficiency). Overcoming data/simulation limitations is key to unlocking the potential of VLAs.
 
-## Challenges and Future Directions
+## 5. Challenges and Future Directions
 
 * **Data Efficiency & Scalability:** Reducing reliance on massive, expensive, expert-driven datasets. Improving the ability to learn from limited, mixed-quality, or internet-sourced data. Efficiently scaling models and training processes. 
 
@@ -594,7 +594,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 * **The Tension Between Generalization and Specialization/Performance:** While a core promise of VLAs is to leverage large pre-trained models for generalization, achieving high success rates on specific, complex, or novel tasks often requires significant fine-tuning or specialized components. This creates a tension: how to achieve expert-level performance while maintaining broad generalization? 
 Future research needs to balance general capabilities with task-specific proficiency, potentially through more effective adaptation techniques (e.g., [PEFT](https://github.com/huggingface/peft)), modular architectures (e.g., MoEs), or methods that combine general priors with task-specific learning.
 
-## Related Awesome Lists
+## 6. Related Awesome Lists
 
 * Awesome-VLA:
 
