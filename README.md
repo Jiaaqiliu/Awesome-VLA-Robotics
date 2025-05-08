@@ -169,6 +169,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **[2024] Octo: An Open-Source Generalist Robot Policy [[paper](https://arxiv.org/pdf/2405.12213)] [[project](https://octo-models.github.io/)] [[Code](https://github.com/octo-models/octo)]** 
 
+* **[2024] RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation** [[paper](https://arxiv.org/pdf/2410.07864)]
+
 * **[2024] ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2409.01652)]  [[project](https://rekep-robot.github.io/)] [[code](https://github.com/huangwl18/ReKep)]
  
 * **[2024] OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics**  [[paper](https://arxiv.org/pdf/2401.12202)] [[project](https://ok-robot.github.io/)] [[code](https://github.com/ok-robot/ok-robot)]
@@ -182,6 +184,10 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 * **[2024] RoboMM: All-in-One Multimodal Large Model for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2412.07215v1)][[Code](https://github.com/RoboUniview/RoboMM)]
 
 * **[2024] Diffusion-VLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression** [[paper](https://arxiv.org/abs/2412.03293)] [[project](https://diffusion-vla.github.io/)]
+
+* **[2024] HiRT: Enhancing Robotic Control with Hierarchical Robot Transformers** [[paper](https://arxiv.org/pdf/2410.05273)]
+
+* **[2024] GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation** [[paper](https://arxiv.org/pdf/2410.06158)]
 
 ##### 2023
 * **[2023] RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**
