@@ -153,6 +153,12 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 * **[2025] RoboGround: Robotic Manipulation with Grounded Vision-Language Priors** [[paper](https://arxiv.org/pdf/2504.21530)] [[project](https://robo-ground.github.io/)]
 
 * **[2025] ViSA-Flow: Accelerating Robot Skill Learning via Large-Scale Video Semantic Action Flow** [[paper](https://arxiv.org/pdf/2505.01288)] [[project](https://visaflow-web.github.io/ViSAFLOW/)]
+
+* **[2025] Interleave-VLA: Enhancing Robot Manipulation with Interleaved Image-Text Instructions** [[paper](https://arxiv.org/pdf/2505.02152)] [[project](https://interleave-vla-anonymous.github.io/Interleave-VLA-Anonymous/)]
+
+* **[2025] OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2505.03912)] [[project](https://openhelix-robot.github.io/)]
+
+
 ##### 2024
 
 * **[2024] OpenVLA: An Open-Source Vision-Language-Action Model**
