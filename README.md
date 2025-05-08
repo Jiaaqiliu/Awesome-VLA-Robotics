@@ -145,7 +145,14 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 * **[2025] Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy** [[paper](https://arxiv.org/pdf/2410.15959v4)] [[project](https://robodita.github.io/)]
 
+* **[2025]  Gemini Robotics: Bringing AI into the Physical World**
+ [[report](https://storage.googleapis.com/deepmind-media/gemini-robotics/gemini_robotics_report.pdf)]
 
+* **[2025] ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy**, RSS 2025 [[Paper](https://arxiv.org/abs/2502.05450)][[Project](https://cccedric.github.io/conrft/)]
+
+* **[2025] RoboGround: Robotic Manipulation with Grounded Vision-Language Priors** [[paper](https://arxiv.org/pdf/2504.21530)] [[project](https://robo-ground.github.io/)]
+
+* **[2025] ViSA-Flow: Accelerating Robot Skill Learning via Large-Scale Video Semantic Action Flow** [[paper](https://arxiv.org/pdf/2505.01288)] [[project](https://visaflow-web.github.io/ViSAFLOW/)]
 ##### 2024
 
 * **[2024] OpenVLA: An Open-Source Vision-Language-Action Model**
