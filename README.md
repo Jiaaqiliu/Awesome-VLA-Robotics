@@ -51,6 +51,7 @@ Contributions are welcome!
 - [2025] A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
 - [2025] Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]
 - [2025] Vision-Language-Action Models: Concepts, Progress, Applications and Challenges [[paper](https://www.arxiv.org/abs/2505.04769)]
+- [2025] OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation [[paper](https://arxiv.org/pdf/2505.03912)]
 - [2025] Exploring Embodied Multimodal Large Models: Development, Datasets, and Future Directions [[paper](https://arxiv.org/pdf/2502.15336)]
 - [2025] Multimodal Fusion and Vision-Language Models: A Survey for Robot Vision [[paper](https://arxiv.org/pdf/2504.02477)] [[project](https://github.com/Xiaofeng-Han-Res/MF-RV)] 
 - [2025] Generative Artificial Intelligence in Robotic Manipulation: A Survey [[paper](https://arxiv.org/pdf/2503.03464)] [[project](https://github.com/GAI4Manipulation/AwesomeGAIManipulation)]
