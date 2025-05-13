@@ -324,20 +324,25 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 Focuses on the core neural network architectures used in VLA models.
 
 - **Transformer-based:** The dominant architecture, leveraging self-attention mechanisms to integrate vision, language, and action sequences. 
-Used in [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [Octo](https://arxiv.org/abs/2405.12213), [OpenVLA](https://arxiv.org/abs/2406.09246), [VIMA](https://arxiv.org/abs/2210.03094),[ QUART](https://arxiv.org/abs/2312.14457), etc.
+Applications:
+    - [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [Octo](https://arxiv.org/abs/2405.12213), [OpenVLA](https://arxiv.org/abs/2406.09246), [VIMA](https://arxiv.org/abs/2210.03094),[ QUART](https://arxiv.org/abs/2312.14457), etc.
 
 - **Diffusion-based:** Primarily for the action generation component, utilizing the ability of diffusion models to model complex distributions. 
-Often combined with a Transformer backbone. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (can use diffusion head), [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), 
+Often combined with a Transformer backbone. Applications:
+    -  [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (can use diffusion head), [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), 
 [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514), [Hybrid VLA+Diffusion](https://arxiv.org/abs/2503.10631).
 
 
 - **Hierarchical / Decoupled:** Architectures that separate high-level reasoning/planning (often VLM/LLM-based) from low-level control/execution 
-(which may be a separate policy). E.g., [Helix](https://www.figure.ai/news/helix) (System 1/2), [NaVILA](https://arxiv.org/abs/2412.04453) (VLA + Locomotion Policy), [Hi Robot](https://arxiv.org/pdf/2502.19417) (VLM + π0), [SayCan](https://arxiv.org/abs/2204.01691) (LLM + Value Function).
+(which may be a separate policy). Applications:
+    - [Helix](https://www.figure.ai/news/helix) (System 1/2), [NaVILA](https://arxiv.org/abs/2412.04453) (VLA + Locomotion Policy), [Hi Robot](https://arxiv.org/pdf/2502.19417) (VLM + π0), [SayCan](https://arxiv.org/abs/2204.01691) (LLM + Value Function).
 
-- **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. E.g., [RoboMamba](https://arxiv.org/abs/2406.04339).
+- **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. Applications:
+    - [RoboMamba](https://arxiv.org/abs/2406.04339)
 
 - **Mixture-of-Experts (MoE / MoLE):** Using sparsely activated expert modules for task adaptation or efficiency. 
-E.g., [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA). Componentized architecture in [CogACT](https://arxiv.org/abs/2411.19650) . [π0](https://www.physicalintelligence.company/blog/pi0) uses an MoE-like structure.
+Applications:
+    - [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA). Componentized architecture in [CogACT](https://arxiv.org/abs/2411.19650) . [π0](https://www.physicalintelligence.company/blog/pi0) uses an MoE-like structure.
 
 - **Architectural Diversification for Capability and Efficiency:** While Transformers are foundational, their limitations in handling continuous actions, computational cost, and reasoning depth are driving researchers to explore alternative or hybrid architectures. Diffusion models excel at action generation, hierarchical systems improve reasoning/control separation, SSMs promise efficiency, and MoEs aim for adaptive specialization. This diversification indicates an active search for architectures better suited to the specific constraints and needs of robotics than those designed purely for vision-language tasks. This has led to the emergence of hybrid and specialized designs to address the unique challenges of real-time control, action modeling, efficiency, and complex reasoning in robotics.
 
