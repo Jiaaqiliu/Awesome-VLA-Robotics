@@ -223,6 +223,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2022] Do As I Can, Not As I Say: Grounding Language in Robotic Affordances (SayCan)**
  [[paper](https://arxiv.org/abs/2204.01691)] [[project](https://say-can.github.io/)] [[code](https://github.com/google-research/google-research/tree/master/saycan)]
 
+- **[2022] Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation** [[paper](https://arxiv.org/abs/2209.05451v2)] [[project](https://peract.github.io/)] [[code](https://github.com/peract/peract)]
 
 
 #### 3.2.2 Navigation
@@ -419,7 +420,7 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
     -  [VLAS](https://arxiv.org/abs/2502.13508) (direct integration), [Shake-VLA](https://arxiv.org/abs/2501.06919) (uses external STT/TTS).
 
 - **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. Applications:
-    -  3D-VLA, PerAct, Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, [SpatialVLA](https://spatialvla.github.io/).
+    -  [3D-VLA](https://arxiv.org/pdf/2403.09631), [PerAct](https://arxiv.org/abs/2209.05451v2), Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, [SpatialVLA](https://spatialvla.github.io/).
 
 - **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in [VLAS](https://arxiv.org/abs/2502.13508), [PaLM-E](https://arxiv.org/abs/2303.03378), [π0](https://www.physicalintelligence.company/blog/pi0) (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 
