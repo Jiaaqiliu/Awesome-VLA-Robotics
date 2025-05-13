@@ -197,6 +197,12 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 - **[2024] GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation** [[paper](https://arxiv.org/pdf/2410.06158)]
 
+- **[2024] DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution** [[paper](https://arxiv.org/pdf/2411.02359)] [[code](https://github.com/yueyang130/DeeR-VLA)]
+
+- **[2024] RT-Affordance: Affordances are Versatile Intermediate Representations for Robot Manipulation** [[paper](https://arxiv.org/pdf/2411.02704)] 
+
+- **[2024] Moto: Latent Motion Token as the Bridging Language for Robot Manipulation** [[paper](https://arxiv.org/pdf/2412.04445)] [[project](https://chenyi99.github.io/moto/)]
+
 ##### 2023
 - **[2023] RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**
  [[paper](https://arxiv.org/abs/2307.15818)] [[project](https://robotics-transformer2.github.io/)]
