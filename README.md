@@ -415,9 +415,11 @@ there's a growing trend towards combining it with interactive learning (RL) for 
 
 Focuses on input data types beyond standard RGB images and text used by VLAs, and how they ground these inputs.
 
-- **Integrating Speech:** Control via spoken commands, potentially capturing nuances missed by text. Requires handling the speech modality directly or via ASR. E.g., [VLAS](https://arxiv.org/abs/2502.13508) (direct integration), Shake-VLA (uses external STT/TTS).
+- **Integrating Speech:** Control via spoken commands, potentially capturing nuances missed by text. Requires handling the speech modality directly or via ASR. Applications:
+    -  [VLAS](https://arxiv.org/abs/2502.13508) (direct integration), [Shake-VLA](https://arxiv.org/abs/2501.06919) (uses external STT/TTS).
 
-- **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. E.g., 3D-VLA, PerAct, Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, [SpatialVLA](https://spatialvla.github.io/).
+- **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. Applications:
+    -  3D-VLA, PerAct, Act3D, RVT, RVT-2, RoboUniView, DP3, 3D Diffuser Actor, LEO, 3D-LLM, LLM-Grounder, [SpatialVLA](https://spatialvla.github.io/).
 
 - **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in [VLAS](https://arxiv.org/abs/2502.13508), [PaLM-E](https://arxiv.org/abs/2303.03378), [π0](https://www.physicalintelligence.company/blog/pi0) (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 
