@@ -357,22 +357,28 @@ Used in early/many Transformer-based VLAs like [RT-1](https://arxiv.org/abs/2212
 Sometimes used in conjunction with other methods or implemented via specific heads. L1 regression is used in [OpenVLA-OFT](https://openvla-oft.github.io/).
 
 - **Diffusion Policies for Actions:** Modeling action generation as a denoising diffusion process. 
-Good at capturing multi-modality and continuous spaces. E.g., [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (diffusion head), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514). Can be slow due to iterative sampling.
+Good at capturing multi-modality and continuous spaces. Applications:
+    - [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (diffusion head), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514). Can be slow due to iterative sampling.
 
 - **Flow Matching:** An alternative generative method for continuous actions, used in [π0](https://www.physicalintelligence.company/blog/pi0) for efficient, high-frequency (50Hz) trajectory generation.
 
-- **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. 
-Used in [CogACT](https://cogact.github.io/), [RoboAgent](https://robopen.github.io/), [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). Increases action dimensionality and inference time when using AR decoding.
+- **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. Increases action dimensionality and inference time when using AR decoding.
+Applications:
+    -  [CogACT](https://cogact.github.io/), [RoboAgent](https://robopen.github.io/), [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). 
 
-- **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. E.g., [PD-VLA](https://arxiv.org/abs/2503.02310).
+- **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. Applications:
+    - [PD-VLA](https://arxiv.org/abs/2503.02310).
 
 - **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. 
-E.g., [FAST](https://arxiv.org/pdf/2501.09747), designed for dexterous, high-frequency tasks.
+Applications:
+    - [FAST](https://arxiv.org/pdf/2501.09747) (designed for dexterous, high-frequency tasks).
 
 - **Point-based Actions:** Using VLMs to predict keypoints or goal locations rather than full trajectories. 
-E.g., [PIVOT](https://arxiv.org/abs/2402.07872), [RoboPoint](https://arxiv.org/abs/2406.10721), [ReKep](https://arxiv.org/pdf/2409.01652).
+Applications:
+    -  [PIVOT](https://arxiv.org/abs/2402.07872), [RoboPoint](https://arxiv.org/abs/2406.10721), [ReKep](https://arxiv.org/pdf/2409.01652).
 
-- **Mid-Level Language Actions:** Generating actions as natural language commands to be consumed by a lower-level policy. E.g., [NaVILA](https://arxiv.org/abs/2412.04453).
+- **Mid-Level Language Actions:** Generating actions as natural language commands to be consumed by a lower-level policy. Applications:
+    - [NaVILA](https://arxiv.org/abs/2412.04453).
 
 - **Action Generation as a Core VLA Challenge:** The diversity and rapid evolution of action representation/generation techniques highlight its importance and difficulty. The limitations of simple tokenization are driving innovations like diffusion models, flow matching, specialized tokenizers, and parallel decoding to balance precision, efficiency, and compatibility with large sequence models. This focus indicates that effectively translating high-level understanding into low-level physical control may be *the* core challenge that VLAs must address to move beyond standard VLM capabilities. Success requires a shift from simple VLM adaptation to action modeling techniques specifically designed for robotics.
 
