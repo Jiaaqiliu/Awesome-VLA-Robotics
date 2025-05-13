@@ -24,7 +24,7 @@ Contributions are welcome!
 - [4. Datasets and Benchmarks](#4-datasets-and-benchmarks)
     - [4.1 Quick Glance at Datasets and Benchmarks](#41-quick-glance-at-datasets-and-benchmarks)
     - [4.2 Robot Learning Datasets](#42-robot-learning-datasets)
-    - [4.3 Simulation Environments](#43-simulation-environments)s
+    - [4.3 Simulation Environments](#43-simulation-environments)
     - [4.4 Evaluation Benchmarks](#44-evaluation-benchmarks)
 - [5. Challenges and Future Directions](#5-challenges-and-future-directions)
 - [6. Related Awesome Lists](#6-related-awesome-lists)
