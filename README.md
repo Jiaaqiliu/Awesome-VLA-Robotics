@@ -326,7 +326,7 @@ Focuses on the core neural network architectures used in VLA models.
 
 - **Transformer-based:** The dominant architecture, leveraging self-attention mechanisms to integrate vision, language, and action sequences. 
 Applications:
-    - [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [Octo](https://arxiv.org/abs/2405.12213), [OpenVLA](https://arxiv.org/abs/2406.09246), [VIMA](https://arxiv.org/abs/2210.03094),[ QUART](https://arxiv.org/abs/2312.14457), etc.
+    - [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [Octo](https://arxiv.org/abs/2405.12213), [OpenVLA](https://arxiv.org/abs/2406.09246), [VIMA](https://arxiv.org/abs/2210.03094),[ QUART](https://arxiv.org/abs/2312.14457).
 
 - **Diffusion-based:** Primarily for the action generation component, utilizing the ability of diffusion models to model complex distributions. 
 Often combined with a Transformer backbone. Applications:
@@ -424,7 +424,8 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 
 - **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in [VLAS](https://arxiv.org/abs/2502.13508), [PaLM-E](https://arxiv.org/abs/2303.03378), [π0](https://www.physicalintelligence.company/blog/pi0) (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 
-- **Multimodal Prompts:** Handling instructions that include images or video in addition to text. E.g., [VIMA](https://arxiv.org/abs/2210.03094).
+- **Multimodal Prompts:** Handling instructions that include images or video in addition to text. Applications:
+    - [VIMA](https://arxiv.org/abs/2210.03094).
 
 - **Grounding:** The process of linking language descriptions or visual perceptions to specific entities, locations, or actions in the physical world or robot representation. Addressed via various techniques like similarity matching, leveraging common-sense knowledge, multimodal alignment, or interaction. LLM-Grounder focuses on open-vocabulary 3D visual grounding.
 
