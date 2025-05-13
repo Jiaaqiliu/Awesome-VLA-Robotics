@@ -386,10 +386,11 @@ Applications:
 
 Focuses on how VLA models are trained and adapted.
 
-- **Imitation Learning (IL) / Behavior Cloning (BC):** Dominant paradigm, training VLAs to mimic expert demonstrations (often from teleoperation). 
-Used for [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [OpenVLA](https://arxiv.org/abs/2406.09246) pre-training, [Octo](https://arxiv.org/abs/2405.12213), [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), etc. Heavily reliant on large-scale, diverse, high-quality datasets. Performance is often limited by the quality of the demonstrations.
-
-- **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. E.g., [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety).
+- **Imitation Learning (IL) / Behavior Cloning (BC):** Dominant paradigm, training VLAs to mimic expert demonstrations (often from teleoperation). Heavily reliant on large-scale, diverse, high-quality datasets. Performance is often limited by the quality of the demonstrations.
+Applications:
+    -  [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [OpenVLA](https://arxiv.org/abs/2406.09246) （pre-training part）, [Octo](https://arxiv.org/abs/2405.12213), [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), etc. 
+- **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. Applications:
+    - [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety).
 
 - **Pre-training & Fine-tuning:** Standard approach, involving pre-training on large datasets (web data for VLM backbones, large robot datasets like OpenX for VLAs) and then fine-tuning on specific tasks or robots.
     - **Fine-tuning by RL**
@@ -398,10 +399,12 @@ Used for [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/
 - **Parameter-Efficient Fine-Tuning (PEFT):** Techniques like LoRA to efficiently adapt large VLAs without retraining the entire model, crucial for practical deployment and customization. [MoRE](https://arxiv.org/abs/2503.08007) uses LoRA modules as experts.
 
 - **Distillation:** Training smaller, faster models (students) to mimic the behavior of larger, slower models (teachers). 
-E.g., [RPD](https://arxiv.org/abs/2503.05833) (distilling a VLA to an RL policy), [OneDP](https://arxiv.org/abs/2410.21257) (distilling a diffusion policy).
+Applications:
+    - [RPD](https://arxiv.org/abs/2503.05833) (distilling a VLA to an RL policy), [OneDP](https://arxiv.org/abs/2410.21257) (distilling a diffusion policy).
 
 - **Curriculum Learning:** Structuring the learning process, e.g., by embodiment complexity. 
-E.g., [DexVLA](https://arxiv.org/pdf/2502.05855) uses embodied curriculum.
+Applications:
+    -  [DexVLA](https://arxiv.org/pdf/2502.05855) uses embodied curriculum.
 
 - **Learning from Mixed-Quality Data:** Using techniques (e.g., RL in MoRE) to learn effectively even when demonstration data is suboptimal or contains failures.
 
