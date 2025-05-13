@@ -55,6 +55,7 @@ Contributions are welcome!
 - [2025] Exploring Embodied Multimodal Large Models: Development, Datasets, and Future Directions [[paper](https://arxiv.org/pdf/2502.15336)]
 - [2025] Multimodal Fusion and Vision-Language Models: A Survey for Robot Vision [[paper](https://arxiv.org/pdf/2504.02477)] [[project](https://github.com/Xiaofeng-Han-Res/MF-RV)] 
 - [2025] Generative Artificial Intelligence in Robotic Manipulation: A Survey [[paper](https://arxiv.org/pdf/2503.03464)] [[project](https://github.com/GAI4Manipulation/AwesomeGAIManipulation)]
+- [2025] Neural Brain: A Neuroscience-inspired Framework for Embodied Agents [[paper](https://arxiv.org/pdf/2505.07634)] [[project](https://github.com/CNJianLiu/Neural-Brain-for-Embodied-Agents)] 
 - [2024] Aligning Cyber Space with Physical World: A Comprehensive Survey on Embodied AI. [[paper](https://arxiv.org/abs/2407.06886)]
 - [2024] A Survey on Robotics with Foundation Models: toward Embodied AI. [[paper](https://arxiv.org/abs/2402.02385)]
 - [2024] What Foundation Models can Bring for Robot Learning in Manipulation: A Survey. [[paper](https://arxiv.org/abs/2404.18201)]
@@ -285,6 +286,8 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
    [[paper](https://arxiv.org/pdf/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
 - **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**
    [[paper](https://arxiv.org/abs/2503.22020)] [[project](https://cot-vla.github.io/)]
+
+- **[2025] Embodied-R: Collaborative Framework for Activating Embodied Spatial Reasoning in Foundation Models via Reinforcement Learning** [[paper](https://arxiv.org/pdf/2504.12680)] [[project](https://embodiedcity.github.io/Embodied-R/)] 
 
 - **[2025] RoboBrain: A Unified Brain Model for Robotic Manipulation from Abstract to Concrete** [[paper](https://arxiv.org/pdf/2502.21257)] [[project](https://superrobobrain.github.io/)]  [[code](https://github.com/FlagOpen/RoboBrain)]
 
