@@ -204,6 +204,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 - **[2024] Moto: Latent Motion Token as the Bridging Language for Robot Manipulation** [[paper](https://arxiv.org/pdf/2412.04445)] [[project](https://chenyi99.github.io/moto/)]
 
+- **[2024] Bi-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Dexterous Manipulations**  [[paper](https://arxiv.org/abs/2405.06039)]
+
 ##### 2023
 - **[2023] RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**
  [[paper](https://arxiv.org/abs/2307.15818)] [[project](https://robotics-transformer2.github.io/)]
