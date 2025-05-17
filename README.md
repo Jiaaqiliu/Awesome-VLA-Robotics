@@ -657,6 +657,7 @@ Future research needs to balance general capabilities with task-specific profici
 * Awesome-VLA:
 
     * https://github.com/yueen-ma/Awesome-VLA
+    * https://github.com/OpenHelix-robot/awesome-dual-system-vla
     * https://github.com/Orlando-CS/Awesome-VLA
         
 * Awesome-Embodied-AI:
