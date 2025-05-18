@@ -274,6 +274,7 @@ Focuses on enabling more natural and effective interactions between humans and r
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
+- **[2025] Training Strategies for Efficient Embodied Reasoning (ECoT-Lite)**  [[paper](https://arxiv.org/abs/2505.08243)]
 - **[2025] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
  [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
 
