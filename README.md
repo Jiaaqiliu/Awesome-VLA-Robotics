@@ -134,6 +134,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 - **[2025] DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping** [[paper](https://arxiv.org/pdf/2502.20900)] [[project](https://dexgraspvla.github.io/)] 
 
+- **[2025] Interleave-VLA: Enhancing Robot Manipulation with Interleaved Image-Text Instructions** [[paper](https://arxiv.org/abs/2505.02152)] 
+
 - **[2025] EnerVerse: Envisioning Embodied Future Space for Robotics Manipulation** [[paper](https://arxiv.org/pdf/2501.01895)]
 
 - **[2025] VLA-Cache: Towards Efficient Vision-Language-Action Model via Adaptive Token Caching in Robotic Manipulation**[[paper](https://arxiv.org/pdf/2502.02175)]
