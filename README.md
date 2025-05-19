@@ -144,6 +144,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 - **[2025] Refined Policy Distillation: From VLA Generalists to RL Experts** [[paper(RPD)](https://arxiv.org/abs/2503.05833)]
 
+- **[2025] MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation** [[paper](https://arxiv.org/abs/2503.20384)][[project](https://sites.google.com/view/mole-vla)] [[Code](https://github.com/RoyZry98/MoLe-VLA-Pytorch/)]
+
 - **[2025] MoManipVLA: Transferring Vision-language-action Models for General Mobile Manipulation** [[paper](https://arxiv.org/pdf/2503.13446)] [[project](https://gary3410.github.io/momanipVLA/)]
 
 - **[2025] Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy** [[paper](https://arxiv.org/pdf/2410.15959v4)] [[project](https://robodita.github.io/)]
@@ -352,6 +354,7 @@ Often combined with a Transformer backbone. Applications:
 - **Mixture-of-Experts (MoE / MoLE):** Using sparsely activated expert modules for task adaptation or efficiency. 
 Applications:
     - [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA), [CogACT](https://arxiv.org/abs/2411.19650), [π0](https://www.physicalintelligence.company/blog/pi0) (uses an MoE-like structure).
+    - [MolE-VLA](https://arxiv.org/abs/2503.20384)
 
 - **Architectural Diversification for Capability and Efficiency:** While Transformers are foundational, their limitations in handling continuous actions, computational cost, and reasoning depth are driving researchers to explore alternative or hybrid architectures. Diffusion models excel at action generation, hierarchical systems improve reasoning/control separation, SSMs promise efficiency, and MoEs aim for adaptive specialization. This diversification indicates an active search for architectures better suited to the specific constraints and needs of robotics than those designed purely for vision-language tasks. This has led to the emergence of hybrid and specialized designs to address the unique challenges of real-time control, action modeling, efficiency, and complex reasoning in robotics.
 
