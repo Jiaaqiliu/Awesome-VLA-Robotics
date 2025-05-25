@@ -367,7 +367,6 @@ Applications:
     - [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA), [CogACT](https://arxiv.org/abs/2411.19650), [π0](https://www.physicalintelligence.company/blog/pi0) (uses an MoE-like structure).
     - [MolE-VLA](https://arxiv.org/abs/2503.20384)
 
-- **Architectural Diversification for Capability and Efficiency:** While Transformers are foundational, their limitations in handling continuous actions, computational cost, and reasoning depth are driving researchers to explore alternative or hybrid architectures. Diffusion models excel at action generation, hierarchical systems improve reasoning/control separation, SSMs promise efficiency, and MoEs aim for adaptive specialization. This diversification indicates an active search for architectures better suited to the specific constraints and needs of robotics than those designed purely for vision-language tasks. This has led to the emergence of hybrid and specialized designs to address the unique challenges of real-time control, action modeling, efficiency, and complex reasoning in robotics.
 
 #### 3.3.2 Action Representation & Generation
 
@@ -403,7 +402,6 @@ Applications:
 - **Mid-Level Language Actions:** Generating actions as natural language commands to be consumed by a lower-level policy. Applications:
     - [NaVILA](https://arxiv.org/abs/2412.04453).
 
-- **Action Generation as a Core VLA Challenge:** The diversity and rapid evolution of action representation/generation techniques highlight its importance and difficulty. The limitations of simple tokenization are driving innovations like diffusion models, flow matching, specialized tokenizers, and parallel decoding to balance precision, efficiency, and compatibility with large sequence models. This focus indicates that effectively translating high-level understanding into low-level physical control may be *the* core challenge that VLAs must address to move beyond standard VLM capabilities. Success requires a shift from simple VLM adaptation to action modeling techniques specifically designed for robotics.
 
 #### 3.3.3 Learning Paradigms
 
@@ -431,8 +429,6 @@ Applications:
 
 - **Learning from Mixed-Quality Data:** Using techniques (e.g., RL in MoRE) to learn effectively even when demonstration data is suboptimal or contains failures.
 
-- **Bridging Imitation and Interaction:** While Imitation Learning (IL) on large-scale datasets like OpenX is foundational for creating general-purpose VLAs, 
-there's a growing trend towards combining it with interactive learning (RL) for fine-tuning and improvement. This hybrid approach aims to leverage the broad knowledge of IL datasets while overcoming IL's limitations (suboptimality, dataset cost) by enabling robots to adapt and potentially surpass human demonstrators through environmental interaction. The challenge lies in making RL stable and efficient for large VLA models. This trend indicates a direction towards combining the strengths of both: broad generalization via large-scale IL pre-training, and targeted refinement and adaptation via efficient and stable RL fine-tuning.
 
 #### 3.3.4 Input Modalities & Grounding
 
@@ -451,7 +447,6 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 
 - **Grounding:** The process of linking language descriptions or visual perceptions to specific entities, locations, or actions in the physical world or robot representation. Addressed via various techniques like similarity matching, leveraging common-sense knowledge, multimodal alignment, or interaction. LLM-Grounder focuses on open-vocabulary 3D visual grounding.
 
-- **The Need for Richer World Representations:** The increasing integration of 3D vision and speech indicates that standard RGB images and text may be insufficient for robust, nuanced robot interaction in complex environments. 3D data provides crucial spatial context missing from 2D images, while speech offers a more natural HRI modality. This trend suggests that future VLAs will become truly "multi-sensory" agents, moving beyond just vision and language. The VLA paradigm is expanding beyond its name ("Vision-Language-Action") to incorporate the richer sensory inputs (3D, speech, proprioception) needed for effective manipulation and interaction in the complex physical world, moving towards more general-purpose multimodal embodied agents.
 
 ### 3.3.5 Fine-tuning
 - **FT by RL**
@@ -615,7 +610,6 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 
     <details><summary>Details</summary>Visual question answering benchmark requiring external knowledge, used to evaluate the general VLM abilities of [PaLM-E](https://arxiv.org/abs/2303.03378).   </details>
 
-- **Symbiotic Relationship of Models, Data, and Simulation:** VLA progress is tightly coupled with the availability of large-scale datasets (OpenX being crucial) and powerful simulators (Isaac Sim, MuJoCo enabling large-scale training). Benchmarks (CALVIN, ManiSkill) drive standardized evaluation. However, the cost of real-world data collection and the persistent sim-to-real gap remain major bottlenecks, driving research into data augmentation, sim-to-real techniques, data-efficient learning, and automated data collection. The ecosystem of models, datasets, simulators, and benchmarks co-evolves, with limitations in one area (e.g., real data cost) driving innovation in others (e.g., simulation, data efficiency). Overcoming data/simulation limitations is key to unlocking the potential of VLAs.
 
 ## 5. Challenges and Future Directions
 
@@ -643,8 +637,6 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 - **Multimodality Expansion:** Integrating richer sensory inputs beyond vision + language, such as audio/speech, touch, force, 3D. 
 
     * Future directions: Developing architectures and alignment techniques for diverse modalities.
-- **The Tension Between Generalization and Specialization/Performance:** While a core promise of VLAs is to leverage large pre-trained models for generalization, achieving high success rates on specific, complex, or novel tasks often requires significant fine-tuning or specialized components. This creates a tension: how to achieve expert-level performance while maintaining broad generalization? 
-Future research needs to balance general capabilities with task-specific proficiency, potentially through more effective adaptation techniques (e.g., [PEFT](https://github.com/huggingface/peft)), modular architectures (e.g., MoEs), or methods that combine general priors with task-specific learning.
 
 ## 6. Related Awesome Lists
 
