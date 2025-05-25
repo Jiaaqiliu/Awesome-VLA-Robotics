@@ -106,8 +106,9 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2025] CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models**  [[paper](https://arxiv.org/pdf/2503.22020)] [[project](https://cot-vla.github.io/)]
 
 
-- **[2025] Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models**
- [[paper](https://arxiv.org/abs/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
+- **[2025] Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models** [[paper](https://arxiv.org/abs/2502.19417)] [[project](https://www.physicalintelligence.company/research/hirobot)]
+
+- **[2025] Interactive Post-Training for Vision-Language-Action Models (RIPT-VLA)** [[paper](https://arxiv.org/abs/2505.17016)] [[project](https://ariostgx.github.io/ript_vla/)]
 
 
 - **[2025] DexVLA: Scaling Vision-Language-Action Models for Dexterous Manipulation Across Embodiments** [[paper](https://arxiv.org/pdf/2502.05855)] [[project](https://dex-vla.github.io/)]
