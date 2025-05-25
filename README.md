@@ -307,6 +307,9 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 
 - **[2025] JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse** [[paper](https://arxiv.org/pdf/2503.16365)] [[project](https://craftjarvis.github.io/JarvisVLA/)]
 
+- **[2025] Probing a Vision-Language-Action Model for Symbolic States and Integration into a Cognitive Architecture** [[paper](https://arxiv.org/abs/2502.04558)]
+
+
 - **[2024] RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation**
    [[paper](https://arxiv.org/abs/2406.04339)] [[project](https://sites.google.com/view/robomamba-web)]
 
