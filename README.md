@@ -465,19 +465,19 @@ This section lists key resources for training and evaluating VLA models. Large-s
 
 | Name | Type | Focus Area | Key Features / Environment | Link | Key Publication |
 |---|---|---|---|---|---|
-| Open X-Embodiment (OpenX) | Dataset | General Manipulation | Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [Project](https://robotics-transformer-x.github.io/) | [arXiv](https://arxiv.org/abs/2310.08864) |
-| DROID | Dataset | Real-world Manipulation | Large-scale human-collected data (500+ tasks, 26k hours) | [Project](https://droid-dataset.github.io/) | [arxiv](https://arxiv.org/abs/2403.06037) |
-| CALVIN | Dataset / Benchmark | Long-Horizon Manipulation | Long-horizon tasks with language conditioning, Franka arm, PyBullet simulation | [Project](http://calvin.cs.uni-freiburg.de/)| [arxiv](https://arxiv.org/abs/2112.03227) |
-| QUARD | Dataset | Quadruped Robot Tasks | Large-scale multi-task dataset (sim + real) for navigation and manipulation | [Project](https://sites.google.com/view/quar-vla) | [ECCV 2024](https://arxiv.org/abs/2312.14457) |
-| BEHAVIOR-1K | Dataset / Benchmark | Household Activities | 1000 simulated human household activities | [Project](https://behavior.stanford.edu/) | [arxiv](https://arxiv.org/abs/2108.03332) |
-| Isaac Sim / Orbit / OmniGibson | Simulator | High-fidelity Robot Simulation | NVIDIA Omniverse-based, physically realistic | [Isaac-sim](https://developer.nvidia.com/isaac-sim), [Orbit](https://isaac-orbit.github.io/), [OmniGibson](https://omnigibson.stanford.edu/) | - |
-| Habitat Sim | Simulator | Embodied AI Navigation | Flexible, high-performance 3D simulator | [Project](https://aihabitat.org/) | [arxiv](https://arxiv.org/abs/1904.01201) |
-| MuJoCo | Simulator | Physics Engine | Popular physics engine for robotics and RL | [Website](https://mujoco.org/) | - |
-| PyBullet | Simulator | Physics Engine | Open-source physics engine, used for CALVIN, etc. | [Website](https://pybullet.org/) | - |
-| ManiSkill (1, 2, 3) | Benchmark | Generalizable Manipulation Skills | Large-scale manipulation benchmark based on SAPIEN | [Project](https://maniskill.ai/) | [arxiv](https://arxiv.org/abs/2107.14483) |
-| Meta-World | Benchmark | Multi-task / Meta RL Manipulation | 50 Sawyer arm manipulation tasks, MuJoCo | [Project](https://meta-world.github.io/)| [arxiv](https://arxiv.org/abs/1910.10897) |
-| RLBench | Benchmark | Robot Learning Manipulation | 100+ manipulation tasks, CoppeliaSim (V-REP) | [Project](https://sites.google.com/view/rlbench) | [arxiv](https://arxiv.org/abs/1909.12271) |
-| VLN-CE / R2R / RxR | Benchmark | Vision-Language Nav | Standard VLN benchmarks, often run in Habitat | [VLN-CE](https://github.com/jacobkrantz/VLN-CE),[R2R-EnvDrop](https://github.com/airsplay/R2R-EnvDrop),[RxR](https://github.com/google-research-datasets/RxR) | - |
+| Open X-Embodiment (OpenX) | Dataset | General Manipulation | <details><summary>Details</summary>Aggregates 20+ datasets, cross-embodiment/task/environment, >1M trajectories | [Project](https://robotics-transformer-x.github.io/) | [arXiv](https://arxiv.org/abs/2310.08864) |
+| DROID | Dataset | Real-world Manipulation | <details><summary>Details</summary>Large-scale human-collected data (500+ tasks, 26k hours) | [Project](https://droid-dataset.github.io/) | [arxiv](https://arxiv.org/abs/2403.06037) |
+| CALVIN | Dataset / Benchmark | Long-Horizon Manipulation | <details><summary>Details</summary>Long-horizon tasks with language conditioning, Franka arm, PyBullet simulation | [Project](http://calvin.cs.uni-freiburg.de/)| [arxiv](https://arxiv.org/abs/2112.03227) |
+| QUARD | Dataset | Quadruped Robot Tasks | <details><summary>Details</summary>Large-scale multi-task dataset (sim + real) for navigation and manipulation | [Project](https://sites.google.com/view/quar-vla) | [ECCV 2024](https://arxiv.org/abs/2312.14457) |
+| BEHAVIOR-1K | Dataset / Benchmark | Household Activities | <details><summary>Details</summary>1000 simulated human household activities | [Project](https://behavior.stanford.edu/) | [arxiv](https://arxiv.org/abs/2108.03332) |
+| Isaac Sim / Orbit / OmniGibson | Simulator | High-fidelity Robot Simulation | <details><summary>Details</summary>NVIDIA Omniverse-based, physically realistic | [Isaac-sim](https://developer.nvidia.com/isaac-sim), [Orbit](https://isaac-orbit.github.io/), [OmniGibson](https://omnigibson.stanford.edu/) | - |
+| Habitat Sim | Simulator | Embodied AI Navigation | <details><summary>Details</summary>Flexible, high-performance 3D simulator | [Project](https://aihabitat.org/) | [arxiv](https://arxiv.org/abs/1904.01201) |
+| MuJoCo | Simulator | Physics Engine | <details><summary>Details</summary>Popular physics engine for robotics and RL | [Website](https://mujoco.org/) | - |
+| PyBullet | Simulator | Physics Engine | <details><summary>Details</summary>Open-source physics engine, used for CALVIN, etc. | [Website](https://pybullet.org/) | - |
+| ManiSkill (1, 2, 3) | Benchmark | Generalizable Manipulation Skills | <details><summary>Details</summary>Large-scale manipulation benchmark based on SAPIEN | [Project](https://maniskill.ai/) | [arxiv](https://arxiv.org/abs/2107.14483) |
+| Meta-World | Benchmark | Multi-task / Meta RL Manipulation | <details><summary>Details</summary>50 Sawyer arm manipulation tasks, MuJoCo | [Project](https://meta-world.github.io/)| [arxiv](https://arxiv.org/abs/1910.10897) |
+| RLBench | Benchmark | Robot Learning Manipulation | <details><summary>Details</summary>100+ manipulation tasks, CoppeliaSim (V-REP) | [Project](https://sites.google.com/view/rlbench) | [arxiv](https://arxiv.org/abs/1909.12271) |
+| VLN-CE / R2R / RxR | Benchmark | Vision-Language Nav | <details><summary>Details</summary>Standard VLN benchmarks, often run in Habitat | [VLN-CE](https://github.com/jacobkrantz/VLN-CE),[R2R-EnvDrop](https://github.com/airsplay/R2R-EnvDrop),[RxR](https://github.com/google-research-datasets/RxR) | - |
 
 ### 4.2 Robot Learning Datasets
 
