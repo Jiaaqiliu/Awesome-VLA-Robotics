@@ -213,6 +213,8 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 - **[2024] An Embodied Generalist Agent in 3D World**  [[paper](https://arxiv.org/abs/2311.12871)]
 
+- **[2024] Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation**  [[paper](https://arxiv.org/abs/2410.08001)][[project](https://opendrivelab.com/legacy/RoboDual/index.html)] [[code](https://github.com/OpenDriveLab/RoboDual)]
+
 ##### 2023
 - **[2023] RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**
  [[paper](https://arxiv.org/abs/2307.15818)] [[project](https://robotics-transformer2.github.io/)]
