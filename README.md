@@ -285,6 +285,8 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 
 - **[2025] OneTwoVLA: A Unified Vision-Language-Action Model with Adaptive Reasoning** [[paper](https://arxiv.org/abs/2505.11917)] [[project](https://one-two-vla.github.io/)]
 
+- **[2025] Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge** [[paper](https://arxiv.org/abs/2505.21906)] [[project](https://chatvla-2.github.io/)]
+
 - **[2025] Hume: Introducing System-2 Thinking in Visual-Language-Action Model** [[paper](https://arxiv.org/abs/2505.21432)] [[project](https://hume-vla.github.io/)]
 
  - **[2025] Robotic Control via Embodied Chain-of-Thought Reasoning** [[paper](https://arxiv.org/abs/2407.08693)] [[project](https://embodied-cot.github.io/)][[code](https://github.com/MichalZawalski/embodied-CoT/)]
