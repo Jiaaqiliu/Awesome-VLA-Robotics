@@ -101,6 +101,10 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
+
+- **[2025] VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning**
+ [[paper](https://arxiv.org/abs/2505.18719)][[Code](https://github.com/GuanxingLu/vlarl)]
+
 - **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
  [[project](https://www.figure.ai/news/helix)]
 
