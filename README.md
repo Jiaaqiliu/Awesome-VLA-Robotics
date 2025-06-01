@@ -15,6 +15,7 @@ Contributions are welcome!
         - [3.2.3 Human-Robot Interaction (HRI)](#323-human-robot-interaction-hri)
         - [3.2.4 Task Planning / Reasoning](#324-task-planning--reasoning)
         - [3.2.5 Humanoid](#325-humanoid)
+        - [3.2.6 Other](#326-other)
     - [3.3 By Technical Approach](#33-by-technical-approach)
         - [3.3.1 Model Architectures](#331-model-architectures)
         - [3.3.2 Action Representation & Generation](#332-action-representation--generation)
@@ -348,6 +349,13 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2025] Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration**
    [[paper](https://arxiv.org/pdf/2502.14795)]
 
+#### 3.2.6 Other
+- **[2025] Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge**
+   [[paper](https://arxiv.org/pdf/2505.21906)][[Project](https://chatvla-2.github.io/)](ChatVLA-2)
+
+- **[2025] ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model**
+   [[paper](https://arxiv.org/abs/2502.14420)][[Project](https://chatvla.github.io/)]
+
 ### 3.3 By Technical Approach
 
 #### 3.3.1 Model Architectures
@@ -374,7 +382,7 @@ Often combined with a Transformer backbone. Applications:
 - **Mixture-of-Experts (MoE / MoLE):** Using sparsely activated expert modules for task adaptation or efficiency. 
 Applications:
     - [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA), [CogACT](https://arxiv.org/abs/2411.19650), [π0](https://www.physicalintelligence.company/blog/pi0) (uses an MoE-like structure).
-    - [MolE-VLA](https://arxiv.org/abs/2503.20384)
+    - [MolE-VLA](https://arxiv.org/abs/2503.20384), [ChatVLA](https://arxiv.org/abs/2502.14420)
 
 
 #### 3.3.2 Action Representation & Generation
