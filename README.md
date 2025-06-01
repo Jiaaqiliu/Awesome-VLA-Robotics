@@ -356,6 +356,12 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2025] ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model**
    [[paper](https://arxiv.org/abs/2502.14420)][[Project](https://chatvla.github.io/)]
 
+- **[2024] OccLLaMA: An Occupancy-Language-Action Generative World Model for Autonomous Driving**
+   [[paper](https://arxiv.org/abs/2409.03272)]
+
+- **[2024] OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model**
+   [[paper](https://arxiv.org/abs/2503.23463)][[Project](https://drivevla.github.io/)][[Code](https://github.com/DriveVLA/OpenDriveVLA)]
+
 ### 3.3 By Technical Approach
 
 #### 3.3.1 Model Architectures
