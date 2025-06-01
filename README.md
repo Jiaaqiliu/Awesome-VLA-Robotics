@@ -320,6 +320,9 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2024] RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation**
    [[paper](https://arxiv.org/abs/2406.04339)] [[project](https://sites.google.com/view/robomamba-web)]
 
+- **[2024] Improving Vision-Language-Action Models via Chain-of-Affordance**
+   [[paper](https://arxiv.org/abs/2412.20451)] [[project](https://chain-of-affordance.github.io/)]
+
 - **[2023] PaLM-E: An Embodied Multimodal Language Model**
    [[paper](https://arxiv.org/abs/2303.03378)] [[project](https://palm-e.github.io/)]
 
