@@ -116,6 +116,9 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2025] Interactive Post-Training for Vision-Language-Action Models (RIPT-VLA)** [[paper](https://arxiv.org/abs/2505.17016)] [[project](https://ariostgx.github.io/ript_vla/)]
 
 
+- **[2025] UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent** [[paper](https://arxiv.org/abs/2501.18867)]
+
+
 - **[2025] NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks** [[paper](https://arxiv.org/abs/2504.19854)] [[project](https://declare-lab.github.io/nora)]
 
 
