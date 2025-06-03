@@ -443,7 +443,7 @@ Focuses on how VLA models are trained and adapted.
 Applications:
     -  [RT-1](https://arxiv.org/abs/2212.06817), [RT-2](https://arxiv.org/abs/2307.15818), [OpenVLA](https://arxiv.org/abs/2406.09246) （pre-training part）, [Octo](https://arxiv.org/abs/2405.12213), [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), etc. 
 - **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. Applications:
-    - [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety).
+    - [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety), [RIPT-VLA](https://arxiv.org/abs/2505.17016),[VLA-RL](https://arxiv.org/abs/2505.18719),[SimpleVLA-RL](https://github.com/PRIME-RL/SimpleVLA-RL).
 
 - **Pre-training & Fine-tuning:** Standard approach, involving pre-training on large datasets (web data for VLM backbones, large robot datasets like OpenX for VLAs) and then fine-tuning on specific tasks or robots.
     - **Fine-tuning by RL**
