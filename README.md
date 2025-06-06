@@ -359,6 +359,9 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
    [[paper](https://arxiv.org/pdf/2502.14795)]
 
 #### 3.2.6 Other
+- **[2025] Adversarial Attacks on Robotic Vision Language Action Models**
+   [[paper](https://arxiv.org/abs/2506.03350)][[Code](https://github.com/eliotjones1/robogcg)]
+
 - **[2025] Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge**
    [[paper](https://arxiv.org/pdf/2505.21906)][[Project](https://chatvla-2.github.io/)](ChatVLA-2)
 
