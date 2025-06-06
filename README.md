@@ -11,7 +11,7 @@ Contributions are welcome!
     - [3.1 Quick Glance at Key VLA Models](#31-quick-glance-at-key-vla-models)
     - [3.2 By Application Area](#32-by-application-area)
         - [3.2.1 Manipulation](#321-manipulation)
-        - [3.2.2 Navigation](#322-navigation-and-mobile-manipulation)
+        - [3.2.2 Navigation and Mobile Manipulation](#322-navigation-and-mobile-manipulation)
         - [3.2.3 Human-Robot Interaction (HRI)](#323-human-robot-interaction-hri)
         - [3.2.4 Task Planning / Reasoning](#324-task-planning--reasoning)
         - [3.2.5 Humanoid](#325-humanoid)
@@ -261,6 +261,8 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 - **[2025] FlexVLN: Flexible Adaptation for Diverse Vision-and-Language Navigation Tasks**
    [[paper](https://arxiv.org/abs/2503.13966)] 
 
+- **[2025] MoManipVLA: Transferring Vision-language-action Models for General Mobile Manipulation** [[paper](https://arxiv.org/pdf/2503.13446)] [[project](https://gary3410.github.io/momanipVLA/)]
+
 - **[2024] NaVILA: Legged Robot Vision-Language-Action Model for Navigation**
    [[paper](https://arxiv.org/abs/2412.04453)] [[project](https://navila-bot.github.io/)]
 
@@ -298,7 +300,14 @@ Focuses on enabling more natural and effective interactions between humans and r
 - **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
    [[project](https://www.figure.ai/news/helix)]
   
+- **[2025] CognitiveDrone: A VLA Model and Evaluation Benchmark for Real-Time Cognitive Task Solving and Reasoning in UAVs**
+   [[paper](https://arxiv.org/abs/2503.01378)][[project](https://cognitivedrone.github.io/)]
 
+- **[2024] TalkWithMachines: Enhancing Human-Robot Interaction for Interpretable Industrial Robotics Through Large/Vision Language Models**
+   [[paper](https://arxiv.org/abs/2412.15462)][[project](https://talk-machines.github.io)]
+
+
+  
 #### 3.2.4 Task Planning / Reasoning
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
@@ -366,6 +375,7 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
  [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
 - **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
  [[project](https://www.figure.ai/news/helix)]
+
 - **[2025] Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration**
    [[paper](https://arxiv.org/pdf/2502.14795)]
 
