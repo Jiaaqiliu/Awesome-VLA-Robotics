@@ -11,7 +11,7 @@ Contributions are welcome!
     - [3.1 Quick Glance at Key VLA Models](#31-quick-glance-at-key-vla-models)
     - [3.2 By Application Area](#32-by-application-area)
         - [3.2.1 Manipulation](#321-manipulation)
-        - [3.2.2 Navigation](#322-navigation)
+        - [3.2.2 Navigation](#322-navigation-and-mobile-manipulation)
         - [3.2.3 Human-Robot Interaction (HRI)](#323-human-robot-interaction-hri)
         - [3.2.4 Task Planning / Reasoning](#324-task-planning--reasoning)
         - [3.2.5 Humanoid](#325-humanoid)
@@ -249,7 +249,7 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2022] Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation** [[paper](https://arxiv.org/abs/2209.05451v2)] [[project](https://peract.github.io/)] [[code](https://github.com/peract/peract)]
 
 
-#### 3.2.2 Navigation
+#### 3.2.2 Navigation and Mobile Manipulation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
 - **[2025] Do Visual Imaginations Improve Vision-and-Language Navigation Agents?**
@@ -258,6 +258,8 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
  - **[2025] SpatialVLA: Exploring Spatial Representations for Visual-Language-Action Models**
    [[paper](https://arxiv.org/abs/2501.15830)] [[project](https://spatialvla.github.io/)]
 
+- **[2025] FlexVLN: Flexible Adaptation for Diverse Vision-and-Language Navigation Tasks**
+   [[paper](https://arxiv.org/abs/2503.13966)] 
 
 - **[2024] NaVILA: Legged Robot Vision-Language-Action Model for Navigation**
    [[paper](https://arxiv.org/abs/2412.04453)] [[project](https://navila-bot.github.io/)]
@@ -270,7 +272,14 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
 - **[2024] NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation**
    [[paper](https://arxiv.org/abs/2402.15852)] [[project](https://pku-epic.github.io/NaVid/)]
-  
+
+- **[2023] VLN-SIG: Improving Vision-and-Language Navigation by Generating Future-View Image Semantics**
+   [[paper](https://arxiv.org/abs/2304.04907)] [[project](https://jialuli-luka.github.io/VLN-SIG)]
+
+- **[2023] PanoGen: Text-Conditioned Panoramic Environment Generation for Vision-and-Language Navigation**
+   [[paper](https://arxiv.org/abs/2305.19195)] [[project](https://pano-gen.github.io/)]
+
+
 
 #### 3.2.3 Human-Robot Interaction (HRI)
 
@@ -370,11 +379,21 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
 - **[2025] ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model**
    [[paper](https://arxiv.org/abs/2502.14420)][[Project](https://chatvla.github.io/)]
 
+- **[2025] OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model**
+   [[paper](https://arxiv.org/abs/2503.23463)][[Project](https://drivevla.github.io/)][[Code](https://github.com/DriveVLA/OpenDriveVLA)]
+
 - **[2024] OccLLaMA: An Occupancy-Language-Action Generative World Model for Autonomous Driving**
    [[paper](https://arxiv.org/abs/2409.03272)]
 
-- **[2024] OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model**
-   [[paper](https://arxiv.org/abs/2503.23463)][[Project](https://drivevla.github.io/)][[Code](https://github.com/DriveVLA/OpenDriveVLA)]
+- **[2024] DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models**
+   [[paper](https://arxiv.org/abs/2402.12289)][[Project](https://tsinghua-mars-lab.github.io/DriveVLM/)]
+
+- **[2024] EMMA: End-to-End Multimodal Model for Autonomous Driving**
+   [[paper](https://arxiv.org/abs/2410.23262)][[Code](https://github.com/taco-group/OpenEMMA)]
+
+
+
+
 
 ### 3.3 By Technical Approach
 
