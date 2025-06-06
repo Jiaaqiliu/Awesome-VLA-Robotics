@@ -276,6 +276,8 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
 Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
 
+- **[2025] Unveiling the Potential of Vision-Language-Action Models with Open-Ended Multimodal Instructions** [[paper](https://arxiv.org/abs/2502.13508)]
+
 - **[2025] VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation** [[paper](https://arxiv.org/abs/2502.13508)]
 
 - **[2025] Shake-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Manipulations and Liquid Mixing**
