@@ -312,6 +312,8 @@ Focuses on enabling more natural and effective interactions between humans and r
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
+- **[2025] Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents**  [[paper](https://arxiv.org/abs/2505.23450)]  [[project](https://agentic-robot.github.io/)]
+
 - **[2025] Training Strategies for Efficient Embodied Reasoning (ECoT-Lite)**  [[paper](https://arxiv.org/abs/2505.08243)]
 
 - **[2025] OneTwoVLA: A Unified Vision-Language-Action Model with Adaptive Reasoning** [[paper](https://arxiv.org/abs/2505.11917)] [[project](https://one-two-vla.github.io/)]
