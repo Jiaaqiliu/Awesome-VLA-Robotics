@@ -508,7 +508,7 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
 
 - **Integrating 3D Vision:** Using point clouds, voxels, depth maps, or implicit representations (NeRFs, 3DGS) to provide richer spatial understanding. Applications:
     -  [3D-VLA](https://arxiv.org/pdf/2403.09631), [PerAct](https://arxiv.org/abs/2209.05451v2), [Act3D](https://arxiv.org/abs/2306.17817v2), [RVT](https://arxiv.org/abs/2306.14896v1), [RVT-2](https://arxiv.org/abs/2406.08545v1), [RoboUniView](https://arxiv.org/pdf/2406.18977), DP3, [3D Diffuser Actor](https://arxiv.org/abs/2402.10885), [LEO](https://arxiv.org/abs/2311.12871v3), [3D-LLM](https://arxiv.org/abs/2307.12981v1), [LLM-Grounder](https://arxiv.org/abs/2309.12311), [SpatialVLA](https://spatialvla.github.io/).
-
+    - [Bridge VLA](https://www.arxiv.org/abs/2506.07961)
 - **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in [VLAS](https://arxiv.org/abs/2502.13508), [PaLM-E](https://arxiv.org/abs/2303.03378), [π0](https://www.physicalintelligence.company/blog/pi0) (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 
 - **Multimodal Prompts:** Handling instructions that include images or video in addition to text. Applications:
