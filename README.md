@@ -252,6 +252,10 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 #### 3.2.2 Navigation and Mobile Manipulation
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
+
+- **[2025] OctoNav: Towards Generalist Embodied Navigation**
+ [[paper](https://arxiv.org/abs/2506.09839)] [[project](https://buaa-colalab.github.io/OctoNav/)]
+
 - **[2025] Do Visual Imaginations Improve Vision-and-Language Navigation Agents?**
  [[paper](https://arxiv.org/pdf/2503.16394)] [[project](https://www.akhilperincherry.com/VLN-Imagine-website/)]
 
