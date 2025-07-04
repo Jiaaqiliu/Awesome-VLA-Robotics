@@ -49,6 +49,7 @@ Contributions are welcome!
 
 ## 2. Survey papers
 
+- [2025] A Survey on Vision-Language-Action Models: An Action Tokenization Perspective[[paper](https://arxiv.org/abs/2507.01925)]
 - [2025] A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
 - ~~[2025] Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]~~
 - [2025] Vision-Language-Action Models: Concepts, Progress, Applications and Challenges [[paper](https://www.arxiv.org/abs/2505.04769)]
