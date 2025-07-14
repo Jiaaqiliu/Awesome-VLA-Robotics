@@ -112,6 +112,9 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2025] VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning**
  [[paper](https://arxiv.org/abs/2505.18719)][[Code](https://github.com/GuanxingLu/vlarl)]
 
+ - **[2025] CEED-VLA: Consistency Vision-Language-Action Model with Early-Exit Decoding**
+ [[paper](https://www.arxiv.org/abs/2506.13725)][[Project](https://irpn-eai.github.io/CEED-VLA/)]
+
  - **[2025] SwitchVLA: Execution-Aware Task Switching for Vision-Language-Action Models**
  [[paper](https://arxiv.org/abs/2506.03574)][[Project](https://switchvla.github.io/)]
 
