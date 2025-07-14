@@ -103,6 +103,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
 
+- **[2025] TriVLA: A Triple-System-Based Unified Vision-Language-Action Model for General Robot Control**
+ [[paper](https://arxiv.org/abs/2507.01424)][[Project](https://zhenyangliu.github.io/TriVLA/)]
+
 - **[2025] VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning**
  [[paper](https://arxiv.org/abs/2505.18719)][[Code](https://github.com/GuanxingLu/vlarl)]
 
@@ -434,6 +437,7 @@ Often combined with a Transformer backbone. Applications:
 - **Hierarchical / Decoupled:** Architectures that separate high-level reasoning/planning (often VLM/LLM-based) from low-level control/execution 
 (which may be a separate policy). Applications:
     - [Helix](https://www.figure.ai/news/helix) (System 1/2), [NaVILA](https://arxiv.org/abs/2412.04453) (VLA + Locomotion Policy), [Hi Robot](https://arxiv.org/pdf/2502.19417) (VLM + π0), [SayCan](https://arxiv.org/abs/2204.01691) (LLM + Value Function).
+    - [TriVLA](https://arxiv.org/abs/2507.01424)
 
 - **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. Applications:
     - [RoboMamba](https://arxiv.org/abs/2406.04339)
