@@ -109,6 +109,9 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2025] TriVLA: A Triple-System-Based Unified Vision-Language-Action Model for General Robot Control**
  [[paper](https://arxiv.org/abs/2507.01424)][[Project](https://zhenyangliu.github.io/TriVLA/)]
 
+ - **[2025] VOTE: Vision-Language-Action Optimization with Trajectory Ensemble Voting**
+ [[paper](https://arxiv.org/abs/2507.05116)]
+
 - **[2025] VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning**
  [[paper](https://arxiv.org/abs/2505.18719)][[Code](https://github.com/GuanxingLu/vlarl)]
 
