@@ -103,6 +103,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
 
+- **[2025] DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive World Knowledge**
+ [[paper](https://arxiv.org/abs/2507.04447)][[Code](https://github.com/Zhangwenyao1/DreamVLA)][[Project](https://zhangwenyao1.github.io/DreamVLA/)]
+
 - **[2025] TriVLA: A Triple-System-Based Unified Vision-Language-Action Model for General Robot Control**
  [[paper](https://arxiv.org/abs/2507.01424)][[Project](https://zhenyangliu.github.io/TriVLA/)]
 
@@ -468,8 +471,9 @@ Good at capturing multi-modality and continuous spaces. Applications:
 Applications:
     -  [CogACT](https://cogact.github.io/), [RoboAgent](https://robopen.github.io/), [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). 
 
-- **Parallel Decoding:** Techniques to speed up autoregressive decoding of action chunks. Applications:
-    - [PD-VLA](https://arxiv.org/abs/2503.02310).
+- **Better Decoding Strategy:** Techniques to speed up autoregressive decoding of action chunks. 
+    - **Parallel Decoding:**  [PD-VLA](https://arxiv.org/abs/2503.02310).
+    - **Early-Exit Decoding:** [CEED-VLA](https://www.arxiv.org/abs/2506.13725)
 
 - **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. 
 Applications:
