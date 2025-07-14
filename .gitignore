@@ -1,0 +1,68 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Logs
+*.log
+
+# Data, models, outputs
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.pb
+*.npz
+*.npy
+*.csv
+*.tsv
+*.pkl
+*.joblib
+*.db
+*.sqlite3
+*.cache
+*.dat
+*.tmp
+*.bak
+
+# VSCode
+.vscode/
+
+# PyCharm/IDEA
+.idea/
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# Test/coverage
+htmlcov/
+.tox/
+.coverage
+.cache
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Others
+*.swp
+*.swo 
