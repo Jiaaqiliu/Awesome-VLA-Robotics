@@ -52,6 +52,7 @@ Contributions are welcome!
 - [2025] A Survey on Vision-Language-Action Models: An Action Tokenization Perspective[[paper](https://arxiv.org/abs/2507.01925)]
 - [2025] A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
 - ~~[2025] Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]~~
+- [2025] Vision Language Action Models in Robotic Manipulation: A Systematic Review [[paper](https://arxiv.org/pdf/2507.10672v1)]
 - [2025] Vision-Language-Action Models: Concepts, Progress, Applications and Challenges [[paper](https://www.arxiv.org/abs/2505.04769)]
 - [2025] OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation [[paper](https://arxiv.org/pdf/2505.03912)][[project](https://openhelix-robot.github.io/)]
 - [2025] Exploring Embodied Multimodal Large Models: Development, Datasets, and Future Directions [[paper](https://arxiv.org/pdf/2502.15336)]
@@ -102,6 +103,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
+
+- **[2025] EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos**
+ [[paper](https://arxiv.org/abs/2507.12440)][[Project](https://rchalyang.github.io/EgoVLA/)]
 
 - **[2025] DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive World Knowledge**
  [[paper](https://arxiv.org/abs/2507.04447)][[Code](https://github.com/Zhangwenyao1/DreamVLA)][[Project](https://zhangwenyao1.github.io/DreamVLA/)]
@@ -331,6 +335,8 @@ Focuses on enabling more natural and effective interactions between humans and r
 #### 3.2.4 Task Planning / Reasoning
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
+
+- **[2025] ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning**  [[paper](https://arxiv.org/abs/2507.16815)]  [[project](https://jasper0314-huang.github.io/thinkact-vla/)]
 
 - **[2025] Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents**  [[paper](https://arxiv.org/abs/2505.23450)]  [[project](https://agentic-robot.github.io/)]
 
