@@ -338,6 +338,8 @@ Focuses on enabling more natural and effective interactions between humans and r
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
+- **[2025] Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation**  [[paper](https://arxiv.org/abs/2508.19958)]  [[project](https://long-vla.github.io/)]
+
 - **[2025] ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning**  [[paper](https://arxiv.org/abs/2507.16815)]  [[project](https://jasper0314-huang.github.io/thinkact-vla/)]
 
 - **[2025] Agentic Robot: A Brain-Inspired Framework for Vision-Language-Action Models in Embodied Agents**  [[paper](https://arxiv.org/abs/2505.23450)]  [[project](https://agentic-robot.github.io/)]
