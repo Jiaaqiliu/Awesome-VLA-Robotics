@@ -104,6 +104,9 @@ This section is the heart of the resource, listing specific VLA models and influ
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
 
+- **[2025] Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies**
+ [[paper](https://arxiv.org/abs/2508.20072)]
+
 - **[2025] EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos**
  [[paper](https://arxiv.org/abs/2507.12440)][[Project](https://rchalyang.github.io/EgoVLA/)]
 
