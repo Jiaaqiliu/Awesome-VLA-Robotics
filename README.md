@@ -480,6 +480,7 @@ Sometimes used in conjunction with other methods or implemented via specific hea
 - **Diffusion Policies for Actions:** Modeling action generation as a denoising diffusion process. 
 Good at capturing multi-modality and continuous spaces. Applications:
     - [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/), [Octo](https://arxiv.org/abs/2405.12213) (diffusion head), [SUDD](https://arxiv.org/abs/2307.14535v2), [MDT](https://arxiv.org/abs/2407.05996v1), [RDT-1B](https://arxiv.org/abs/2410.07864v2), [DexVLA](https://arxiv.org/pdf/2502.05855), [DiVLA](https://diffusion-vla.github.io/), [TinyVLA](https://arxiv.org/abs/2409.12514). Can be slow due to iterative sampling.
+    - [Discrete Diffusion VLA](https://arxiv.org/pdf/2508.20072)
 
 - **Flow Matching:** An alternative generative method for continuous actions, used in [π0](https://www.physicalintelligence.company/blog/pi0) for efficient, high-frequency (50Hz) trajectory generation.
 
