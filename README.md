@@ -118,6 +118,10 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 - **[2025] Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies**
  [[paper](https://arxiv.org/abs/2508.20072)]
 
+ - [2025] **UniVLA: Unified Vision-Language-Action Model** [[paper](https://arxiv.org/abs/2506.19850)] [[code](https://github.com/baaivision/UniVLA)]
+ 
+- [2025] **Gemini Robotics On-Device brings AI to local robotic devices** [[report](https://deepmind.google/discover/blog/gemini-robotics-on-device-brings-ai-to-local-robotic-devices/)]
+
 - **[2025] EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos**
  [[paper](https://arxiv.org/abs/2507.12440)][[Project](https://rchalyang.github.io/EgoVLA/)]
 
@@ -132,11 +136,17 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
  - **[2025] VOTE: Vision-Language-Action Optimization with Trajectory Ensemble Voting**
  [[paper](https://arxiv.org/abs/2507.05116)]
 
+ - [2025] **V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning** [[paper](https://arxiv.org/abs/2506.09985)] [[project](https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/)] [[code](https://github.com/facebookresearch/vjepa2)]
+
+
 - **[2025] VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning**
  [[paper](https://arxiv.org/abs/2505.18719)][[Code](https://github.com/GuanxingLu/vlarl)]
 
  - **[2025] CEED-VLA: Consistency Vision-Language-Action Model with Early-Exit Decoding**
  [[paper](https://www.arxiv.org/abs/2506.13725)][[Project](https://irpn-eai.github.io/CEED-VLA/)]
+
+ - [2025] **Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better** [[paper](https://arxiv.org/abs/2505.237055)] [[project](https://pi.website/research/knowledge_insulation)]
+
 
  - **[2025] SwitchVLA: Execution-Aware Task Switching for Vision-Language-Action Models**
  [[paper](https://arxiv.org/abs/2506.03574)][[Project](https://switchvla.github.io/)]
