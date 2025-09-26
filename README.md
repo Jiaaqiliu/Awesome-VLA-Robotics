@@ -48,10 +48,15 @@ Contributions are welcome!
 - **Evolution from VLM Adaptation to Integrated Systems:** Early VLA research focused mainly on adapting existing VLMs by simply fine-tuning them to output action tokens (e.g., the initial concept of RT-2 ). However, the field is moving towards more integrated architectures where the action generation components are more sophisticated and co-designed (e.g., diffusion policies, specialized action modules, hierarchical systems like Helix  or NaVILA ). This evolution indicates that the definition of VLA is shifting from merely fine-tuning VLMs to designing specific VLA architectures that better address the unique requirements of robot action generation, while still leveraging the capabilities of VLMs.
 
 ## 2. Survey papers
+- [2025] Pure Vision Language Action (VLA) Models: A Comprehensive Survey [[paper](https://arxiv.org/abs/2509.19012)]
+- [2025] Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey [[paper](https://arxiv.org/pdf/2508.13073)] [[project](https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation)]  
 
 - [2025] A Survey on Vision-Language-Action Models: An Action Tokenization Perspective[[paper](https://arxiv.org/abs/2507.01925)]
+- [2025] Foundation Model Driven Robotics: A Comprehensive Review [[paper](https://arxiv.org/pdf/2507.10087)]
+- [2025] A Survey on Vision-Language-Action Models for Autonomous Driving [[paper](https://arxiv.org/pdf/2506.24044)] [[project](https://github.com/JohnsonJiang1996/Awesome-VLA4AD)] 
+- [2025] Parallels Between VLA Model Post-Training and Human Motor Learning: Progress, Challenges, and Trends [[paper](https://arxiv.org/pdf/2506.20966)] [[project](https://github.com/AoqunJin/Awesome-VLA-Post-Training)]  
 - [2025] A Survey on Vision-Language-Action Models for Embodied AI. [[paper](https://arxiv.org/abs/2405.14093)]
-- ~~[2025] Survey on Vision-Language-Action Models. [[paper](https://arxiv.org/abs/2502.06851)]~~
+- [2025] Foundation Models in Robotics: Applications, Challenges, and the Future [[paper](https://arxiv.org/pdf/2312.07843)] [[project](https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models)]
 - [2025] Vision Language Action Models in Robotic Manipulation: A Systematic Review [[paper](https://arxiv.org/pdf/2507.10672v1)]
 - [2025] Vision-Language-Action Models: Concepts, Progress, Applications and Challenges [[paper](https://www.arxiv.org/abs/2505.04769)]
 - [2025] OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation [[paper](https://arxiv.org/pdf/2505.03912)][[project](https://openhelix-robot.github.io/)]
@@ -103,6 +108,12 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
+
+- [2025] **Wall-OSS: Igniting VLMs toward the Embodied Space** [[project](https://x2robot.com/en/research/68bc2cde8497d7f238dde690)] [[paper](https://x2robot.cn-wlcb.ufileos.com/wall_oss.pdf)] [[code](https://github.com/X-Square-Robot/wall-x)]
+
+- [2025] **Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation** [[paper](https://arxiv.org/pdf/2508.05635)] [[project](https://genie-envisioner.github.io/)] [[code](https://github.com/AgibotTech/Genie-Envisioner)]
+
+- [2025] **GR-3 Technical Report** [[paper](https://arxiv.org/pdf/2507.15493)] [[project](https://seed.bytedance.com/GR3)]
 
 - **[2025] Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies**
  [[paper](https://arxiv.org/abs/2508.20072)]
