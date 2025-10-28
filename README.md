@@ -48,6 +48,8 @@ Contributions are welcome!
 - **Evolution from VLM Adaptation to Integrated Systems:** Early VLA research focused mainly on adapting existing VLMs by simply fine-tuning them to output action tokens (e.g., the initial concept of RT-2 ). However, the field is moving towards more integrated architectures where the action generation components are more sophisticated and co-designed (e.g., diffusion policies, specialized action modules, hierarchical systems like Helix  or NaVILA ). This evolution indicates that the definition of VLA is shifting from merely fine-tuning VLMs to designing specific VLA architectures that better address the unique requirements of robot action generation, while still leveraging the capabilities of VLMs.
 
 ## 2. Survey papers
+- [2025] Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications [[paper](https://arxiv.org/pdf/2510.07077)]
+
 - [2025] Pure Vision Language Action (VLA) Models: A Comprehensive Survey [[paper](https://arxiv.org/abs/2509.19012)]
 - [2025] Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey [[paper](https://arxiv.org/pdf/2508.13073)] [[project](https://github.com/JiuTian-VL/Large-VLM-based-VLA-for-Robotic-Manipulation)]  
 
@@ -108,6 +110,7 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
+- [2025] **VLA-0: Building State-of-the-Art VLAs with Zero Modification** [[paper](https://arxiv.org/pdf/2510.13054)] [[project](https://vla0.github.io/)] [[code](https://github.com/NVlabs/vla0)]
 
 - [2025] **Wall-OSS: Igniting VLMs toward the Embodied Space** [[project](https://x2robot.com/en/research/68bc2cde8497d7f238dde690)] [[paper](https://x2robot.cn-wlcb.ufileos.com/wall_oss.pdf)] [[code](https://github.com/X-Square-Robot/wall-x)]
 
@@ -361,6 +364,8 @@ Focuses on enabling more natural and effective interactions between humans and r
 #### 3.2.4 Task Planning / Reasoning
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
+
+- **[2025]MemER: Scaling Up Memory for Robot Control via Experience Retrieval** [[paper](https://arxiv.org/abs/2510.20328)]  [[project](https://jen-pan.github.io/memer/)]
 
 - **[2025] Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation**  [[paper](https://arxiv.org/abs/2508.19958)]  [[project](https://long-vla.github.io/)]
 
@@ -767,10 +772,12 @@ Standardized suites of environments and tasks used to evaluate and compare the p
 ## 6. Related Awesome Lists
 
 * Awesome-VLA:
-
     * https://github.com/yueen-ma/Awesome-VLA
     * https://github.com/OpenHelix-robot/awesome-dual-system-vla
     * https://github.com/Orlando-CS/Awesome-VLA
+    * https://github.com/AoqunJin/Awesome-VLA-Post-Training
+    * https://github.com/OpenHelix-Team/Awesome-VLA-RL
+    * https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln
         
 * Awesome-Embodied-AI:
     * https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
