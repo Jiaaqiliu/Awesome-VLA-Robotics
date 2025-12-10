@@ -110,6 +110,16 @@ This section is the heart of the resource, listing specific VLA models and influ
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
 ##### 2025
+
+- [2025] **GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation** [[paper](https://arxiv.org/pdf/2512.01801)] [[project](https://seed.bytedance.com/gr_rl)]
+- [2025] **EvoVLA: Self-Evolving Vision-Language-Action Model** [[paper](https://arxiv.org/abs/2511.16166)] [[project](https://aigeeksgroup.github.io/EvoVLA/)] [[code](https://github.com/AIGeeksGroup/EvoVLA)]
+- [2025] **OmniVLA: Physically-Grounded Multimodal VLA with Unified Multi-Sensor Perception for Robotic Manipulation** [[paper](https://arxiv.org/abs/2511.01210)]
+- [2025] **π0.6: a VLA that Learns from Experience** [[paper](https://www.physicalintelligence.company/blog/pistar06)]
+
+- [2025] **HiMoE-VLA: Hierarchical Mixture-of-Experts for Generalist Vision-Language-Action Policies** [[paper](https://www.arxiv.org/abs/2512.05693)]  [[code](https://github.com/ZhiyingDu/HiMoE-VLA)]
+
+- [2025] **Mixture of Horizons in Action Chunking** [[paper](https://arxiv.org/abs/2511.19433)] [[project](https://timsty1.github.io/moh/)] [[code](https://github.com/Timsty1/MixtureOfHorizons)]
+
 - [2025] **VLA-0: Building State-of-the-Art VLAs with Zero Modification** [[paper](https://arxiv.org/pdf/2510.13054)] [[project](https://vla0.github.io/)] [[code](https://github.com/NVlabs/vla0)]
 
 - [2025] **Wall-OSS: Igniting VLMs toward the Embodied Space** [[project](https://x2robot.com/en/research/68bc2cde8497d7f238dde690)] [[paper](https://x2robot.cn-wlcb.ufileos.com/wall_oss.pdf)] [[code](https://github.com/X-Square-Robot/wall-x)]
