@@ -494,6 +494,7 @@ Often combined with a Transformer backbone. Applications:
 Applications:
     - [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA), [CogACT](https://arxiv.org/abs/2411.19650), [π0](https://www.physicalintelligence.company/blog/pi0) (uses an MoE-like structure).
     - [MolE-VLA](https://arxiv.org/abs/2503.20384), [ChatVLA](https://arxiv.org/abs/2502.14420)
+    - [HiMoE-VLA: Hierarchical Mixture-of-Experts for Generalist Vision-Language-Action Policies](https://www.arxiv.org/abs/2512.05693)
 
 
 #### 3.3.2 Action Representation & Generation
@@ -516,6 +517,7 @@ Good at capturing multi-modality and continuous spaces. Applications:
 - **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. Increases action dimensionality and inference time when using AR decoding.
 Applications:
     -  [CogACT](https://cogact.github.io/), [RoboAgent](https://robopen.github.io/), [π0](https://www.physicalintelligence.company/blog/pi0), [PD-VLA](https://arxiv.org/abs/2503.02310). 
+    - [Mixture of Horizons in Action Chunking](https://arxiv.org/abs/2511.19433)
 
 - **Better Decoding Strategy:** Techniques to speed up autoregressive decoding of action chunks. 
     - **Parallel Decoding:**  [PD-VLA](https://arxiv.org/abs/2503.02310).
