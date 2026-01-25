@@ -790,7 +790,7 @@ Standardized suites of environments and tasks used to evaluate and compare the p
     * https://github.com/AoqunJin/Awesome-VLA-Post-Training
     * https://github.com/OpenHelix-Team/Awesome-VLA-RL
     * https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln
-        
+    * https://github.com/keon/awesome-physical-ai
 * Awesome-Embodied-AI:
     * https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List
     * https://github.com/dustland/awesome-embodied-ai
