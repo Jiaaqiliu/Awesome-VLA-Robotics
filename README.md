@@ -109,6 +109,23 @@ This section is the heart of the resource, listing specific VLA models and influ
 #### 3.2.1 Manipulation
 
 Focuses on tasks involving interaction with objects, ranging from simple pick-and-place to complex, dexterous, long-horizon activities. This is a major application area for VLA research.
+##### 2026
+
+- [2026] **Observing and Controlling Features in Vision-Language-Action Models** [[paper](https://arxiv.org/abs/2603.05487)] *(Stanford, Marco Pavone)*
+
+- [2026] **Pretrained Vision-Language-Action Models are Surprisingly Resistant to Forgetting in Continual Learning** [[paper](https://arxiv.org/abs/2603.03818)] *(UT Austin, Yuke Zhu)*
+
+- [2026] **EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data** [[paper](https://arxiv.org/abs/2602.16710)] *(UC Berkeley, UT Austin — Trevor Darrell, Yuke Zhu, Linxi Fan)*
+
+- [2026] **FAVLA: A Force-Adaptive Fast-Slow VLA model for Contact-Rich Robotic Manipulation** [[paper](https://arxiv.org/abs/2602.23648)]
+
+- [2026] **Self-Correcting VLA: Online Action Refinement via Sparse World Imagination** [[paper](https://arxiv.org/abs/2602.21633)]
+
+- [2026] **LiLo-VLA: Compositional Long-Horizon Manipulation via Linked Object-Centric Policies** [[paper](https://arxiv.org/abs/2602.21531)]
+
+- [2026] **DySL-VLA: Efficient Vision-Language-Action Model Inference via Dynamic-Static Layer-Skipping for Robot Manipulation** [[paper](https://arxiv.org/abs/2602.22896)]
+
+
 ##### 2025
 
 - [2025] **GR-RL: Going Dexterous and Precise for Long-Horizon Robotic Manipulation** [[paper](https://arxiv.org/pdf/2512.01801)] [[project](https://seed.bytedance.com/gr_rl)]
@@ -375,6 +392,12 @@ Focuses on enabling more natural and effective interactions between humans and r
 
 Focuses on using VLA/LLM components for high-level task decomposition, planning, and reasoning, often bridging the gap between complex instructions and low-level actions.
 
+- **[2026] HALO: A Unified Vision-Language-Action Model for Embodied Multimodal Chain-of-Thought Reasoning** [[paper](https://arxiv.org/abs/2602.21157)]
+
+- **[2026] Self-Correcting VLA: Online Action Refinement via Sparse World Imagination** [[paper](https://arxiv.org/abs/2602.21633)]
+
+- **[2026] LiLo-VLA: Compositional Long-Horizon Manipulation via Linked Object-Centric Policies** [[paper](https://arxiv.org/abs/2602.21531)]
+
 - **[2025]MemER: Scaling Up Memory for Robot Control via Experience Retrieval** [[paper](https://arxiv.org/abs/2510.20328)]  [[project](https://jen-pan.github.io/memer/)]
 
 - **[2025] Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation**  [[paper](https://arxiv.org/abs/2508.19958)]  [[project](https://long-vla.github.io/)]
@@ -496,6 +519,7 @@ Often combined with a Transformer backbone. Applications:
 (which may be a separate policy). Applications:
     - [Helix](https://www.figure.ai/news/helix) (System 1/2), [NaVILA](https://arxiv.org/abs/2412.04453) (VLA + Locomotion Policy), [Hi Robot](https://arxiv.org/pdf/2502.19417) (VLM + π0), [SayCan](https://arxiv.org/abs/2204.01691) (LLM + Value Function).
     - [TriVLA](https://arxiv.org/abs/2507.01424)
+    - [HALO](https://arxiv.org/abs/2602.21157) (Unified VLA with Embodied Multimodal Chain-of-Thought)
 
 - **State-Space Models (SSM):** Emerging architectures like Mamba are being explored for their efficiency. Applications:
     - [RoboMamba](https://arxiv.org/abs/2406.04339)
@@ -555,6 +579,7 @@ Applications:
 - **Reinforcement Learning (RL):** Used to fine-tune VLAs or train components, allowing models to learn from interaction and potentially exceed demonstrator performance. Challenges include stability and sample efficiency with large models. Applications:
     - [iRe-VLA](https://arxiv.org/abs/2501.16664) (iterative RL/SFT), [MoRE](https://arxiv.org/abs/2503.08007) (RL objective for MoE VLAs handling mixed data), [RPD](https://arxiv.org/abs/2503.05833) (RL-based policy distillation), ConRFT (RL fine-tuning with consistency policies), [SafeVLA](https://arxiv.org/pdf/2503.03480) (Constrained RL for safety), [RIPT-VLA](https://arxiv.org/abs/2505.17016),[VLA-RL](https://arxiv.org/abs/2505.18719),[SimpleVLA-RL](https://github.com/PRIME-RL/SimpleVLA-RL).
     - [Robot-R1](https://arxiv.org/abs/2506.00070)
+    - [WoVR](https://arxiv.org/abs/2602.13977) (World Models as Reliable Simulators for Post-Training VLA Policies with RL)
 
 - **Pre-training & Fine-tuning:** Standard approach, involving pre-training on large datasets (web data for VLM backbones, large robot datasets like OpenX for VLAs) and then fine-tuning on specific tasks or robots.
     - **Fine-tuning by RL**
