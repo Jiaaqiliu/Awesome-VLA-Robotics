@@ -103,6 +103,7 @@ This section is the heart of the resource, listing specific VLA models and influ
 | TLA | <details><summary>Details</summary>Tactile-Language-Action (TLA) model; sequential tactile feedback via cross-modal language grounding to enable robust policy generation in contact-intensive scenarios.</details>  | Qwen2 7B + LoRA + Qwen2-VL | Qwen2 | [arXiv](https://arxiv.org/abs/2503.08548) / [Project](https://sites.google.com/view/tactile-language-action/) |
 | OpenVLA-OFT | <details><summary>Details</summary>Optimized Fine-Tuning (OFT)  | Llama 2 (DINOv2 + SigLIP vision)</details>  | L1 regression  | [arXiv](https://arxiv.org/abs/2502.19645) | [Project](https://openvla-oft.github.io/) |
 | RDT |  <details><summary>Details</summary>Robotics Diffusion | InternVL-Chat-V1.5 (VLM) + Diffusion Action Transformer</details>  | Diffusion Policy | [arXiv](https://arxiv.org/abs/2410.07864) | [Project](https://rdt-robotics.github.io/rdt-robotics/) |
+| ABot-M0 |  <details><summary>Details</summary>A novel VLA foundation model based on action manifold learning | Qwen3-VL (VLM) + Action Manifold Learning DiT</details>  | Action Manifold Learning + Flow Matching | [arXiv](https://arxiv.org/abs/2602.11236) / [Project](https://amap-cvlab.github.io/ABot-Manipulation/) |
 
 ### 3.2 By Application Area
 
