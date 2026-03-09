@@ -334,6 +334,18 @@ Focuses on tasks involving interaction with objects, ranging from simple pick-an
 
 Focuses on tasks where a robot moves through an environment based on visual input and language instructions. Includes Vision-Language Navigation (VLN) and applications for legged robots.
 
+- **[2026] OpenFrontier: General Navigation with Visual-Language Grounded Frontiers**
+ [[paper](https://arxiv.org/abs/2603.05377)]
+
+- **[2026] PROSPECT: Unified Streaming Vision-Language Navigation via Semantic--Spatial Fusion and Latent Predictive Representation**
+ [[paper](https://arxiv.org/abs/2603.03739)]
+
+- **[2026] History-Conditioned Spatio-Temporal Visual Token Pruning for Efficient Vision-Language Navigation**
+ [[paper](https://arxiv.org/abs/2603.06480)]
+
+- **[2026] AnyCamVLA: Zero-Shot Camera Adaptation for Viewpoint Robust Vision-Language-Action Models**
+ [[paper](https://arxiv.org/abs/2603.05868)] [[project](https://heo0224.github.io/AnyCamVLA/)]
+
 - **[2025] OctoNav: Towards Generalist Embodied Navigation**
  [[paper](https://arxiv.org/abs/2506.09839)] [[project](https://buaa-colalab.github.io/OctoNav/)]
 
@@ -470,6 +482,12 @@ Focuses on using VLA/LLM components for high-level task decomposition, planning,
    [[paper](https://arxiv.org/abs/2204.01691)] [[project](https://say-can.github.io/)] [[code](https://github.com/google-research/google-research/tree/master/saycan)]
 
 #### 3.2.5 Humanoid
+- **[2026] PhysiFlow: Physics-Aware Humanoid Whole-Body VLA via Multi-Brain Latent Flow Matching and Robust Tracking**
+ [[paper](https://arxiv.org/abs/2603.05410)]
+
+- **[2026] Cognition to Control - Multi-Agent Learning for Human-Humanoid Collaborative Transport**
+ [[paper](https://arxiv.org/abs/2603.03768)]
+
 - **[2025] GR00T N1: An Open Foundation Model for Generalist Humanoid Robots**
  [[paper](https://arxiv.org/pdf/2503.14734)] [[Code](https://github.com/NVIDIA/Isaac-GR00T)]
 - **[2025] Helix: A Vision-Language-Action Model for Generalist Humanoid Control**
