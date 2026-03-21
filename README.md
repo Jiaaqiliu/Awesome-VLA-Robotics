@@ -552,6 +552,11 @@ Applications:
     - [MoRE](https://arxiv.org/abs/2503.08007) (Mixture-of-Robotic-Experts using LoRA), [CogACT](https://arxiv.org/abs/2411.19650), [π0](https://www.physicalintelligence.company/blog/pi0) (uses an MoE-like structure).
     - [MolE-VLA](https://arxiv.org/abs/2503.20384), [ChatVLA](https://arxiv.org/abs/2502.14420)
     - [HiMoE-VLA: Hierarchical Mixture-of-Experts for Generalist Vision-Language-Action Policies](https://www.arxiv.org/abs/2512.05693)
+    - [2026] MoE-ACT [[paper](https://arxiv.org/abs/2603.15265)] [[project](https://j3k7.github.io/MoE-ACT/)]
+
+- **Recent Architecture Updates (2026.03):**
+    - AutoMoT [[paper](https://arxiv.org/abs/2603.14851)] [[project](https://automot-website.github.io/)]
+    - ForceVLA2 [[paper](https://arxiv.org/abs/2603.15169)] [[project](https://sites.google.com/view/force-vla2/home)]
 
 
 #### 3.3.2 Action Representation & Generation
@@ -570,6 +575,9 @@ Good at capturing multi-modality and continuous spaces. Applications:
     - [Discrete Diffusion VLA](https://arxiv.org/pdf/2508.20072)
 
 - **Flow Matching:** An alternative generative method for continuous actions, used in [π0](https://www.physicalintelligence.company/blog/pi0) for efficient, high-frequency (50Hz) trajectory generation.
+    - FASTER [[paper](https://arxiv.org/abs/2603.19199)] [[project](https://innovator-zero.github.io/FASTER)]
+    - GeCO [[paper](https://arxiv.org/abs/2603.17834)] [[project](https://hrh6666.github.io/GeCO/)]
+    - ProbeFlow [[paper](https://arxiv.org/abs/2603.17850)]
 
 - **Action Chunking:** Predicting multiple future actions in a single step, for efficiency and temporal consistency. Increases action dimensionality and inference time when using AR decoding.
 Applications:
@@ -583,6 +591,7 @@ Applications:
 - **Specialized Tokenizers:** Developing better ways to tokenize continuous action sequences. 
 Applications:
     - [FAST](https://arxiv.org/pdf/2501.09747) (designed for dexterous, high-frequency tasks).
+    - KineVLA [[paper](https://arxiv.org/abs/2603.17524)]
 
 - **Point-based Actions:** Using VLMs to predict keypoints or goal locations rather than full trajectories. 
 Applications:
@@ -619,6 +628,10 @@ Applications:
     -  [DexVLA](https://arxiv.org/pdf/2502.05855) uses embodied curriculum.
 
 - **Learning from Mixed-Quality Data:** Using techniques (e.g., RL in MoRE) to learn effectively even when demonstration data is suboptimal or contains failures.
+
+- **Reasoning-Augmented Training / Inference:** Enhancing policy quality via explicit intermediate reasoning.
+Applications:
+    - VLA-Thinker [[paper](https://arxiv.org/abs/2603.14523)] [[project](https://cywang735.github.io/VLA-Thinker/)]
 
 
 #### 3.3.4 Input Modalities & Grounding
