@@ -384,6 +384,12 @@ Focuses on tasks where a robot moves through an environment based on visual inpu
 
 Focuses on enabling more natural and effective interactions between humans and robots, often using language (text or speech) as the primary interface.
 
+- **[2026] The Robot's Inner Critic: Self-Refinement of Social Behaviors through VLM-based Replanning** [[paper](https://arxiv.org/abs/2603.20164)] [[project](https://limjiyu99.github.io/inner-critic/)]
+
+- **[2026] Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis** [[paper](https://arxiv.org/abs/2603.19709)]
+
+- **[2026] Not an Obstacle for Dog, but a Hazard for Human: A Co-Ego Navigation System for Guide Dog Robots** [[paper](https://arxiv.org/abs/2603.20121)]
+
 - **[2025] Unveiling the Potential of Vision-Language-Action Models with Open-Ended Multimodal Instructions** [[paper](https://arxiv.org/abs/2505.11214)] (OE-VLA)
 
 - **[2025] VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation** [[paper](https://arxiv.org/abs/2502.13508)]
@@ -682,6 +688,8 @@ This section lists key resources for training and evaluating VLA models. Large-s
 
 Large-scale datasets of robot interaction trajectories, often with accompanying language instructions and visual observations. Crucial for training general-purpose policies via imitation learning.
 
+- **[2026] HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels** [[paper](https://arxiv.org/abs/2603.20150)]
+
 - **Open X-Embodiment (OpenX)** [[Project](https://robotics-transformer-x.github.io/)] - Open X-Embodiment Collaboration. 
     <details><summary>Details</summary>A massive, standardized dataset aggregating data from 20+ existing robot datasets, spanning diverse embodiments, tasks, and environments. Used to train major VLAs like RT-X, Octo, OpenVLA, π0. Contains over 1 million trajectories. </details>
 
@@ -769,6 +777,12 @@ Physics-based simulators used to train agents, generate synthetic data, and eval
 ### 4.4 Evaluation Benchmarks
 
 Standardized suites of environments and tasks used to evaluate and compare the performance of VLA models and other robot learning algorithms.
+
+- **[2026] NavTrust: Benchmarking Trustworthiness for Embodied Navigation** [[paper](https://arxiv.org/abs/2603.19229)] [[project](https://navtrust.github.io)] [[code](https://github.com/LatiosInAltoMare/NavTrust-Benchmarking-Trustworthiness-for-Embodied-Navigation)]
+
+- **[2026] HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks** [[paper](https://arxiv.org/abs/2603.19822)]
+
+- **[2026] Can LLMs Prove Robotic Path Planning Optimality? A Benchmark for Research-Level Algorithm Verification** [[paper](https://arxiv.org/abs/2603.19464)]
 
 - **CALVIN** [[Project](https://github.com/mees/calvin)].
 
