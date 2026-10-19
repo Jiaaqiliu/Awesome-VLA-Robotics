@@ -654,6 +654,23 @@ Focuses on input data types beyond standard RGB images and text used by VLAs, an
     - [Bridge VLA](https://www.arxiv.org/abs/2506.07961)
 - **Integrating Proprioception / State:** Incorporating the robot's own state (joint angles, velocities, end-effector pose) as input. Common in many policies, explicitly mentioned in [VLAS](https://arxiv.org/abs/2502.13508), [PaLM-E](https://arxiv.org/abs/2303.03378), [π0](https://www.physicalintelligence.company/blog/pi0) (evaluation requires Simpler fork with proprioception support). OpenVLA initially lacked this, noted as a limitation/future work.
 
+- **Integrating Tactile/Force Sensing:** Incorporating tactile and force/torque feedback to enable contact-rich manipulation where vision alone is insufficient (e.g., occlusion, deformable objects, precise insertion). Applications:
+    - [TacVLA](https://arxiv.org/abs/2603.12665) (contact-aware gating for selective tactile token activation)
+    - [VTLA](https://arxiv.org/abs/2505.09577) (vision-tactile-language-action with DPO for insertion tasks)
+    - [OmniVTLA](https://arxiv.org/abs/2508.08706) (dual-path tactile encoder, scaling up tactile-language-action)
+    - [Tactile-VLA](https://arxiv.org/abs/2507.09160) (unlocking VLA's physical knowledge for tactile generalization)
+    - [VLA-Touch](https://arxiv.org/abs/2507.17294) (dual-level tactile feedback: semantic planning + action refinement)
+    - [TaF-VLA](https://arxiv.org/abs/2601.20321) (tactile-force alignment, shifting from tactile-vision to tactile-force)
+    - [ForceVLA](https://arxiv.org/abs/2505.22159) (force-aware MoE, first end-to-end F/T integration in VLA)
+    - [CRAFT](https://arxiv.org/abs/2602.12532) (force-aware curriculum fine-tuning via variational information bottleneck)
+    - [FD-VLA](https://arxiv.org/abs/2602.02142) (force distillation without physical F/T sensors at inference)
+    - [TA-VLA](https://arxiv.org/abs/2509.07962) (systematic design space study for torque-aware VLA, CoRL 2025)
+    - [TLA](https://arxiv.org/abs/2503.08548) (tactile-language-action with cross-modal language grounding)
+
+- **Integrating Audio:** Using contact microphones or audio sensors to capture contact events, material properties, and interaction dynamics at high frequency. Applications:
+    - [Audio-VLA](https://arxiv.org/abs/2511.09958) (contact audio perception for robotic manipulation)
+    - [ManiWAV](https://arxiv.org/abs/2406.19464) (learning manipulation from in-the-wild audio-visual data, CoRL 2024)
+
 - **Multimodal Prompts:** Handling instructions that include images or video in addition to text. Applications:
     - [VIMA](https://arxiv.org/abs/2210.03094).
 
