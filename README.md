@@ -780,6 +780,8 @@ Physics-based simulators used to train agents, generate synthetic data, and eval
 
 Standardized suites of environments and tasks used to evaluate and compare the performance of VLA models and other robot learning algorithms.
 
+- **[2026] LEASH: Stay Safe in Agentic Robotics** [[paper](https://arxiv.org/abs/2611.14115)] [[project](https://zhuqinfeng1999.github.io/LEASH/)] [[code](https://github.com/zhuqinfeng1999/LEASH)]
+
 - **[2026] NavTrust: Benchmarking Trustworthiness for Embodied Navigation** [[paper](https://arxiv.org/abs/2603.19229)] [[project](https://navtrust.github.io)] [[code](https://github.com/LatiosInAltoMare/NavTrust-Benchmarking-Trustworthiness-for-Embodied-Navigation)]
 
 - **[2026] HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks** [[paper](https://arxiv.org/abs/2603.19822)]
