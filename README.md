@@ -776,6 +776,10 @@ Physics-based simulators used to train agents, generate synthetic data, and eval
 
     <details><summary>Details</summary>Learns interactive simulators from real-world videos.   </details>
 
+- **Alloy** [[arXiv](https://arxiv.org/abs/2611.16312)] [[Code](https://github.com/argonrobotics-ai/alloy)] [[Project](https://alloy.argonrobotics.ai)] - Apache-2.0.
+
+    <details><summary>Details</summary>Open-source Python physics engine for robot learning, built on MuJoCo Warp and Newton. Simulates rigid robots, cloth, soft bodies, sand and liquids, with many parallel worlds on a GPU or CPU, Gymnasium vector environments, and an MCP server for AI coding agents.   </details>
+
 ### 4.4 Evaluation Benchmarks
 
 Standardized suites of environments and tasks used to evaluate and compare the performance of VLA models and other robot learning algorithms.
